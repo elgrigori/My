@@ -10,7 +10,7 @@ import com.volunteer.participationservice.repository.ParticipationRepository;
 import com.volunteer.participationservice.service.ParticipationService;
 import com.volunteer.participationservice.service.ServiceException;
 import io.quarkus.test.junit.QuarkusTest;
-import io.quarkus.test.junit.mockito.InjectMock;
+import io.quarkus.test.InjectMock;
 import jakarta.inject.Inject;
 import jakarta.transaction.Transactional;
 import org.eclipse.microprofile.rest.client.inject.RestClient;

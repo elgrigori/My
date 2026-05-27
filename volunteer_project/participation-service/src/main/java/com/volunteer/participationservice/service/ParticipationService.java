@@ -61,7 +61,7 @@ public class ParticipationService {
         participation.startDate = action.startDate;
         participation.endDate = action.endDate;
         participation.status = ParticipationStatus.CONFIRMED;
-        participation.notificationMessage = notificationService.confirmation(volunteer, action);
+        appendNotification(participation, notificationService.confirmation(volunteer, action));
         participationRepository.persist(participation);
         updateActionAccepted(participation, request);
         return toResponse(participation);
@@ -76,8 +76,7 @@ public class ParticipationService {
         }
         validateCanCancel(fetchAction(participation.actionId));
         participation.status = ParticipationStatus.CANCELLED;
-        participation.notificationMessage = "Participation cancelled";
-        participation.notificationRead = false;
+        appendNotification(participation, "Participation cancelled");
         updateActionCancelled(participation);
         return toResponse(participation);
     }
@@ -107,7 +106,7 @@ public class ParticipationService {
 
     public List<ParticipationResponse> notificationsForVolunteer(Long volunteerId) {
         return participationRepository.list("volunteerId = ?1 and notificationMessage is not null", volunteerId).stream()
-                .map(this::toResponse)
+                .flatMap(participation -> notificationResponses(participation).stream())
                 .toList();
     }
 
@@ -245,9 +244,30 @@ public class ParticipationService {
         }
         String message = request.message != null ? request.message : fallbackMessage;
         participationRepository.findAcceptedByAction(request.actionId).forEach(participation -> {
-            participation.notificationMessage = message;
-            participation.notificationRead = false;
+            appendNotification(participation, message);
         });
+    }
+
+    private void appendNotification(Participation participation, String message) {
+        participation.notificationMessage = message;
+        participation.notificationRead = false;
+        participation.notificationHistory = participation.notificationHistory == null || participation.notificationHistory.isBlank()
+                ? message
+                : participation.notificationHistory + "\n" + message;
+    }
+
+    private List<ParticipationResponse> notificationResponses(Participation participation) {
+        if (participation.notificationHistory == null || participation.notificationHistory.isBlank()) {
+            return List.of(toResponse(participation));
+        }
+        return java.util.Arrays.stream(participation.notificationHistory.split("\\R"))
+                .filter(message -> !message.isBlank())
+                .map(message -> {
+                    ParticipationResponse response = toResponse(participation);
+                    response.notificationMessage = message;
+                    return response;
+                })
+                .toList();
     }
 
     public ParticipationResponse toResponse(Participation participation) {

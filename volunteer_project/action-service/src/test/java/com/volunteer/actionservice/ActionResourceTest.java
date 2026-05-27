@@ -4,7 +4,7 @@ import com.volunteer.actionservice.client.ParticipationClient;
 import com.volunteer.actionservice.client.UserClient;
 import com.volunteer.actionservice.repository.ActionRepository;
 import io.quarkus.test.junit.QuarkusTest;
-import io.quarkus.test.junit.mockito.InjectMock;
+import io.quarkus.test.InjectMock;
 import io.restassured.http.ContentType;
 import jakarta.inject.Inject;
 import jakarta.transaction.Transactional;

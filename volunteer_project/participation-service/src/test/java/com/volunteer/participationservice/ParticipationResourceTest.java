@@ -6,7 +6,7 @@ import com.volunteer.participationservice.dto.ActionSummary;
 import com.volunteer.participationservice.dto.UserSummary;
 import com.volunteer.participationservice.repository.ParticipationRepository;
 import io.quarkus.test.junit.QuarkusTest;
-import io.quarkus.test.junit.mockito.InjectMock;
+import io.quarkus.test.InjectMock;
 import io.restassured.http.ContentType;
 import jakarta.inject.Inject;
 import jakarta.transaction.Transactional;

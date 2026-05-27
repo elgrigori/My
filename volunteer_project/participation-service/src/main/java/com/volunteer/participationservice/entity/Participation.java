@@ -45,5 +45,8 @@ public class Participation {
     @Column(length = 1000)
     public String notificationMessage;
 
+    @Column(length = 4000)
+    public String notificationHistory;
+
     public boolean notificationRead;
 }
