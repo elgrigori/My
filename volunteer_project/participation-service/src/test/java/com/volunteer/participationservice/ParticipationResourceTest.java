@@ -1,10 +1,10 @@
 package com.volunteer.participationservice;
 
-import com.volunteer.participationservice.client.ActionClient;
-import com.volunteer.participationservice.client.UserClient;
-import com.volunteer.participationservice.dto.ActionSummary;
-import com.volunteer.participationservice.dto.UserSummary;
-import com.volunteer.participationservice.repository.ParticipationRepository;
+import com.volunteer.participationservice.adapters.out.ActionClient;
+import com.volunteer.participationservice.adapters.out.UserClient;
+import com.volunteer.participationservice.adapters.in.rest.representation.ActionSummary;
+import com.volunteer.participationservice.adapters.in.rest.representation.UserSummary;
+import com.volunteer.participationservice.adapters.out.ParticipationRepository;
 import io.quarkus.test.junit.QuarkusTest;
 import io.quarkus.test.InjectMock;
 import io.restassured.http.ContentType;

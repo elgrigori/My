@@ -1,6 +1,6 @@
 package com.volunteer.userservice;
 
-import com.volunteer.userservice.repository.UserRepository;
+import com.volunteer.userservice.adapters.out.UserRepository;
 import io.quarkus.test.junit.QuarkusTest;
 import io.restassured.http.ContentType;
 import jakarta.inject.Inject;

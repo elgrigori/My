@@ -1,8 +1,8 @@
 package com.volunteer.actionservice;
 
-import com.volunteer.actionservice.client.ParticipationClient;
-import com.volunteer.actionservice.client.UserClient;
-import com.volunteer.actionservice.repository.ActionRepository;
+import com.volunteer.actionservice.adapters.out.ParticipationClient;
+import com.volunteer.actionservice.adapters.out.UserClient;
+import com.volunteer.actionservice.adapters.out.ActionRepository;
 import io.quarkus.test.junit.QuarkusTest;
 import io.quarkus.test.InjectMock;
 import io.restassured.http.ContentType;

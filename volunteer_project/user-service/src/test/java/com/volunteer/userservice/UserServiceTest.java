@@ -1,10 +1,10 @@
 package com.volunteer.userservice;
 
-import com.volunteer.userservice.dto.OrganizationRequest;
-import com.volunteer.userservice.dto.VolunteerRequest;
-import com.volunteer.userservice.repository.UserRepository;
-import com.volunteer.userservice.service.ServiceException;
-import com.volunteer.userservice.service.UserService;
+import com.volunteer.userservice.adapters.in.rest.representation.OrganizationRequest;
+import com.volunteer.userservice.adapters.in.rest.representation.VolunteerRequest;
+import com.volunteer.userservice.adapters.out.UserRepository;
+import com.volunteer.userservice.application.ServiceException;
+import com.volunteer.userservice.application.UserService;
 import io.quarkus.test.junit.QuarkusTest;
 import jakarta.inject.Inject;
 import jakarta.transaction.Transactional;

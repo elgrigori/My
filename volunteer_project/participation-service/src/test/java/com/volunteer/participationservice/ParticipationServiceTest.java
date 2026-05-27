@@ -1,14 +1,14 @@
 package com.volunteer.participationservice;
 
-import com.volunteer.participationservice.client.ActionClient;
-import com.volunteer.participationservice.client.UserClient;
-import com.volunteer.participationservice.dto.ActionSummary;
-import com.volunteer.participationservice.dto.ParticipationRequest;
-import com.volunteer.participationservice.dto.UserSummary;
-import com.volunteer.participationservice.entity.ParticipationStatus;
-import com.volunteer.participationservice.repository.ParticipationRepository;
-import com.volunteer.participationservice.service.ParticipationService;
-import com.volunteer.participationservice.service.ServiceException;
+import com.volunteer.participationservice.adapters.out.ActionClient;
+import com.volunteer.participationservice.adapters.out.UserClient;
+import com.volunteer.participationservice.adapters.in.rest.representation.ActionSummary;
+import com.volunteer.participationservice.adapters.in.rest.representation.ParticipationRequest;
+import com.volunteer.participationservice.adapters.in.rest.representation.UserSummary;
+import com.volunteer.participationservice.application.domain.ParticipationStatus;
+import com.volunteer.participationservice.adapters.out.ParticipationRepository;
+import com.volunteer.participationservice.application.ParticipationService;
+import com.volunteer.participationservice.application.ServiceException;
 import io.quarkus.test.junit.QuarkusTest;
 import io.quarkus.test.InjectMock;
 import jakarta.inject.Inject;
@@ -121,7 +121,7 @@ class ParticipationServiceTest {
 
         participationService.create(request(16L, 71L));
 
-        var notifRequest = new com.volunteer.participationservice.dto.ActionNotificationRequest();
+        var notifRequest = new com.volunteer.participationservice.adapters.in.rest.representation.ActionNotificationRequest();
         notifRequest.actionId = 71L;
         participationService.actionUpdated(notifRequest);
 

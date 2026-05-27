@@ -1,10 +1,10 @@
 package com.volunteer.actionservice;
 
-import com.volunteer.actionservice.dto.ActionRequest;
-import com.volunteer.actionservice.entity.ActionType;
-import com.volunteer.actionservice.repository.ActionRepository;
-import com.volunteer.actionservice.service.ActionService;
-import com.volunteer.actionservice.service.ServiceException;
+import com.volunteer.actionservice.adapters.in.rest.representation.ActionRequest;
+import com.volunteer.actionservice.application.domain.ActionType;
+import com.volunteer.actionservice.adapters.out.ActionRepository;
+import com.volunteer.actionservice.application.ActionService;
+import com.volunteer.actionservice.application.ServiceException;
 import io.quarkus.test.junit.QuarkusTest;
 import jakarta.inject.Inject;
 import jakarta.transaction.Transactional;
@@ -70,7 +70,7 @@ class ActionServiceTest {
 
         var completed = actionService.complete(created.id);
 
-        assertEquals(com.volunteer.actionservice.entity.ActionStatus.COMPLETED, completed.status);
+        assertEquals(com.volunteer.actionservice.application.domain.ActionStatus.COMPLETED, completed.status);
     }
 
     @Test

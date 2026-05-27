@@ -64,7 +64,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="e-assessment-p35" edge="1" parent="1" source="conditionAssessment" style="rounded=0;html=1;strokeColor=#374151;strokeWidth=2.5;fontFamily=Arial;fontColor=#6b7280;fontSize=11;edgeStyle=orthogonalEdgeStyle;labelBackgroundColor=#ffffff;labelBorderColor=#e5e7eb;endArrow=block;endFill=1;" target="damageState" value="updates">
+        <mxCell id="e-assessment-p35" edge="1" parent="1" source="conditionAssessment" style="rounded=0;html=1;strokeColor=#374151;strokeWidth=2.5;fontFamily=Arial.fontColor=#6b7280;fontSize=11;edgeStyle=orthogonalEdgeStyle;labelBackgroundColor=#ffffff;labelBorderColor=#e5e7eb;endArrow=block;endFill=1;" target="damageState" value="updates">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="2110" y="515" />
