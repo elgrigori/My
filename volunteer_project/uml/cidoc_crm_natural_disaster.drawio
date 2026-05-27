@@ -1,0 +1,243 @@
+<mxfile host="app.diagrams.net" modified="2026-05-14T00:00:00.000Z" agent="Codex" version="24.7.17" type="device">
+  <diagram id="cidoc-crm-natural-disaster" name="CIDOC CRM Natural Disaster">
+    <mxGraphModel dx="1800" dy="1100" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1800" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="CIDOC CRM model: Natural disaster affecting a cultural heritage monument" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#1f2937;" vertex="1" parent="1">
+          <mxGeometry x="220" y="20" width="1360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="subtitle" value="All entity boxes use CIDOC CRM classes; all arrow labels use CIDOC CRM properties. No non-CIDOC &quot;affects&quot; relation is introduced." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontColor=#4b5563;" vertex="1" parent="1">
+          <mxGeometry x="320" y="62" width="1160" height="34" as="geometry" />
+        </mxCell>
+
+        <mxCell id="swim-risk" value="Risk Assessment" style="swimlane;html=1;rounded=0;startSize=34;horizontal=1;fillColor=#eef6ff;strokeColor=#8ab6d6;fontColor=#1f2937;fontSize=15;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="120" width="390" height="520" as="geometry" />
+        </mxCell>
+        <mxCell id="swim-event" value="Event Occurrence" style="swimlane;html=1;rounded=0;startSize=34;horizontal=1;fillColor=#fff4e6;strokeColor=#d79b55;fontColor=#1f2937;fontSize=15;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="120" width="390" height="520" as="geometry" />
+        </mxCell>
+        <mxCell id="swim-asset" value="Heritage Resource" style="swimlane;html=1;rounded=0;startSize=34;horizontal=1;fillColor=#f3faf2;strokeColor=#82b366;fontColor=#1f2937;fontSize=15;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="880" y="120" width="390" height="520" as="geometry" />
+        </mxCell>
+        <mxCell id="swim-impact" value="Impact / Condition Evidence" style="swimlane;html=1;rounded=0;startSize=34;horizontal=1;fillColor=#fff1f2;strokeColor=#b85450;fontColor=#1f2937;fontSize=15;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1300" y="120" width="460" height="520" as="geometry" />
+        </mxCell>
+        <mxCell id="swim-response" value="Response" style="swimlane;html=1;rounded=0;startSize=34;horizontal=1;fillColor=#f6f1ff;strokeColor=#9673a6;fontColor=#1f2937;fontSize=15;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="690" width="880" height="360" as="geometry" />
+        </mxCell>
+
+        <mxCell id="riskAssessment" value="&lt;b&gt;Seismic risk assessment&lt;/b&gt;&lt;br&gt;E13 Attribute Assignment&lt;br&gt;&lt;i&gt;pre-event attribution of risk to the monument&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#111827;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="90" y="180" width="285" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="riskActor" value="&lt;b&gt;Risk assessor / heritage authority&lt;/b&gt;&lt;br&gt;E39 Actor" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#ffffff;strokeColor=#6c8ebf;fontColor=#111827;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="90" y="318" width="285" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="riskTimespan" value="&lt;b&gt;Assessment date&lt;/b&gt;&lt;br&gt;E52 Time-Span" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#ffffff;strokeColor=#6c8ebf;fontColor=#111827;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="90" y="410" width="285" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="riskType" value="&lt;b&gt;High seismic risk / vulnerability class&lt;/b&gt;&lt;br&gt;E55 Type&lt;br&gt;&lt;i&gt;assigned risk category&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#ffffff;strokeColor=#6c8ebf;fontColor=#111827;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="90" y="490" width="285" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="riskPropertyType" value="&lt;b&gt;Risk-classification property type&lt;/b&gt;&lt;br&gt;E55 Type&lt;br&gt;&lt;i&gt;e.g. property type of P2 has type&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#ffffff;strokeColor=#6c8ebf;fontColor=#111827;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="90" y="575" width="285" height="58" as="geometry" />
+        </mxCell>
+
+        <mxCell id="disasterEvent" value="&lt;b&gt;Earthquake occurrence&lt;/b&gt;&lt;br&gt;E5 Event&lt;br&gt;&lt;i&gt;natural disaster event, e.g. main shock and aftershocks&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#ffe6cc;strokeColor=#d79b00;fontColor=#111827;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="515" y="180" width="285" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="disasterType" value="&lt;b&gt;Earthquake / natural disaster&lt;/b&gt;&lt;br&gt;E55 Type" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#ffffff;strokeColor=#d79b00;fontColor=#111827;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="515" y="318" width="285" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="eventTimespan" value="&lt;b&gt;Time of shock and aftershocks&lt;/b&gt;&lt;br&gt;E52 Time-Span" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#ffffff;strokeColor=#d79b00;fontColor=#111827;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="515" y="410" width="285" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="place" value="&lt;b&gt;Affected locality / seismic zone&lt;/b&gt;&lt;br&gt;E53 Place" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#ffffff;strokeColor=#d79b00;fontColor=#111827;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="515" y="502" width="285" height="62" as="geometry" />
+        </mxCell>
+
+        <mxCell id="monument" value="&lt;b&gt;Cultural heritage monument&lt;/b&gt;&lt;br&gt;E24 Physical Human-Made Thing&lt;br&gt;&lt;i&gt;also modelable as E27 Site when the monument is treated as an in-situ place&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#111827;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="930" y="180" width="285" height="98" as="geometry" />
+        </mxCell>
+        <mxCell id="monumentType" value="&lt;b&gt;Protected cultural heritage monument&lt;/b&gt;&lt;br&gt;E55 Type" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#ffffff;strokeColor=#82b366;fontColor=#111827;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="930" y="330" width="285" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="monumentName" value="&lt;b&gt;Monument name / inventory id&lt;/b&gt;&lt;br&gt;E41 Appellation" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#ffffff;strokeColor=#82b366;fontColor=#111827;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="930" y="422" width="285" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="materials" value="&lt;b&gt;Stone masonry / historic fabric&lt;/b&gt;&lt;br&gt;E57 Material" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#ffffff;strokeColor=#82b366;fontColor=#111827;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="930" y="514" width="285" height="62" as="geometry" />
+        </mxCell>
+
+        <mxCell id="conditionAssessment" value="&lt;b&gt;Post-disaster condition assessment&lt;/b&gt;&lt;br&gt;E14 Condition Assessment&lt;br&gt;&lt;i&gt;observation after the earthquake&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#111827;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="1360" y="178" width="330" height="88" as="geometry" />
+        </mxCell>
+        <mxCell id="damageState" value="&lt;b&gt;Observed damage condition&lt;/b&gt;&lt;br&gt;E3 Condition State&lt;br&gt;&lt;i&gt;cracking, deformation, partial collapse, loss of material&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#ffffff;strokeColor=#b85450;fontColor=#111827;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="1360" y="326" width="330" height="88" as="geometry" />
+        </mxCell>
+        <mxCell id="damageType" value="&lt;b&gt;Earthquake-related structural damage&lt;/b&gt;&lt;br&gt;E55 Type" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#ffffff;strokeColor=#b85450;fontColor=#111827;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="1360" y="464" width="330" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="assessmentActor" value="&lt;b&gt;Survey team / conservation engineer&lt;/b&gt;&lt;br&gt;E39 Actor" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#ffffff;strokeColor=#b85450;fontColor=#111827;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="1360" y="556" width="330" height="62" as="geometry" />
+        </mxCell>
+
+        <mxCell id="responseActivity" value="&lt;b&gt;Emergency stabilization and conservation response&lt;/b&gt;&lt;br&gt;E11 Modification&lt;br&gt;&lt;i&gt;intervention changing the physical state of the monument&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#e1d5e7;strokeColor=#9673a6;fontColor=#111827;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="535" y="755" width="350" height="88" as="geometry" />
+        </mxCell>
+        <mxCell id="responseActor" value="&lt;b&gt;Conservation authority / emergency team&lt;/b&gt;&lt;br&gt;E39 Actor" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#ffffff;strokeColor=#9673a6;fontColor=#111827;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="950" y="720" width="310" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="responseTimespan" value="&lt;b&gt;Response period&lt;/b&gt;&lt;br&gt;E52 Time-Span" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#ffffff;strokeColor=#9673a6;fontColor=#111827;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="950" y="812" width="310" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="responseTechnique" value="&lt;b&gt;Shoring, bracing, documentation, consolidation&lt;/b&gt;&lt;br&gt;E55 Type" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#ffffff;strokeColor=#9673a6;fontColor=#111827;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="950" y="904" width="310" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="responseType" value="&lt;b&gt;Emergency response / conservation intervention&lt;/b&gt;&lt;br&gt;E55 Type" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#ffffff;strokeColor=#9673a6;fontColor=#111827;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="535" y="904" width="350" height="62" as="geometry" />
+        </mxCell>
+
+        <mxCell id="document" value="&lt;b&gt;Damage report and intervention record&lt;/b&gt;&lt;br&gt;E31 Document&lt;br&gt;&lt;i&gt;records assessment, event context, and response actions&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#111827;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="1360" y="760" width="330" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="ontologyNote" value="&lt;b&gt;Ontological interpretation&lt;/b&gt;&lt;br&gt;The disaster is modeled as E5 Event. Its presence with the monument is expressed by P12. The impact is not a non-CIDOC relation: it is the E3 Condition State identified by an E14 Condition Assessment after the event. The response is an E11 Modification, carried out by an E39 Actor, modifying the monument and motivated by the documented condition." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9ca3af;dashed=1;fontColor=#374151;fontSize=12;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1085" width="1720" height="70" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e-risk-actor" value="P14 carried out by" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#4b5563;fontSize=12;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;" edge="1" parent="1" source="riskAssessment" target="riskActor">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-risk-time" value="P4 has time-span" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#4b5563;fontSize=12;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;" edge="1" parent="1" source="riskAssessment" target="riskTimespan">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-risk-assigned-to" value="P140 assigned attribute to" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#2563eb;fontSize=12;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;" edge="1" parent="1" source="riskAssessment" target="monument">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="400" y="223" />
+              <mxPoint x="400" y="130" />
+              <mxPoint x="1073" y="130" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-risk-assigned" value="P141 assigned" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#4b5563;fontSize=12;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;" edge="1" parent="1" source="riskAssessment" target="riskType">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-risk-property-type" value="P177 assigned property of type" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#4b5563;fontSize=12;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;" edge="1" parent="1" source="riskAssessment" target="riskPropertyType">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="55" y="223" />
+              <mxPoint x="55" y="604" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="e-event-type" value="P2 has type" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#4b5563;fontSize=12;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;" edge="1" parent="1" source="disasterEvent" target="disasterType">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-event-time" value="P4 has time-span" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#4b5563;fontSize=12;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;" edge="1" parent="1" source="disasterEvent" target="eventTimespan">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-event-place" value="P7 took place at" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#4b5563;fontSize=12;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;" edge="1" parent="1" source="disasterEvent" target="place">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-event-presence" value="P12 occurred in the presence of" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#d97706;fontSize=12;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;" edge="1" parent="1" source="disasterEvent" target="monument">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-monument-place" value="P53 has former or current location" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#4b5563;fontSize=12;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;" edge="1" parent="1" source="monument" target="place">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1073" y="600" />
+              <mxPoint x="658" y="600" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="e-monument-type" value="P2 has type" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#4b5563;fontSize=12;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;" edge="1" parent="1" source="monument" target="monumentType">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-monument-id" value="P1 is identified by" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#4b5563;fontSize=12;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;" edge="1" parent="1" source="monument" target="monumentName">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-monument-material" value="P45 consists of" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#4b5563;fontSize=12;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;" edge="1" parent="1" source="monument" target="materials">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e-condition-concerned" value="P34 concerned" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#b91c1c;fontSize=12;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;" edge="1" parent="1" source="conditionAssessment" target="monument">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-condition-identified" value="P35 has identified" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#b91c1c;fontSize=12;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;" edge="1" parent="1" source="conditionAssessment" target="damageState">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-condition-motivated" value="P17 was motivated by" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#b91c1c;fontSize=12;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;" edge="1" parent="1" source="conditionAssessment" target="disasterEvent">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1525" y="140" />
+              <mxPoint x="658" y="140" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-damage-type" value="P2 has type" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#4b5563;fontSize=12;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;" edge="1" parent="1" source="damageState" target="damageType">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-condition-actor" value="P14 carried out by" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#4b5563;fontSize=12;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;" edge="1" parent="1" source="conditionAssessment" target="assessmentActor">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1720" y="222" />
+              <mxPoint x="1720" y="587" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="e-response-modified" value="P31 has modified" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#7e22ce;fontSize=12;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;" edge="1" parent="1" source="responseActivity" target="monument">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="710" y="670" />
+              <mxPoint x="1073" y="670" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-response-motivated" value="P17 was motivated by" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#7e22ce;fontSize=12;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;" edge="1" parent="1" source="responseActivity" target="damageState">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="710" y="650" />
+              <mxPoint x="1525" y="650" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-response-actor" value="P14 carried out by" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#4b5563;fontSize=12;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;" edge="1" parent="1" source="responseActivity" target="responseActor">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-response-time" value="P4 has time-span" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#4b5563;fontSize=12;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;" edge="1" parent="1" source="responseActivity" target="responseTimespan">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-response-technique" value="P32 used general technique" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#4b5563;fontSize=12;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;" edge="1" parent="1" source="responseActivity" target="responseTechnique">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-response-type" value="P2 has type" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#4b5563;fontSize=12;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;" edge="1" parent="1" source="responseActivity" target="responseType">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e-doc-condition" value="P70 documents" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#374151;fontSize=12;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;" edge="1" parent="1" source="document" target="conditionAssessment">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1525" y="700" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-doc-event" value="P70 documents" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#374151;fontSize=12;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;" edge="1" parent="1" source="document" target="disasterEvent">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1525" y="1070" />
+              <mxPoint x="450" y="1070" />
+              <mxPoint x="450" y="223" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-doc-response" value="P70 documents" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#374151;fontSize=12;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;" edge="1" parent="1" source="document" target="responseActivity">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

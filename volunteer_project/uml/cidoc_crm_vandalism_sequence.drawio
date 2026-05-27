@@ -1,0 +1,357 @@
+<mxfile host="app.diagrams.net" agent="Codex">
+  <diagram id="cidoc-crm-vandalism-large-readable" name="CIDOC CRM Vandalism English Large">
+    <mxGraphModel dx="3433" dy="2077" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2850" pageHeight="2100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="centerFrame" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fafafa;strokeColor=#d1d5db;fontFamily=Arial;fontColor=#111827;fontSize=22;fontStyle=1;align=center;verticalAlign=top;spacingTop=20;" value="Reactive Heritage Digital Twin Ontology&lt;br&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Ontology Classes and Example Instances&lt;/font&gt;" vertex="1">
+          <mxGeometry height="1850" width="2300" x="360" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="title" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=4;fillColor=#ffffff;strokeColor=#6b7280;fontFamily=Arial;fontColor=#111827;fontSize=26;fontStyle=1;align=center;verticalAlign=middle;spacing=8;" value="REACTIVE HERITAGE DIGITAL TWIN ONTOLOGY - SEMANTIC STATE MODEL" vertex="1">
+          <mxGeometry height="62" width="1600" x="520" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="scenario" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#f8fafc;strokeColor=#cbd5e1;strokeWidth=1;fontFamily=Arial;fontColor=#111827;fontSize=13;align=center;verticalAlign=middle;spacing=8;spacingTop=4;spacingBottom=4;" value="&lt;b&gt;E89 Propositional Object&lt;/b&gt;&lt;br&gt;Scenario Context" vertex="1">
+          <mxGeometry height="70" width="390" x="760" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="riskAssessment" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#dbeafe;strokeColor=#2563eb;strokeWidth=2.5;fontFamily=Arial;fontColor=#111827;fontSize=19;align=center;verticalAlign=middle;spacing=16;spacingTop=4;spacingBottom=4;" value="&lt;b&gt;E13 Attribute Assignment&lt;/b&gt;&lt;br&gt;Risk Assessment" vertex="1">
+          <mxGeometry height="120" width="460" x="30" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="vandalismEvent" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#fee2e2;strokeColor=#dc2626;strokeWidth=2.5;fontFamily=Arial;fontColor=#111827;fontSize=19;align=center;verticalAlign=middle;spacing=16;spacingTop=4;spacingBottom=4;" value="&lt;b&gt;E11 Modification&lt;/b&gt;&lt;br&gt;Vandalism Event" vertex="1">
+          <mxGeometry height="124" width="540" x="1190" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="conditionAssessment" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#dbeafe;strokeColor=#2563eb;strokeWidth=2.5;fontFamily=Arial;fontColor=#111827;fontSize=19;align=center;verticalAlign=middle;spacing=16;spacingTop=4;spacingBottom=4;" value="&lt;b&gt;E14 Condition Assessment&lt;/b&gt;&lt;br&gt;Damage Assessment" vertex="1">
+          <mxGeometry height="120" width="460" x="1950" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="rhdtoAnnotation" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Arial;fontSize=11;fontStyle=1;fontColor=#0e7490;" value="central RHDTO entity" vertex="1">
+          <mxGeometry height="24" width="260" x="1300" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="perpetrator" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#ffedd5;strokeColor=#ea580c;strokeWidth=2;fontFamily=Arial;fontColor=#111827;fontSize=18;align=center;verticalAlign=middle;spacing=16;spacingTop=4;spacingBottom=4;" value="&lt;b&gt;E39 Actor&lt;/b&gt;&lt;br&gt;Perpetrator" vertex="1">
+          <mxGeometry height="78" width="250" x="2060" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="damageState" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#ede9fe;strokeColor=#7c3aed;strokeWidth=3;fontFamily=Arial;fontColor=#111827;fontSize=19;align=center;verticalAlign=middle;spacing=16;spacingTop=4;spacingBottom=4;" value="&lt;b&gt;E3 Condition State&lt;/b&gt;&lt;br&gt;Damage State" vertex="1">
+          <mxGeometry height="120" width="420" x="2350" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="damageType" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#f3e8ff;strokeColor=#c4b5fd;strokeWidth=1;fontFamily=Arial;fontColor=#111827;fontSize=13;align=center;verticalAlign=middle;spacing=7;spacingTop=4;spacingBottom=4;" value="&lt;b&gt;E55 Type&lt;/b&gt;&lt;br&gt;Graffiti" vertex="1">
+          <mxGeometry height="58" width="250" x="2250" y="910" as="geometry" />
+        </mxCell>
+        <mxCell id="riskManagement" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#dbeafe;strokeColor=#2563eb;strokeWidth=2.5;fontFamily=Arial;fontColor=#111827;fontSize=19;align=center;verticalAlign=middle;spacing=16;spacingTop=4;spacingBottom=4;" value="&lt;b&gt;E7 Activity&lt;/b&gt;&lt;br&gt;Decision Activity" vertex="1">
+          <mxGeometry height="120" width="540" x="1070" y="1030" as="geometry" />
+        </mxCell>
+        <mxCell id="e-risk-p141" edge="1" parent="1" source="riskAssessment" style="rounded=0;html=1;strokeColor=#0ea5e9;strokeWidth=4;fontFamily=Arial;fontColor=#0369a1;fontSize=12;fontStyle=1;edgeStyle=orthogonalEdgeStyle;curved=1;labelBackgroundColor=#ffffff;labelBorderColor=#bae6fd;endArrow=block;endFill=1;" target="riskState" value="updates">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="750" y="515" />
+              <mxPoint x="750" y="680" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-vandalism-p31" edge="1" parent="1" source="vandalismEvent" style="rounded=0;html=1;strokeColor=#374151;strokeWidth=2.5;fontFamily=Arial;fontColor=#6b7280;fontSize=11;edgeStyle=orthogonalEdgeStyle;labelBackgroundColor=#ffffff;labelBorderColor=#e5e7eb;endArrow=block;endFill=1;" target="monument" value="affects">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1540" y="540" />
+              <mxPoint x="1540" y="540" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-vandalism-p14" edge="1" parent="1" source="vandalismEvent" style="rounded=0;html=1;strokeColor=#7e57c2;strokeWidth=1.5;fontFamily=Arial;fontColor=#6b7280;fontSize=11;edgeStyle=orthogonalEdgeStyle;labelBackgroundColor=#ffffff;labelBorderColor=#e5e7eb;endArrow=block;endFill=1;" target="perpetrator" value="P14&lt;br&gt;carried out by">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-assessment-p34" edge="1" parent="1" source="damageState" style="rounded=0;html=1;strokeColor=#374151;strokeWidth=2.5;fontFamily=Arial;fontColor=#6b7280;fontSize=11;edgeStyle=orthogonalEdgeStyle;labelBackgroundColor=#ffffff;labelBorderColor=#e5e7eb;endArrow=block;endFill=1;" target="monument" value="belongs to">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1870" y="750" />
+              <mxPoint x="1750" y="750" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-assessment-p35" edge="1" parent="1" source="conditionAssessment" style="rounded=0;html=1;strokeColor=#374151;strokeWidth=2.5;fontFamily=Arial;fontColor=#6b7280;fontSize=11;edgeStyle=orthogonalEdgeStyle;labelBackgroundColor=#ffffff;labelBorderColor=#e5e7eb;endArrow=block;endFill=1;" target="damageState" value="updates">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2110" y="515" />
+              <mxPoint x="2110" y="680" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-damage-type" edge="1" parent="1" source="damageState" style="rounded=0;html=1;strokeColor=#7e57c2;strokeWidth=1.5;fontFamily=Arial;fontColor=#6b7280;fontSize=11;edgeStyle=orthogonalEdgeStyle;labelBackgroundColor=#ffffff;labelBorderColor=#e5e7eb;endArrow=block;endFill=1;" target="damageType" value="P2&lt;br&gt;has type">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="riskState" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#ede9fe;strokeColor=#7c3aed;strokeWidth=3;fontFamily=Arial;fontColor=#111827;fontSize=19;align=center;verticalAlign=middle;spacing=16;spacingTop=4;spacingBottom=4;" value="&lt;b&gt;E3 Condition State&lt;/b&gt;&lt;br&gt;Risk State" vertex="1">
+          <mxGeometry height="120" width="420" x="610" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="e-risk-state-assigned" edge="1" parent="1" source="riskState" style="rounded=0;html=1;strokeColor=#374151;strokeWidth=2.5;fontFamily=Arial;fontColor=#6b7280;fontSize=11;edgeStyle=orthogonalEdgeStyle;labelBackgroundColor=#ffffff;labelBorderColor=#e5e7eb;endArrow=block;endFill=1;" target="monument" value="belongs to">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="990" y="750" />
+              <mxPoint x="1110" y="750" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="confidenceLevel" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#ffffff;strokeColor=#64748b;strokeWidth=1.5;fontFamily=Arial;fontColor=#111827;fontSize=14;align=center;verticalAlign=middle;spacing=8;spacingTop=4;spacingBottom=4;" value="&lt;b&gt;E54 Dimension&lt;/b&gt;&lt;br&gt;Confidence Level" vertex="1">
+          <mxGeometry height="56" width="240" x="70" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="riskMitigation" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#dbeafe;strokeColor=#2563eb;strokeWidth=2.5;fontFamily=Arial;fontColor=#111827;fontSize=18;align=center;verticalAlign=middle;spacing=14;spacingTop=4;spacingBottom=4;" value="&lt;b&gt;E7 Activity&lt;/b&gt;&lt;br&gt;Risk Mitigation" vertex="1">
+          <mxGeometry height="86" width="300" x="1400" y="1330" as="geometry" />
+        </mxCell>
+        <mxCell id="e-observation-produced-damage" edge="1" parent="1" source="observationActivity" style="rounded=0;html=1;strokeColor=#374151;strokeWidth=2.5;fontFamily=Arial;fontColor=#6b7280;fontSize=11;edgeStyle=orthogonalEdgeStyle;labelBackgroundColor=#ffffff;labelBorderColor=#e5e7eb;endArrow=block;endFill=1;" target="damageState" value="produces">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2110" y="985" />
+              <mxPoint x="2110" y="820" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-confidence-risk-assessment" edge="1" parent="1" source="riskAssessment" style="rounded=0;html=1;strokeColor=#7e57c2;strokeWidth=1.5;fontFamily=Arial;fontColor=#6b7280;fontSize=11;edgeStyle=orthogonalEdgeStyle;labelBackgroundColor=#ffffff;labelBorderColor=#e5e7eb;endArrow=block;endFill=1;" target="confidenceLevel" value="P141&lt;br&gt;assigned">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="585" y="630" />
+              <mxPoint x="510" y="630" />
+              <mxPoint x="510" y="640" />
+              <mxPoint x="170" y="640" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-decision-purpose" edge="1" parent="1" source="riskManagement" style="rounded=0;html=1;strokeColor=#7e57c2;strokeWidth=1.5;fontFamily=Arial;fontColor=#6b7280;fontSize=11;edgeStyle=orthogonalEdgeStyle;labelBackgroundColor=#ffffff;labelBorderColor=#e5e7eb;endArrow=block;endFill=1;" target="riskMitigation" value="P20&lt;br&gt;had specific purpose">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="probabilityValue" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#ffffff;strokeColor=#64748b;strokeWidth=1.5;fontFamily=Arial;fontColor=#111827;fontSize=14;align=center;verticalAlign=middle;spacing=8;spacingTop=4;spacingBottom=4;" value="&lt;b&gt;E54 Dimension&lt;/b&gt;&lt;br&gt;Probability Value" vertex="1">
+          <mxGeometry height="56" width="250" x="830" y="352" as="geometry" />
+        </mxCell>
+        <mxCell id="e-probability-risk-assessment" edge="1" parent="1" source="riskAssessment" style="rounded=0;html=1;strokeColor=#7e57c2;strokeWidth=1.5;fontFamily=Arial;fontColor=#6b7280;fontSize=11;edgeStyle=orthogonalEdgeStyle;labelBackgroundColor=#ffffff;labelBorderColor=#e5e7eb;endArrow=block;endFill=1;" target="probabilityValue" value="P141&lt;br&gt;assigned">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="805" y="535" />
+              <mxPoint x="805" y="515" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="feedbackLoopLabel" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Arial;fontSize=18;fontStyle=1;fontColor=#0369a1;" value="Feedback Loop" vertex="1">
+          <mxGeometry height="34" width="190" x="455" y="825" as="geometry" />
+        </mxCell>
+        <mxCell id="monument" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#cffafe;strokeColor=#0891b2;strokeWidth=4;fontFamily=Arial;fontColor=#111827;fontSize=26;align=center;verticalAlign=middle;spacing=24;spacingTop=4;spacingBottom=4;" value="&lt;b&gt;Tangible Heritage Entity (RHDTO)&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;mapped to E18 Physical Thing&lt;/font&gt;" vertex="1">
+          <mxGeometry height="210" width="620" x="1190" y="745" as="geometry" />
+        </mxCell>
+        <mxCell id="observationActivity" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#dbeafe;strokeColor=#2563eb;strokeWidth=2.5;fontFamily=Arial;fontColor=#111827;fontSize=19;align=center;verticalAlign=middle;spacing=16;spacingTop=4;spacingBottom=4;" value="&lt;b&gt;E7 Activity&lt;/b&gt;&lt;br&gt;Observation Activity" vertex="1">
+          <mxGeometry height="100" width="460" x="1700" y="1175" as="geometry" />
+        </mxCell>
+        <mxCell id="e-risk-feedback" edge="1" parent="1" source="riskState" style="rounded=0;html=1;strokeColor=#0ea5e9;strokeWidth=4;fontFamily=Arial;fontColor=#0369a1;fontSize=12;fontStyle=1;edgeStyle=orthogonalEdgeStyle;curved=1;labelBackgroundColor=#ffffff;labelBorderColor=#bae6fd;endArrow=block;endFill=1;" target="riskAssessment" value="Feedback Loop">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="530" y="750" />
+              <mxPoint x="430" y="750" />
+              <mxPoint x="430" y="445" />
+              <mxPoint x="510" y="445" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-decision-acts-on" edge="1" parent="1" source="riskManagement" style="rounded=0;html=1;strokeColor=#374151;strokeWidth=2.5;fontFamily=Arial;fontColor=#6b7280;fontSize=11;edgeStyle=orthogonalEdgeStyle;labelBackgroundColor=#ffffff;labelBorderColor=#e5e7eb;endArrow=block;endFill=1;" target="monument" value="acts on">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1410" y="1040" />
+              <mxPoint x="1410" y="895" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-scenario-about" edge="1" parent="1" source="scenario" style="rounded=0;html=1;strokeColor=#374151;strokeWidth=2.5;fontFamily=Arial;fontColor=#6b7280;fontSize=11;edgeStyle=orthogonalEdgeStyle;labelBackgroundColor=#ffffff;labelBorderColor=#e5e7eb;endArrow=block;endFill=1;" target="monument" value="is about">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1090" y="520" />
+              <mxPoint x="1420" y="520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="preventiveRiskManagement" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#dbeafe;strokeColor=#2563eb;strokeWidth=2.5;fontFamily=Arial;fontColor=#111827;fontSize=18;align=center;verticalAlign=middle;spacing=14;spacingTop=4;spacingBottom=4;" value="&lt;b&gt;E7 Activity&lt;/b&gt;&lt;br&gt;Preventive Risk Management" vertex="1">
+          <mxGeometry height="105" width="430" x="585" y="1070" as="geometry" />
+        </mxCell>
+        <mxCell id="postEventRiskManagement" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#dbeafe;strokeColor=#2563eb;strokeWidth=2.5;fontFamily=Arial;fontColor=#111827;fontSize=18;align=center;verticalAlign=middle;spacing=14;spacingTop=4;spacingBottom=4;" value="&lt;b&gt;E7 Activity&lt;/b&gt;&lt;br&gt;Post-Event Risk Management" vertex="1">
+          <mxGeometry height="105" width="430" x="2230" y="1350" as="geometry" />
+        </mxCell>
+        <mxCell id="e-event-causes-damage" edge="1" parent="1" source="vandalismEvent" style="rounded=0;html=1;strokeColor=#be123c;strokeWidth=2.5;fontFamily=Arial;fontColor=#6b7280;fontSize=11;edgeStyle=orthogonalEdgeStyle;labelBackgroundColor=#ffffff;labelBorderColor=#fecdd3;endArrow=block;endFill=1;" target="damageState" value="causes">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1685" y="362" />
+              <mxPoint x="1650" y="362" />
+              <mxPoint x="1650" y="640" />
+              <mxPoint x="2560" y="640" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-damage-triggers-post-risk" edge="1" parent="1" source="damageState" style="rounded=0;html=1;strokeColor=#be123c;strokeWidth=2.5;fontFamily=Arial;fontColor=#6b7280;fontSize=11;edgeStyle=orthogonalEdgeStyle;labelBackgroundColor=#ffffff;labelBorderColor=#fecdd3;endArrow=block;endFill=1;" target="postEventRiskManagement" value="triggers">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2560" y="800" />
+              <mxPoint x="1980" y="800" />
+              <mxPoint x="1980" y="990" />
+              <mxPoint x="2445" y="990" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-risk-drives-preventive" edge="1" parent="1" source="riskState" style="rounded=0;html=1;strokeColor=#be123c;strokeWidth=2.5;fontFamily=Arial;fontColor=#6b7280;fontSize=11;edgeStyle=orthogonalEdgeStyle;labelBackgroundColor=#ffffff;labelBorderColor=#fecdd3;endArrow=block;endFill=1;" target="riskManagement" value="drives">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="770" y="820" />
+              <mxPoint x="770" y="1110" />
+              <mxPoint x="1130" y="1110" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-mitigation-influences-risk" edge="1" parent="1" source="riskMitigation" style="rounded=0;html=1;strokeColor=#374151;strokeWidth=2.5;fontFamily=Arial;fontColor=#6b7280;fontSize=11;edgeStyle=orthogonalEdgeStyle;labelBackgroundColor=#ffffff;labelBorderColor=#e5e7eb;endArrow=block;endFill=1;" target="riskState" value="influences">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1280" y="1278" />
+              <mxPoint x="500" y="1278" />
+              <mxPoint x="500" y="760" />
+              <mxPoint x="550" y="760" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-decision-controls-preventive" edge="1" parent="1" source="riskManagement" style="rounded=0;html=1;strokeColor=#2563eb;strokeWidth=2.5;fontFamily=Arial;fontColor=#2563eb;fontSize=11;fontStyle=1;edgeStyle=orthogonalEdgeStyle;labelBackgroundColor=#ffffff;labelBorderColor=#bfdbfe;endArrow=block;endFill=1;" target="preventiveRiskManagement" value="controls">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1130" y="1110" />
+              <mxPoint x="850" y="1052" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-decision-controls-post" edge="1" parent="1" source="riskManagement" style="rounded=0;html=1;strokeColor=#2563eb;strokeWidth=2.5;fontFamily=Arial;fontColor=#2563eb;fontSize=11;fontStyle=1;edgeStyle=orthogonalEdgeStyle;labelBackgroundColor=#ffffff;labelBorderColor=#bfdbfe;endArrow=block;endFill=1;" target="postEventRiskManagement" value="controls">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1685" y="1110" />
+              <mxPoint x="1890" y="1052" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-preventive-influences-risk" edge="1" parent="1" source="preventiveRiskManagement" style="rounded=0;html=1;strokeColor=#374151;strokeWidth=2.5;fontFamily=Arial;fontColor=#6b7280;fontSize=11;edgeStyle=orthogonalEdgeStyle;labelBackgroundColor=#ffffff;labelBorderColor=#e5e7eb;endArrow=block;endFill=1;" target="riskState" value="influences">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="640" y="990" />
+              <mxPoint x="640" y="820" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-post-reduces-damage" edge="1" parent="1" source="postEventRiskManagement" style="rounded=0;html=1;strokeColor=#374151;strokeWidth=2.5;fontFamily=Arial;fontColor=#6b7280;fontSize=11;edgeStyle=orthogonalEdgeStyle;labelBackgroundColor=#ffffff;labelBorderColor=#e5e7eb;endArrow=block;endFill=1;" target="damageState" value="reduces">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2445" y="990" />
+              <mxPoint x="2160" y="990" />
+              <mxPoint x="2160" y="820" />
+              <mxPoint x="2560" y="820" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-observation-feeds-assessment" edge="1" parent="1" source="observationActivity" style="rounded=0;html=1;strokeColor=#374151;strokeWidth=2.5;fontFamily=Arial;fontColor=#6b7280;fontSize=11;edgeStyle=orthogonalEdgeStyle;labelBackgroundColor=#ffffff;labelBorderColor=#e5e7eb;endArrow=block;endFill=1;" target="conditionAssessment" value="feeds">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2190" y="1020" />
+              <mxPoint x="2380" y="1020" />
+              <mxPoint x="2380" y="445" />
+              <mxPoint x="2350" y="445" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="instStatueAthena" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#ecfeff;strokeColor=#67e8f9;strokeWidth=1.5;fontFamily=Arial;fontColor=#164e63;fontSize=14;align=center;verticalAlign=middle;spacing=8;spacingTop=4;spacingBottom=4;" value="Statue of Athena" vertex="1">
+          <mxGeometry height="62" width="300" x="1270" y="990" as="geometry" />
+        </mxCell>
+        <mxCell id="instGraffitiAttack" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#fff1f2;strokeColor=#fca5a5;strokeWidth=1.5;fontFamily=Arial;fontColor=#7f1d1d;fontSize=14;align=center;verticalAlign=middle;spacing=8;spacingTop=4;spacingBottom=4;" value="Graffiti attack" vertex="1">
+          <mxGeometry height="58" width="280" x="1300" y="365" as="geometry" />
+        </mxCell>
+        <mxCell id="instGraffitiSurface" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#f5f3ff;strokeColor=#c4b5fd;strokeWidth=1.5;fontFamily=Arial;fontColor=#4c1d95;fontSize=14;align=center;verticalAlign=middle;spacing=8;spacingTop=4;spacingBottom=4;" value="Graffiti on surface" vertex="1">
+          <mxGeometry height="58" width="280" x="2420" y="625" as="geometry" />
+        </mxCell>
+        <mxCell id="instHighRisk" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#f5f3ff;strokeColor=#c4b5fd;strokeWidth=1.5;fontFamily=Arial;fontColor=#4c1d95;fontSize=14;align=center;verticalAlign=middle;spacing=8;spacingTop=4;spacingBottom=4;" value="High risk level" vertex="1">
+          <mxGeometry height="58" width="280" x="680" y="965" as="geometry" />
+        </mxCell>
+        <mxCell id="instCameraInstallation" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#eff6ff;strokeColor=#93c5fd;strokeWidth=1.5;fontFamily=Arial;fontColor=#1e3a8a;fontSize=14;align=center;verticalAlign=middle;spacing=8;spacingTop=4;spacingBottom=4;" value="Camera installation" vertex="1">
+          <mxGeometry height="58" width="280" x="650" y="1205" as="geometry" />
+        </mxCell>
+        <mxCell id="instCleaningIntervention" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#eff6ff;strokeColor=#93c5fd;strokeWidth=1.5;fontFamily=Arial;fontColor=#1e3a8a;fontSize=14;align=center;verticalAlign=middle;spacing=8;spacingTop=4;spacingBottom=4;" value="Cleaning intervention" vertex="1">
+          <mxGeometry height="58" width="280" x="2305" y="1485" as="geometry" />
+        </mxCell>
+        <mxCell id="instUnknownVandal" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#fff7ed;strokeColor=#fdba74;strokeWidth=1.5;fontFamily=Arial;fontColor=#7c2d12;fontSize=14;align=center;verticalAlign=middle;spacing=8;spacingTop=4;spacingBottom=4;" value="Unknown vandal" vertex="1">
+          <mxGeometry height="56" width="250" x="2060" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="inst-of-statue-entity" edge="1" parent="1" source="instStatueAthena" style="rounded=0;html=1;strokeColor=#94a3b8;strokeWidth=1.5;dashed=1;fontFamily=Arial;fontColor=#64748b;fontSize=11;edgeStyle=orthogonalEdgeStyle;labelBackgroundColor=#ffffff;labelBorderColor=#e2e8f0;endArrow=block;endFill=1;" target="monument" value="instance of">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1420" y="990" />
+              <mxPoint x="1420" y="965" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="inst-of-graffiti-event" edge="1" parent="1" source="instGraffitiAttack" style="rounded=0;html=1;strokeColor=#94a3b8;strokeWidth=1.5;dashed=1;fontFamily=Arial;fontColor=#64748b;fontSize=11;edgeStyle=orthogonalEdgeStyle;labelBackgroundColor=#ffffff;labelBorderColor=#e2e8f0;endArrow=block;endFill=1;" target="vandalismEvent" value="instance of">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1440" y="365" />
+              <mxPoint x="1440" y="345" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="inst-of-graffiti-damage" edge="1" parent="1" source="instGraffitiSurface" style="rounded=0;html=1;strokeColor=#94a3b8;strokeWidth=1.5;dashed=1;fontFamily=Arial;fontColor=#64748b;fontSize=11;edgeStyle=orthogonalEdgeStyle;labelBackgroundColor=#ffffff;labelBorderColor=#e2e8f0;endArrow=block;endFill=1;" target="damageState" value="instance of">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2560" y="625" />
+              <mxPoint x="2560" y="610" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="inst-of-high-risk" edge="1" parent="1" source="instHighRisk" style="rounded=0;html=1;strokeColor=#94a3b8;strokeWidth=1.5;dashed=1;fontFamily=Arial;fontColor=#64748b;fontSize=11;edgeStyle=orthogonalEdgeStyle;labelBackgroundColor=#ffffff;labelBorderColor=#e2e8f0;endArrow=block;endFill=1;" target="riskState" value="instance of">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="820" y="965" />
+              <mxPoint x="820" y="950" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="inst-of-camera-preventive" edge="1" parent="1" source="instCameraInstallation" style="rounded=0;html=1;strokeColor=#94a3b8;strokeWidth=1.5;dashed=1;fontFamily=Arial;fontColor=#64748b;fontSize=11;edgeStyle=orthogonalEdgeStyle;labelBackgroundColor=#ffffff;labelBorderColor=#e2e8f0;endArrow=block;endFill=1;" target="preventiveRiskManagement" value="instance of">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="790" y="1205" />
+              <mxPoint x="790" y="1185" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="inst-of-cleaning-post" edge="1" parent="1" source="instCleaningIntervention" style="rounded=0;html=1;strokeColor=#94a3b8;strokeWidth=1.5;dashed=1;fontFamily=Arial;fontColor=#64748b;fontSize=11;edgeStyle=orthogonalEdgeStyle;labelBackgroundColor=#ffffff;labelBorderColor=#e2e8f0;endArrow=block;endFill=1;" target="postEventRiskManagement" value="instance of">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2445" y="1485" />
+              <mxPoint x="2445" y="1465" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="inst-of-vandal-actor" edge="1" parent="1" source="instUnknownVandal" style="rounded=0;html=1;strokeColor=#94a3b8;strokeWidth=1.5;dashed=1;fontFamily=Arial;fontColor=#64748b;fontSize=11;edgeStyle=orthogonalEdgeStyle;labelBackgroundColor=#ffffff;labelBorderColor=#e2e8f0;endArrow=block;endFill=1;" target="perpetrator" value="instance of">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2185" y="270" />
+              <mxPoint x="2185" y="258" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="inst-event-caused-damage" edge="1" parent="1" source="instGraffitiAttack" style="rounded=0;html=1;strokeColor=#64748b;strokeWidth=1.5;fontFamily=Arial;fontColor=#64748b;fontSize=11;edgeStyle=orthogonalEdgeStyle;labelBackgroundColor=#ffffff;labelBorderColor=#e2e8f0;endArrow=block;endFill=1;" target="instGraffitiSurface" value="caused">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1580" y="394" />
+              <mxPoint x="2560" y="394" />
+              <mxPoint x="2560" y="615" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="inst-damage-assessed-by" edge="1" parent="1" source="instGraffitiSurface" style="rounded=0;html=1;strokeColor=#64748b;strokeWidth=1.5;fontFamily=Arial;fontColor=#64748b;fontSize=11;edgeStyle=orthogonalEdgeStyle;labelBackgroundColor=#ffffff;labelBorderColor=#e2e8f0;endArrow=block;endFill=1;" target="conditionAssessment" value="assessed by">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2560" y="625" />
+              <mxPoint x="2560" y="380" />
+              <mxPoint x="2420" y="380" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="inst-risk-triggered-action" edge="1" parent="1" source="instHighRisk" style="rounded=0;html=1;strokeColor=#64748b;strokeWidth=1.5;fontFamily=Arial;fontColor=#64748b;fontSize=11;edgeStyle=orthogonalEdgeStyle;labelBackgroundColor=#ffffff;labelBorderColor=#e2e8f0;endArrow=block;endFill=1;" target="instCameraInstallation" value="triggered">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="820" y="1025" />
+              <mxPoint x="820" y="1195" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

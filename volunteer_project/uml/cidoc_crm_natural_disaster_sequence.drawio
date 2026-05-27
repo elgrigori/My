@@ -1,0 +1,165 @@
+<mxfile host="app.diagrams.net" modified="2026-05-14T00:00:00.000Z" agent="Codex" version="24.7.17" type="device">
+  <diagram id="cidoc-crm-natural-disaster-sequence" name="Natural Disaster Sequence Corrected">
+    <mxGraphModel dx="1800" dy="1100" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1900" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <mxCell id="title" value="RISK MANAGEMENT MECHANISM - NATURAL DISASTER USE CASE (CIDOC CRM, CORRECTED SEQUENCE)" style="rounded=1;whiteSpace=wrap;html=1;arcSize=4;fillColor=#ffffff;strokeColor=#6b7280;fontColor=#111827;fontSize=18;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="480" y="15" width="940" height="44" as="geometry" />
+        </mxCell>
+
+        <mxCell id="timelineBox" value="TEMPORAL SEQUENCE" style="rounded=1;whiteSpace=wrap;html=1;arcSize=4;fillColor=#ffffff;strokeColor=#6b7280;fontColor=#111827;fontSize=14;fontStyle=1;align=center;verticalAlign=top;spacingTop=16;" vertex="1" parent="1">
+          <mxGeometry x="25" y="15" width="275" height="850" as="geometry" />
+        </mxCell>
+        <mxCell id="timelineLine" value="" style="endArrow=block;html=1;rounded=0;strokeColor=#111827;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="65" y="110" as="sourcePoint" />
+            <mxPoint x="65" y="835" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s1" value="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffe6e6;strokeColor=#dc2626;fontColor=#111827;fontSize=14;" vertex="1" parent="1"><mxGeometry x="48" y="92" width="34" height="34" as="geometry" /></mxCell>
+        <mxCell id="s2" value="2" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffe6e6;strokeColor=#dc2626;fontColor=#111827;fontSize=14;" vertex="1" parent="1"><mxGeometry x="48" y="225" width="34" height="34" as="geometry" /></mxCell>
+        <mxCell id="s3" value="3" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#e7f6e7;strokeColor=#2f7d32;fontColor=#111827;fontSize=14;" vertex="1" parent="1"><mxGeometry x="48" y="365" width="34" height="34" as="geometry" /></mxCell>
+        <mxCell id="s4" value="4" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffe6e6;strokeColor=#dc2626;fontColor=#111827;fontSize=14;" vertex="1" parent="1"><mxGeometry x="48" y="505" width="34" height="34" as="geometry" /></mxCell>
+        <mxCell id="s5" value="5" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#fff2cc;strokeColor=#d97706;fontColor=#111827;fontSize=14;" vertex="1" parent="1"><mxGeometry x="48" y="625" width="34" height="34" as="geometry" /></mxCell>
+        <mxCell id="s6" value="6" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dbeafe;strokeColor=#2563eb;fontColor=#111827;fontSize=14;" vertex="1" parent="1"><mxGeometry x="48" y="720" width="34" height="34" as="geometry" /></mxCell>
+        <mxCell id="s7" value="7" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dbeafe;strokeColor=#2563eb;fontColor=#111827;fontSize=14;" vertex="1" parent="1"><mxGeometry x="48" y="790" width="34" height="34" as="geometry" /></mxCell>
+
+        <mxCell id="t1" value="Before the event&lt;br&gt;(risk identification)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=13;fontColor=#111827;" vertex="1" parent="1"><mxGeometry x="105" y="88" width="155" height="45" as="geometry" /></mxCell>
+        <mxCell id="t2" value="Risk evaluation period&lt;br&gt;(probability is assigned)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=13;fontColor=#111827;" vertex="1" parent="1"><mxGeometry x="105" y="222" width="165" height="50" as="geometry" /></mxCell>
+        <mxCell id="t3" value="During the event&lt;br&gt;(natural disaster occurs)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=13;fontColor=#111827;" vertex="1" parent="1"><mxGeometry x="105" y="360" width="165" height="50" as="geometry" /></mxCell>
+        <mxCell id="t4" value="After the event&lt;br&gt;(damage observed)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=13;fontColor=#111827;" vertex="1" parent="1"><mxGeometry x="105" y="502" width="165" height="45" as="geometry" /></mxCell>
+        <mxCell id="t5" value="Management process&lt;br&gt;(response planned/executed)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=13;fontColor=#111827;" vertex="1" parent="1"><mxGeometry x="105" y="617" width="170" height="55" as="geometry" /></mxCell>
+        <mxCell id="t6" value="Notification created&lt;br&gt;and sent" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=13;fontColor=#111827;" vertex="1" parent="1"><mxGeometry x="105" y="716" width="165" height="45" as="geometry" /></mxCell>
+        <mxCell id="t7" value="Notification received&lt;br&gt;by responsible actor" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=13;fontColor=#111827;" vertex="1" parent="1"><mxGeometry x="105" y="786" width="165" height="50" as="geometry" /></mxCell>
+        <mxCell id="timeFlow" value="TIME FLOW" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=14;fontStyle=1;fontColor=#111827;" vertex="1" parent="1">
+          <mxGeometry x="70" y="835" width="160" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="scenario" value="&lt;b&gt;Possible natural-disaster scenario&lt;/b&gt;&lt;br&gt;E89 Propositional Object&lt;br&gt;&lt;i&gt;potential earthquake; not an E5 Event&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#fde2e2;strokeColor=#dc2626;fontColor=#111827;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="390" y="85" width="285" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="riskAssessment" value="&lt;b&gt;Risk assessment&lt;/b&gt;&lt;br&gt;E13 Attribute Assignment&lt;br&gt;&lt;i&gt;assigns likelihood / risk value&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#fde2e2;strokeColor=#dc2626;fontColor=#111827;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="390" y="225" width="285" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="monument" value="&lt;b&gt;Cultural heritage monument&lt;/b&gt;&lt;br&gt;E24 Physical Human-Made Thing&lt;br&gt;Name: Temple of Poseidon" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#d5e8d4;strokeColor=#2f7d32;fontColor=#111827;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="390" y="395" width="300" height="88" as="geometry" />
+        </mxCell>
+        <mxCell id="actualEvent" value="&lt;b&gt;Earthquake occurrence&lt;/b&gt;&lt;br&gt;E5 Event&lt;br&gt;&lt;i&gt;actual natural disaster event&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#fde2e2;strokeColor=#dc2626;fontColor=#111827;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="445" y="560" width="235" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="conditionAssessment" value="&lt;b&gt;Damage observation&lt;/b&gt;&lt;br&gt;E14 Condition Assessment&lt;br&gt;&lt;i&gt;post-event inspection&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#fff2cc;strokeColor=#d97706;fontColor=#111827;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="440" y="715" width="245" height="82" as="geometry" />
+        </mxCell>
+
+        <mxCell id="riskPeriod" value="&lt;b&gt;Risk evaluation period&lt;/b&gt;&lt;br&gt;E52 Time-Span&lt;br&gt;e.g. 01/01/2024 - 31/12/2024" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#e9ddf5;strokeColor=#7e57c2;fontColor=#111827;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="800" y="225" width="265" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="probability" value="&lt;b&gt;Probability / risk value&lt;/b&gt;&lt;br&gt;E54 Dimension&lt;br&gt;Value: high / 0.35 annually" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#ffffff;strokeColor=#dc2626;fontColor=#111827;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="800" y="90" width="265" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="eventTime" value="&lt;b&gt;Time of disaster&lt;/b&gt;&lt;br&gt;E52 Time-Span&lt;br&gt;e.g. 12/05/2024, 08:43-08:45" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#e9ddf5;strokeColor=#7e57c2;fontColor=#111827;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="800" y="555" width="265" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="damageState" value="&lt;b&gt;Observed damage condition&lt;/b&gt;&lt;br&gt;E3 Condition State&lt;br&gt;Type: structural damage" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#fff2cc;strokeColor=#d97706;fontColor=#111827;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="800" y="715" width="265" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="conditionTime" value="&lt;b&gt;Observation time&lt;/b&gt;&lt;br&gt;E52 Time-Span&lt;br&gt;e.g. 12/05/2024, 10:30-11:15" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#e9ddf5;strokeColor=#7e57c2;fontColor=#111827;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="1110" y="715" width="265" height="82" as="geometry" />
+        </mxCell>
+
+        <mxCell id="riskProcessBox" value="RISK MANAGEMENT PROCESS" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=8 6;fillColor=none;strokeColor=#2563eb;fontColor=#1d4ed8;fontSize=14;fontStyle=1;align=center;verticalAlign=top;spacingTop=16;" vertex="1" parent="1">
+          <mxGeometry x="1270" y="90" width="520" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="riskManagement" value="&lt;b&gt;Risk management activity&lt;/b&gt;&lt;br&gt;E7 Activity&lt;br&gt;Type: prevention / mitigation planning" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#dbeafe;strokeColor=#2563eb;fontColor=#111827;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="1350" y="135" width="295" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="manager" value="&lt;b&gt;Heritage authority / conservator&lt;/b&gt;&lt;br&gt;E39 Actor" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#ffe9bd;strokeColor=#d97706;fontColor=#111827;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="1350" y="305" width="295" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="response" value="&lt;b&gt;Emergency stabilization response&lt;/b&gt;&lt;br&gt;E11 Modification&lt;br&gt;&lt;i&gt;physical intervention after damage&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#e1d5e7;strokeColor=#7e57c2;fontColor=#111827;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="1350" y="505" width="295" height="86" as="geometry" />
+        </mxCell>
+
+        <mxCell id="notificationBox" value="NOTIFICATION PROCESS" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=8 6;fillColor=none;strokeColor=#7e57c2;fontColor=#5b3fa3;fontSize=14;fontStyle=1;align=center;verticalAlign=top;spacingTop=16;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="835" width="720" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="notificationCreation" value="&lt;b&gt;Notification creation&lt;/b&gt;&lt;br&gt;E65 Creation&lt;br&gt;Type: alert communication" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#dbeafe;strokeColor=#2563eb;fontColor=#111827;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="1190" y="890" width="260" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="message" value="&lt;b&gt;Alert message&lt;/b&gt;&lt;br&gt;E73 Information Object&lt;br&gt;Content: earthquake damage alert" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#111827;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="1190" y="1025" width="260" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="notificationTime" value="&lt;b&gt;Notification time&lt;/b&gt;&lt;br&gt;E52 Time-Span&lt;br&gt;e.g. 12/05/2024, 11:20" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#e9ddf5;strokeColor=#7e57c2;fontColor=#111827;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="1510" y="890" width="250" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="reception" value="&lt;b&gt;Notification reception&lt;/b&gt;&lt;br&gt;E7 Activity&lt;br&gt;message received / acknowledged" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#dbeafe;strokeColor=#2563eb;fontColor=#111827;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="1510" y="1025" width="250" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="receiver" value="&lt;b&gt;Civil protection / emergency authority&lt;/b&gt;&lt;br&gt;E39 Actor" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#ffe9bd;strokeColor=#d97706;fontColor=#111827;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="885" y="1015" width="260" height="72" as="geometry" />
+        </mxCell>
+
+        <mxCell id="legend" value="&lt;b&gt;Corrected CIDOC CRM points&lt;/b&gt;&lt;br&gt;1. A potential disaster is E89 Propositional Object, not E5 Event.&lt;br&gt;2. Probability / risk value is E54 Dimension assigned by E13 Attribute Assignment.&lt;br&gt;3. The actual earthquake is E5 Event, but it has no E39 Actor.&lt;br&gt;4. The earthquake does not use P31; damage is represented as an E3 Condition State identified by E14.&lt;br&gt;5. Physical response is E11 Modification, the correct domain for P31 has modified." style="rounded=1;whiteSpace=wrap;html=1;arcSize=4;fillColor=#ffffff;strokeColor=#6b7280;fontColor=#111827;fontSize=12;align=left;verticalAlign=top;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="320" y="930" width="520" height="180" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e-risk-to-scenario" value="P140 assigned attribute to" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#dc2626;fontSize=12;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;" edge="1" parent="1" source="riskAssessment" target="scenario"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e-risk-prob" value="P141 assigned" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#dc2626;fontSize=12;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;" edge="1" parent="1" source="riskAssessment" target="probability"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e-risk-time" value="P4 has time-span" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#4b5563;fontSize=12;dashed=1;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;" edge="1" parent="1" source="riskAssessment" target="riskPeriod"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e-scenario-about-monument" value="P129 is about" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#2563eb;fontSize=12;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;" edge="1" parent="1" source="scenario" target="monument">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points"><mxPoint x="365" y="128" /><mxPoint x="365" y="439" /></Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-event-presence" value="P12 occurred in the presence of" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#dc2626;fontSize=12;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;" edge="1" parent="1" source="actualEvent" target="monument"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e-event-time" value="P4 has time-span" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#4b5563;fontSize=12;dashed=1;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;" edge="1" parent="1" source="actualEvent" target="eventTime"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e-condition-concerned" value="P34 concerned" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#d97706;fontSize=12;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;" edge="1" parent="1" source="conditionAssessment" target="monument"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e-condition-identified" value="P35 has identified" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#d97706;fontSize=12;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;" edge="1" parent="1" source="conditionAssessment" target="damageState"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e-condition-motivated" value="P17 was motivated by" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#d97706;fontSize=12;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;" edge="1" parent="1" source="conditionAssessment" target="actualEvent">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points"><mxPoint x="410" y="756" /><mxPoint x="410" y="601" /></Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-condition-time" value="P4 has time-span" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#4b5563;fontSize=12;dashed=1;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;" edge="1" parent="1" source="conditionAssessment" target="conditionTime"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e-management-actor" value="P14 carried out by" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#2563eb;fontSize=12;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;" edge="1" parent="1" source="riskManagement" target="manager"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e-management-used-risk" value="P16 used specific object" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#2563eb;fontSize=12;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;" edge="1" parent="1" source="riskManagement" target="riskAssessment">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points"><mxPoint x="1498" y="75" /><mxPoint x="533" y="75" /></Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-response-actor" value="P14 carried out by" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#7e57c2;fontSize=12;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;" edge="1" parent="1" source="response" target="manager"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e-response-modified" value="P31 has modified" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#7e57c2;fontSize=12;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;" edge="1" parent="1" source="response" target="monument">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points"><mxPoint x="1498" y="670" /><mxPoint x="540" y="670" /></Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-response-motivated" value="P17 was motivated by" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#7e57c2;fontSize=12;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;" edge="1" parent="1" source="response" target="damageState">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points"><mxPoint x="1498" y="690" /><mxPoint x="933" y="690" /></Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-notification-actor" value="P14 carried out by" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#2563eb;fontSize=12;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;" edge="1" parent="1" source="notificationCreation" target="manager">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points"><mxPoint x="1320" y="850" /><mxPoint x="1498" y="850" /></Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-notification-created" value="P94 has created" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#2563eb;fontSize=12;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;" edge="1" parent="1" source="notificationCreation" target="message"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e-notification-time" value="P4 has time-span" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#4b5563;fontSize=12;dashed=1;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;" edge="1" parent="1" source="notificationCreation" target="notificationTime"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e-message-event" value="P67 refers to" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#374151;fontSize=12;dashed=1;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;" edge="1" parent="1" source="message" target="actualEvent">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points"><mxPoint x="1160" y="1064" /><mxPoint x="700" y="1064" /><mxPoint x="700" y="601" /></Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-message-damage" value="P67 refers to" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#374151;fontSize=12;dashed=1;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;" edge="1" parent="1" source="message" target="damageState">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points"><mxPoint x="1170" y="1064" /><mxPoint x="933" y="1064" /></Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-reception-message" value="P16 used specific object" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#2563eb;fontSize=12;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;" edge="1" parent="1" source="reception" target="message"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e-reception-actor" value="P14 carried out by" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#2563eb;fontSize=12;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;" edge="1" parent="1" source="reception" target="receiver"><mxGeometry relative="1" as="geometry" /></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

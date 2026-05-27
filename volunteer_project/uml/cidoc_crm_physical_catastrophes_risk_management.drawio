@@ -1,0 +1,330 @@
+<mxfile host="app.diagrams.net" agent="Codex">
+  <diagram id="cidoc-crm-physical-catastrophes-risk-management" name="CIDOC CRM Physical Catastrophes Risk Management">
+    <mxGraphModel dx="2357" dy="1238" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3000" pageHeight="1900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=4;fillColor=#ffffff;strokeColor=#6b7280;fontFamily=Arial;fontColor=#111827;fontSize=26;fontStyle=1;align=center;verticalAlign=middle;spacing=8;" value="PHYSICAL CATASTROPHE RISK MANAGEMENT SCENARIO - CIDOC CRM" vertex="1">
+          <mxGeometry height="62" width="1500" x="540" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="timelineFrame" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=4;fillColor=#ffffff;strokeColor=#6b7280;fontFamily=Arial;fontColor=#111827;fontSize=20;fontStyle=1;align=center;verticalAlign=top;spacingTop=24;" value="TEMPORAL FLOW" vertex="1">
+          <mxGeometry height="1540" width="330" x="50" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="centerFrame" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fafafa;strokeColor=#d1d5db;fontFamily=Arial;fontColor=#111827;fontSize=22;fontStyle=1;align=center;verticalAlign=top;spacingTop=20;" value="MAIN MECHANISM&lt;br&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Risk → Catastrophe Event → Damage → Response&lt;/font&gt;" vertex="1">
+          <mxGeometry height="1540" width="1220" x="430" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="rightFrame" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fbfbff;strokeColor=#d1d5db;fontFamily=Arial;fontColor=#111827;fontSize=22;fontStyle=1;align=center;verticalAlign=top;spacingTop=20;" value="RISK MANAGEMENT AND NOTIFICATION" vertex="1">
+          <mxGeometry height="1540" width="1180" x="1700" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="timelineArrow" edge="1" parent="1" style="endArrow=block;html=1;rounded=0;strokeColor=#111827;strokeWidth=5;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="105" y="235" as="sourcePoint" />
+            <mxPoint x="105" y="1510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="step1" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#fee2e2;strokeColor=#dc2626;fontFamily=Arial;fontColor=#111827;fontSize=18;fontStyle=1;" value="1" vertex="1">
+          <mxGeometry height="46" width="46" x="82" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="step2" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dbeafe;strokeColor=#2563eb;fontFamily=Arial;fontColor=#111827;fontSize=18;fontStyle=1;" value="2" vertex="1">
+          <mxGeometry height="46" width="46" x="82" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="step3" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#fee2e2;strokeColor=#dc2626;fontFamily=Arial;fontColor=#111827;fontSize=18;fontStyle=1;" value="3" vertex="1">
+          <mxGeometry height="46" width="46" x="82" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="step4" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dbeafe;strokeColor=#2563eb;fontFamily=Arial;fontColor=#111827;fontSize=18;fontStyle=1;" value="4" vertex="1">
+          <mxGeometry height="46" width="46" x="82" y="910" as="geometry" />
+        </mxCell>
+        <mxCell id="step5" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#fff2cc;strokeColor=#d97706;fontFamily=Arial;fontColor=#111827;fontSize=18;fontStyle=1;" value="5" vertex="1">
+          <mxGeometry height="46" width="46" x="82" y="1130" as="geometry" />
+        </mxCell>
+        <mxCell id="step6" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#e1d5e7;strokeColor=#7e57c2;fontFamily=Arial;fontColor=#111827;fontSize=18;fontStyle=1;" value="6" vertex="1">
+          <mxGeometry height="46" width="46" x="82" y="1370" as="geometry" />
+        </mxCell>
+        <mxCell id="stepText1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontFamily=Arial;fontSize=18;fontColor=#111827;" value="Scenario / Hazard Hypothesis" vertex="1">
+          <mxGeometry height="66" width="205" x="150" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="stepText2" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontFamily=Arial;fontSize=18;fontColor=#111827;" value="Risk Assessment" vertex="1">
+          <mxGeometry height="66" width="205" x="150" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="stepText3" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontFamily=Arial;fontSize=18;fontColor=#111827;" value="Catastrophe Occurrence" vertex="1">
+          <mxGeometry height="66" width="215" x="150" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="stepText4" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontFamily=Arial;fontSize=18;fontColor=#111827;" value="Alert / Notification" vertex="1">
+          <mxGeometry height="66" width="205" x="150" y="900" as="geometry" />
+        </mxCell>
+        <mxCell id="stepText5" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontFamily=Arial;fontSize=18;fontColor=#111827;" value="Damage Assessment" vertex="1">
+          <mxGeometry height="66" width="205" x="150" y="1120" as="geometry" />
+        </mxCell>
+        <mxCell id="stepText6" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontFamily=Arial;fontSize=18;fontColor=#111827;" value="Response / Stabilization" vertex="1">
+          <mxGeometry height="66" width="205" x="150" y="1360" as="geometry" />
+        </mxCell>
+        <mxCell id="scenario" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#fee2e2;strokeColor=#dc2626;fontFamily=Arial;fontColor=#111827;fontSize=17;spacing=10;" value="&lt;b&gt;E89 Propositional Object&lt;/b&gt;&lt;br&gt;Possible physical catastrophe scenario&lt;br&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;earthquake / flood / fire / landslide hypothesis&lt;/font&gt;" vertex="1">
+          <mxGeometry height="110" width="450" x="500" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="riskAssessment" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#dbeafe;strokeColor=#2563eb;strokeWidth=3;fontFamily=Arial;fontColor=#111827;fontSize=17;spacing=10;" value="&lt;b&gt;E13 Attribute Assignment&lt;/b&gt;&lt;br&gt;Physical Catastrophe Risk Assessment" vertex="1">
+          <mxGeometry height="100" width="450" x="500" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="catastropheEvent" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#fee2e2;strokeColor=#dc2626;fontFamily=Arial;fontColor=#111827;fontSize=17;spacing=10;" value="&lt;b&gt;E5 Event&lt;/b&gt;&lt;br&gt;Physical Catastrophe Occurrence&lt;br&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;actual earthquake, flood, fire, or landslide&lt;/font&gt;" vertex="1">
+          <mxGeometry height="110" width="450" x="500" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="conditionAssessment" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#fff2cc;strokeColor=#d97706;fontFamily=Arial;fontColor=#111827;fontSize=17;spacing=10;" value="&lt;b&gt;E14 Condition Assessment&lt;/b&gt;&lt;br&gt;Damage Assessment" vertex="1">
+          <mxGeometry height="100" width="450" x="500" y="1110" as="geometry" />
+        </mxCell>
+        <mxCell id="response" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#e1d5e7;strokeColor=#7e57c2;fontFamily=Arial;fontColor=#111827;fontSize=17;spacing=10;" value="&lt;b&gt;E11 Modification&lt;/b&gt;&lt;br&gt;Emergency Stabilization / Repair" vertex="1">
+          <mxGeometry height="100" width="450" x="500" y="1360" as="geometry" />
+        </mxCell>
+        <mxCell id="monument" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#d5e8d4;strokeColor=#2f7d32;strokeWidth=3;fontFamily=Arial;fontColor=#111827;fontSize=17;spacing=10;" value="&lt;b&gt;E18 Physical Thing&lt;/b&gt;&lt;br&gt;Cultural Heritage Monument" vertex="1">
+          <mxGeometry height="100" width="360" x="1080" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="rhdtoHeritageEntity" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#ecfeff;strokeColor=#67e8f9;strokeWidth=1;dashed=1;fontFamily=Arial;fontColor=#0f172a;fontSize=12;spacing=4;" value="&lt;b&gt;Heritage Entity&lt;/b&gt;" vertex="1">
+          <mxGeometry height="32" width="200" x="1215" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="rhdtoTangibleEntity" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#ecfeff;strokeColor=#67e8f9;strokeWidth=1;dashed=1;fontFamily=Arial;fontColor=#0f172a;fontSize=12;spacing=4;" value="&lt;b&gt;Tangible Entity&lt;/b&gt;" vertex="1">
+          <mxGeometry height="32" width="200" x="1215" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="rhdtoLabel" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Arial;fontSize=11;fontStyle=1;fontColor=#0e7490;" value="RHDTO layer" vertex="1">
+          <mxGeometry height="18" width="200" x="1215" y="535" as="geometry" />
+        </mxCell>
+        <mxCell id="riskType" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#ffffff;strokeColor=#2563eb;strokeWidth=2;fontFamily=Arial;fontColor=#111827;fontSize=15;spacing=9;" value="&lt;b&gt;E55 Type&lt;/b&gt;&lt;br&gt;Physical Catastrophe Risk" vertex="1">
+          <mxGeometry height="72" width="330" x="1080" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="probability" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#ffffff;strokeColor=#2563eb;fontFamily=Arial;fontColor=#111827;fontSize=15;spacing=9;" value="&lt;b&gt;E54 Dimension&lt;/b&gt;&lt;br&gt;Probability&lt;br&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;value: high / medium / low&lt;/font&gt;" vertex="1">
+          <mxGeometry height="86" width="330" x="1080" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="riskTime" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#e9ddf5;strokeColor=#7e57c2;fontFamily=Arial;fontColor=#111827;fontSize=15;spacing=9;" value="&lt;b&gt;E52 Time-Span&lt;/b&gt;&lt;br&gt;Risk assessment time" vertex="1">
+          <mxGeometry height="72" width="330" x="1080" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="eventTime" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#e9ddf5;strokeColor=#7e57c2;fontFamily=Arial;fontColor=#111827;fontSize=15;spacing=9;" value="&lt;b&gt;E52 Time-Span&lt;/b&gt;&lt;br&gt;Catastrophe time" vertex="1">
+          <mxGeometry height="72" width="330" x="1080" y="810" as="geometry" />
+        </mxCell>
+        <mxCell id="damageState" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#ffffff;strokeColor=#d97706;fontFamily=Arial;fontColor=#111827;fontSize=16;spacing=9;" value="&lt;b&gt;E3 Condition State&lt;/b&gt;&lt;br&gt;Structural / Material Damage" vertex="1">
+          <mxGeometry height="86" width="330" x="1080" y="1110" as="geometry" />
+        </mxCell>
+        <mxCell id="damageType" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#ffffff;strokeColor=#d97706;fontFamily=Arial;fontColor=#111827;fontSize=14;spacing=8;" value="&lt;b&gt;E55 Type&lt;/b&gt;&lt;br&gt;Cracking / Collapse / Water Damage / Fire Damage" vertex="1">
+          <mxGeometry height="86" width="330" x="1080" y="1240" as="geometry" />
+        </mxCell>
+        <mxCell id="assessmentTime" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#e9ddf5;strokeColor=#7e57c2;fontFamily=Arial;fontColor=#111827;fontSize=15;spacing=9;" value="&lt;b&gt;E52 Time-Span&lt;/b&gt;&lt;br&gt;Damage assessment time" vertex="1">
+          <mxGeometry height="72" width="330" x="1080" y="1360" as="geometry" />
+        </mxCell>
+        <mxCell id="responder" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#ffe9bd;strokeColor=#d97706;fontFamily=Arial;fontColor=#111827;fontSize=16;spacing=9;" value="&lt;b&gt;E39 Actor&lt;/b&gt;&lt;br&gt;Conservator / Emergency Team" vertex="1">
+          <mxGeometry height="72" width="330" x="1080" y="1480" as="geometry" />
+        </mxCell>
+        <mxCell id="responseTime" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#e9ddf5;strokeColor=#7e57c2;fontFamily=Arial;fontColor=#111827;fontSize=15;spacing=9;" value="&lt;b&gt;E52 Time-Span&lt;/b&gt;&lt;br&gt;Response time" vertex="1">
+          <mxGeometry height="72" width="330" x="1080" y="1580" as="geometry" />
+        </mxCell>
+        <mxCell id="riskManagement" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#dbeafe;strokeColor=#2563eb;fontFamily=Arial;fontColor=#111827;fontSize=17;spacing=10;" value="&lt;b&gt;E7 Activity&lt;/b&gt;&lt;br&gt;Risk Management" vertex="1">
+          <mxGeometry height="86" width="390" x="2100" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="preventiveManagement" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#e0f2fe;strokeColor=#2563eb;fontFamily=Arial;fontColor=#111827;fontSize=16;spacing=10;" value="&lt;b&gt;E7 Activity&lt;/b&gt;&lt;br&gt;Preventive Risk Management" vertex="1">
+          <mxGeometry height="90" width="390" x="1800" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="postManagement" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#e0f2fe;strokeColor=#2563eb;fontFamily=Arial;fontColor=#111827;fontSize=16;spacing=10;" value="&lt;b&gt;E7 Activity&lt;/b&gt;&lt;br&gt;Post-Catastrophe Risk Management" vertex="1">
+          <mxGeometry height="90" width="390" x="2400" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="preGroup" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=4;fillColor=#ffffff;strokeColor=#93c5fd;fontFamily=Arial;fontColor=#1d4ed8;fontSize=15;fontStyle=1;align=center;verticalAlign=top;spacingTop=8;" value="BEFORE THE CATASTROPHE" vertex="1">
+          <mxGeometry height="230" width="390" x="1800" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="monitoring" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#e0f2fe;strokeColor=#2563eb;fontFamily=Arial;fontColor=#111827;fontSize=14;spacing=7;" value="&lt;b&gt;E7 Activity&lt;/b&gt;&lt;br&gt;Environmental Monitoring" vertex="1">
+          <mxGeometry height="54" width="340" x="1825" y="595" as="geometry" />
+        </mxCell>
+        <mxCell id="mitigation" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#e0f2fe;strokeColor=#2563eb;fontFamily=Arial;fontColor=#111827;fontSize=14;spacing=7;" value="&lt;b&gt;E7 Activity&lt;/b&gt;&lt;br&gt;Preventive Mitigation Measures" vertex="1">
+          <mxGeometry height="54" width="340" x="1825" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="responsePlanning" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#e0f2fe;strokeColor=#2563eb;fontFamily=Arial;fontColor=#111827;fontSize=14;spacing=7;" value="&lt;b&gt;E7 Activity&lt;/b&gt;&lt;br&gt;Emergency Response Planning" vertex="1">
+          <mxGeometry height="54" width="340" x="1825" y="745" as="geometry" />
+        </mxCell>
+        <mxCell id="postGroup" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=4;fillColor=#ffffff;strokeColor=#93c5fd;fontFamily=Arial;fontColor=#1d4ed8;fontSize=15;fontStyle=1;align=center;verticalAlign=top;spacingTop=8;" value="AFTER THE CATASTROPHE" vertex="1">
+          <mxGeometry height="230" width="390" x="2400" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="eventDetection" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#e0f2fe;strokeColor=#2563eb;fontFamily=Arial;fontColor=#111827;fontSize=14;spacing=7;" value="&lt;b&gt;E7 Activity&lt;/b&gt;&lt;br&gt;Event Detection" vertex="1">
+          <mxGeometry height="54" width="340" x="2425" y="595" as="geometry" />
+        </mxCell>
+        <mxCell id="emergencyResponse" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#e0f2fe;strokeColor=#2563eb;fontFamily=Arial;fontColor=#111827;fontSize=14;spacing=7;" value="&lt;b&gt;E7 Activity&lt;/b&gt;&lt;br&gt;Emergency Response Coordination" vertex="1">
+          <mxGeometry height="54" width="340" x="2425" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="riskReview" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#e0f2fe;strokeColor=#2563eb;fontFamily=Arial;fontColor=#111827;fontSize=14;spacing=7;" value="&lt;b&gt;E7 Activity&lt;/b&gt;&lt;br&gt;Risk Re-evaluation" vertex="1">
+          <mxGeometry height="54" width="340" x="2425" y="745" as="geometry" />
+        </mxCell>
+        <mxCell id="alertCreation" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#dbeafe;strokeColor=#2563eb;fontFamily=Arial;fontColor=#111827;fontSize=17;spacing=10;" value="&lt;b&gt;E65 Creation&lt;/b&gt;&lt;br&gt;Alert Creation" vertex="1">
+          <mxGeometry height="86" width="390" x="1800" y="910" as="geometry" />
+        </mxCell>
+        <mxCell id="message" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#f5f5f5;strokeColor=#666666;fontFamily=Arial;fontColor=#111827;fontSize=17;spacing=10;" value="&lt;b&gt;E73 Information Object&lt;/b&gt;&lt;br&gt;Emergency Alert Message" vertex="1">
+          <mxGeometry height="86" width="390" x="2400" y="910" as="geometry" />
+        </mxCell>
+        <mxCell id="receiver" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#ffe9bd;strokeColor=#d97706;fontFamily=Arial;fontColor=#111827;fontSize=16;spacing=10;" value="&lt;b&gt;E39 Actor&lt;/b&gt;&lt;br&gt;Civil Protection / Heritage Authority" vertex="1">
+          <mxGeometry height="86" width="390" x="2400" y="1080" as="geometry" />
+        </mxCell>
+        <mxCell id="alertTime" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#e9ddf5;strokeColor=#7e57c2;fontFamily=Arial;fontColor=#111827;fontSize=14;spacing=9;" value="&lt;b&gt;E52 Time-Span&lt;/b&gt;&lt;br&gt;Notification time" vertex="1">
+          <mxGeometry height="72" width="390" x="1800" y="1040" as="geometry" />
+        </mxCell>
+        <mxCell id="managementNote" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=4;fillColor=#ffffff;strokeColor=#6b7280;fontFamily=Arial;fontColor=#374151;fontSize=13;align=left;verticalAlign=top;spacing=12;" value="&lt;b&gt;Semantic note&lt;/b&gt;&lt;br&gt;Potential physical catastrophes are represented as E89 Propositional Objects. Actual earthquakes, floods, fires, or landslides are modeled as E5 Events. Damage is represented through E14 Condition Assessment identifying an E3 Condition State. Physical intervention is modeled as E11 Modification." vertex="1">
+          <mxGeometry height="135" width="990" x="1800" y="1260" as="geometry" />
+        </mxCell>
+        <mxCell id="legend" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=4;fillColor=#ffffff;strokeColor=#6b7280;fontFamily=Arial;fontColor=#111827;fontSize=15;align=left;verticalAlign=top;spacing=14;" value="&lt;b&gt;Legend&lt;/b&gt;&lt;br&gt;Black arrows = visual temporal sequence only&lt;br&gt;Colored arrows = CIDOC CRM properties&lt;br&gt;Dashed purple arrows = P4 has time-span&lt;br&gt;Temporal order is inferred from associated E52 Time-Spans." vertex="1">
+          <mxGeometry height="120" width="900" x="520" y="1530" as="geometry" />
+        </mxCell>
+        <mxCell id="flow1" edge="1" parent="1" source="scenario" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#111827;strokeWidth=5;fontFamily=Arial;fontSize=15;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;" target="riskAssessment" value="temporal sequence">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow2" edge="1" parent="1" source="riskAssessment" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#111827;strokeWidth=5;fontFamily=Arial;fontSize=15;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;" target="catastropheEvent" value="temporal sequence">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow3" edge="1" parent="1" source="catastropheEvent" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#111827;strokeWidth=5;fontFamily=Arial;fontSize=15;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;" target="alertCreation" value="temporal sequence">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="990" y="725" />
+              <mxPoint x="1660" y="725" />
+              <mxPoint x="1660" y="953" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow4" edge="1" parent="1" source="catastropheEvent" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#111827;strokeWidth=5;fontFamily=Arial;fontSize=15;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;" target="conditionAssessment" value="temporal sequence">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow5" edge="1" parent="1" source="conditionAssessment" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#111827;strokeWidth=5;fontFamily=Arial;fontSize=15;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;" target="response" value="temporal sequence">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow-pre1" edge="1" parent="1" source="monitoring" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#111827;strokeWidth=4;endArrow=block;endFill=1;" target="mitigation" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow-pre2" edge="1" parent="1" source="mitigation" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#111827;strokeWidth=4;endArrow=block;endFill=1;" target="responsePlanning" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow-post1" edge="1" parent="1" source="eventDetection" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#111827;strokeWidth=4;endArrow=block;endFill=1;" target="emergencyResponse" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow-post2" edge="1" parent="1" source="emergencyResponse" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#111827;strokeWidth=4;endArrow=block;endFill=1;" target="riskReview" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rhdto-monument-instance" edge="1" parent="1" source="monument" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#0891b2;strokeWidth=1;fontFamily=Arial;fontSize=12;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;" target="rhdtoTangibleEntity" value="instance of">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rhdto-tangible-subclass" edge="1" parent="1" source="rhdtoTangibleEntity" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#0891b2;strokeWidth=1;fontFamily=Arial;fontSize=12;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;" target="rhdtoHeritageEntity" value="subclass of">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-scenario-about" edge="1" parent="1" source="scenario" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#16a34a;strokeWidth=2;fontFamily=Arial;fontSize=16;fontStyle=1;labelBackgroundColor=#ffffff;labelBorderColor=#d1d5db;endArrow=block;endFill=1;" target="monument" value="&lt;b&gt;P129&lt;/b&gt;&lt;br&gt;is about">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1020" y="255" />
+              <mxPoint x="1020" y="720" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-risk-p140" edge="1" parent="1" source="riskAssessment" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#2563eb;strokeWidth=2;fontFamily=Arial;fontSize=16;fontStyle=1;labelBackgroundColor=#ffffff;labelBorderColor=#d1d5db;endArrow=block;endFill=1;" target="monument" value="&lt;b&gt;P140&lt;/b&gt;&lt;br&gt;assigned attribute to">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1020" y="480" />
+              <mxPoint x="1020" y="720" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-risk-type" edge="1" parent="1" source="riskAssessment" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#2563eb;strokeWidth=2;fontFamily=Arial;fontSize=16;fontStyle=1;labelBackgroundColor=#ffffff;labelBorderColor=#d1d5db;endArrow=block;endFill=1;" target="riskType" value="&lt;b&gt;P2&lt;/b&gt;&lt;br&gt;has type">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-risk-probability" edge="1" parent="1" source="riskAssessment" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#2563eb;strokeWidth=2;fontFamily=Arial;fontSize=16;fontStyle=1;labelBackgroundColor=#ffffff;labelBorderColor=#d1d5db;endArrow=block;endFill=1;" target="probability" value="&lt;b&gt;P141&lt;/b&gt;&lt;br&gt;assigned">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-risk-time" edge="1" parent="1" source="riskAssessment" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#7e57c2;strokeWidth=2;fontFamily=Arial;fontSize=16;fontStyle=1;dashed=1;labelBackgroundColor=#ffffff;labelBorderColor=#d1d5db;endArrow=block;endFill=1;" target="riskTime" value="&lt;b&gt;P4&lt;/b&gt;&lt;br&gt;has time-span">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-event-presence" edge="1" parent="1" source="catastropheEvent" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#dc2626;strokeWidth=2;fontFamily=Arial;fontSize=16;fontStyle=1;labelBackgroundColor=#ffffff;labelBorderColor=#d1d5db;endArrow=block;endFill=1;" target="monument" value="&lt;b&gt;P12&lt;/b&gt;&lt;br&gt;occurred in the presence of">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-event-time" edge="1" parent="1" source="catastropheEvent" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#7e57c2;strokeWidth=2;fontFamily=Arial;fontSize=16;fontStyle=1;dashed=1;labelBackgroundColor=#ffffff;labelBorderColor=#d1d5db;endArrow=block;endFill=1;" target="eventTime" value="&lt;b&gt;P4&lt;/b&gt;&lt;br&gt;has time-span">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-assessment-concerned" edge="1" parent="1" source="conditionAssessment" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#d97706;strokeWidth=2;fontFamily=Arial;fontSize=16;fontStyle=1;labelBackgroundColor=#ffffff;labelBorderColor=#d1d5db;endArrow=block;endFill=1;" target="monument" value="&lt;b&gt;P34&lt;/b&gt;&lt;br&gt;concerned">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1020" y="1160" />
+              <mxPoint x="1020" y="720" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-assessment-damage" edge="1" parent="1" source="conditionAssessment" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#d97706;strokeWidth=2;fontFamily=Arial;fontSize=16;fontStyle=1;labelBackgroundColor=#ffffff;labelBorderColor=#d1d5db;endArrow=block;endFill=1;" target="damageState" value="&lt;b&gt;P35&lt;/b&gt;&lt;br&gt;has identified">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-assessment-time" edge="1" parent="1" source="conditionAssessment" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#7e57c2;strokeWidth=2;fontFamily=Arial;fontSize=16;fontStyle=1;dashed=1;labelBackgroundColor=#ffffff;labelBorderColor=#d1d5db;endArrow=block;endFill=1;" target="assessmentTime" value="&lt;b&gt;P4&lt;/b&gt;&lt;br&gt;has time-span">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-damage-type" edge="1" parent="1" source="damageState" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#d97706;strokeWidth=2;fontFamily=Arial;fontSize=16;fontStyle=1;labelBackgroundColor=#ffffff;labelBorderColor=#d1d5db;endArrow=block;endFill=1;" target="damageType" value="&lt;b&gt;P2&lt;/b&gt;&lt;br&gt;has type">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-response-modified" edge="1" parent="1" source="response" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#7e57c2;strokeWidth=2;fontFamily=Arial;fontSize=16;fontStyle=1;labelBackgroundColor=#ffffff;labelBorderColor=#d1d5db;endArrow=block;endFill=1;" target="monument" value="&lt;b&gt;P31&lt;/b&gt;&lt;br&gt;has modified">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1020" y="1410" />
+              <mxPoint x="1020" y="720" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-response-actor" edge="1" parent="1" source="response" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#d97706;strokeWidth=2;fontFamily=Arial;fontSize=16;fontStyle=1;labelBackgroundColor=#ffffff;labelBorderColor=#d1d5db;endArrow=block;endFill=1;" target="responder" value="&lt;b&gt;P14&lt;/b&gt;&lt;br&gt;carried out by">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-response-time" edge="1" parent="1" source="response" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#7e57c2;strokeWidth=2;fontFamily=Arial;fontSize=16;fontStyle=1;dashed=1;labelBackgroundColor=#ffffff;labelBorderColor=#d1d5db;endArrow=block;endFill=1;" target="responseTime" value="&lt;b&gt;P4&lt;/b&gt;&lt;br&gt;has time-span">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-preventive-risk" edge="1" parent="1" source="preventiveManagement" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#2563eb;strokeWidth=2;fontFamily=Arial;fontSize=16;fontStyle=1;labelBackgroundColor=#ffffff;labelBorderColor=#d1d5db;endArrow=block;endFill=1;" target="riskAssessment" value="&lt;b&gt;P15&lt;/b&gt;&lt;br&gt;was influenced by">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1670" y="445" />
+              <mxPoint x="1670" y="480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-preventive-object" edge="1" parent="1" source="preventiveManagement" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#16a34a;strokeWidth=2;fontFamily=Arial;fontSize=16;fontStyle=1;labelBackgroundColor=#ffffff;labelBorderColor=#d1d5db;endArrow=block;endFill=1;" target="monument" value="&lt;b&gt;P16&lt;/b&gt;&lt;br&gt;used specific object">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1670" y="445" />
+              <mxPoint x="1670" y="720" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-post-event" edge="1" parent="1" source="postManagement" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#2563eb;strokeWidth=2;fontFamily=Arial;fontSize=16;fontStyle=1;labelBackgroundColor=#ffffff;labelBorderColor=#d1d5db;endArrow=block;endFill=1;" target="catastropheEvent" value="&lt;b&gt;P15&lt;/b&gt;&lt;br&gt;was influenced by">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2350" y="445" />
+              <mxPoint x="2350" y="1720" />
+              <mxPoint x="470" y="1720" />
+              <mxPoint x="470" y="725" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-review-assessment" edge="1" parent="1" source="riskReview" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#2563eb;strokeWidth=2;fontFamily=Arial;fontSize=16;fontStyle=1;labelBackgroundColor=#ffffff;labelBorderColor=#d1d5db;endArrow=block;endFill=1;" target="conditionAssessment" value="&lt;b&gt;P15&lt;/b&gt;&lt;br&gt;was influenced by">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2820" y="772" />
+              <mxPoint x="2820" y="1760" />
+              <mxPoint x="480" y="1760" />
+              <mxPoint x="480" y="1160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-alert-created" edge="1" parent="1" source="alertCreation" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#2563eb;strokeWidth=2;fontFamily=Arial;fontSize=16;fontStyle=1;labelBackgroundColor=#ffffff;labelBorderColor=#d1d5db;endArrow=block;endFill=1;" target="message" value="&lt;b&gt;P94&lt;/b&gt;&lt;br&gt;has created">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-alert-time" edge="1" parent="1" source="alertCreation" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#7e57c2;strokeWidth=2;fontFamily=Arial;fontSize=16;fontStyle=1;dashed=1;labelBackgroundColor=#ffffff;labelBorderColor=#d1d5db;endArrow=block;endFill=1;" target="alertTime" value="&lt;b&gt;P4&lt;/b&gt;&lt;br&gt;has time-span">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-message-refers" edge="1" parent="1" source="message" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#374151;strokeWidth=2;fontFamily=Arial;fontSize=16;fontStyle=1;labelBackgroundColor=#ffffff;labelBorderColor=#d1d5db;endArrow=block;endFill=1;" target="catastropheEvent" value="&lt;b&gt;P67&lt;/b&gt;&lt;br&gt;refers to">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2600" y="1025" />
+              <mxPoint x="2600" y="1800" />
+              <mxPoint x="460" y="1800" />
+              <mxPoint x="460" y="725" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-receiver" edge="1" parent="1" source="alertCreation" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#d97706;strokeWidth=2;fontFamily=Arial;fontSize=16;fontStyle=1;labelBackgroundColor=#ffffff;labelBorderColor=#d1d5db;endArrow=block;endFill=1;" target="receiver" value="&lt;b&gt;P14&lt;/b&gt;&lt;br&gt;carried out by">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2200" y="953" />
+              <mxPoint x="2200" y="1123" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

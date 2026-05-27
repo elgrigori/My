@@ -1,0 +1,41 @@
+services:
+  user-service:
+    build: ./user-service
+    ports:
+      - "8081:8081"
+    environment:
+      QUARKUS_DATASOURCE_JDBC_URL: "jdbc:h2:file:/deployments/data/user-service;DB_CLOSE_DELAY=-1"
+    volumes:
+      - user-data:/deployments/data
+
+  action-service:
+    build: ./action-service
+    ports:
+      - "8082:8082"
+    environment:
+      QUARKUS_DATASOURCE_JDBC_URL: "jdbc:h2:file:/deployments/data/action-service;DB_CLOSE_DELAY=-1"
+      QUARKUS_REST_CLIENT_USER_SERVICE_URL: "http://user-service:8081"
+      QUARKUS_REST_CLIENT_PARTICIPATION_SERVICE_URL: "http://participation-service:8083"
+    depends_on:
+      - user-service
+    volumes:
+      - action-data:/deployments/data
+
+  participation-service:
+    build: ./participation-service
+    ports:
+      - "8083:8083"
+    environment:
+      QUARKUS_DATASOURCE_JDBC_URL: "jdbc:h2:file:/deployments/data/participation-service;DB_CLOSE_DELAY=-1"
+      QUARKUS_REST_CLIENT_USER_SERVICE_URL: "http://user-service:8081"
+      QUARKUS_REST_CLIENT_ACTION_SERVICE_URL: "http://action-service:8082"
+    depends_on:
+      - user-service
+      - action-service
+    volumes:
+      - participation-data:/deployments/data
+
+volumes:
+  user-data:
+  action-data:
+  participation-data:

@@ -1,0 +1,171 @@
+package com.volunteer.userservice;
+
+import com.volunteer.userservice.repository.UserRepository;
+import io.quarkus.test.junit.QuarkusTest;
+import io.restassured.http.ContentType;
+import jakarta.inject.Inject;
+import jakarta.transaction.Transactional;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.hasSize;
+import static org.hamcrest.Matchers.notNullValue;
+
+@QuarkusTest
+class UserResourceTest {
+    @Inject
+    UserRepository userRepository;
+
+    @BeforeEach
+    @Transactional
+    void cleanDatabase() {
+        userRepository.deleteAll();
+    }
+
+    @Test
+    void registersVolunteerAndReadsProfile() {
+        String location = given()
+                .contentType(ContentType.JSON)
+                .body("""
+                        {
+                          "username": "volunteer-api",
+                          "email": "volunteer-api@example.com",
+                          "password": "secret1",
+                          "firstName": "Grace",
+                          "lastName": "Hopper",
+                          "city": "Piraeus"
+                        }
+                        """)
+                .when()
+                .post("/volunteers")
+                .then()
+                .statusCode(201)
+                .body("id", notNullValue())
+                .body("type", equalTo("VOLUNTEER"))
+                .extract()
+                .header("Location");
+
+        given()
+                .when()
+                .get(location)
+                .then()
+                .statusCode(200)
+                .body("username", equalTo("volunteer-api"))
+                .body("firstName", equalTo("Grace"));
+    }
+
+    @Test
+    void rejectsDuplicateOrganizationAfm() {
+        String body = """
+                {
+                  "username": "%s",
+                  "email": "%s",
+                  "password": "secret1",
+                  "afm": "998877665",
+                  "organizationName": "Open Aid",
+                  "description": "Aid",
+                  "mission": "Help",
+                  "foundedYear": 2010
+                }
+                """;
+
+        given().contentType(ContentType.JSON)
+                .body(body.formatted("org-one", "org-one@example.com"))
+                .post("/organizations")
+                .then()
+                .statusCode(201);
+
+        given().contentType(ContentType.JSON)
+                .body(body.formatted("org-two", "org-two@example.com"))
+                .post("/organizations")
+                .then()
+                .statusCode(409)
+                .body("message", equalTo("AFM already exists"));
+    }
+
+    @Test
+    void exposesVolunteerCollectionExistsAndDeleteEndpoints() {
+        int id = given()
+                .contentType(ContentType.JSON)
+                .body("""
+                        {
+                          "username": "volunteer-crud",
+                          "email": "volunteer-crud@example.com",
+                          "password": "secret1",
+                          "firstName": "Ada",
+                          "lastName": "Lovelace"
+                        }
+                        """)
+                .post("/volunteers")
+                .then()
+                .statusCode(201)
+                .extract()
+                .path("id");
+
+        given().get("/volunteers").then().statusCode(200).body("$", hasSize(1));
+        given().get("/volunteers/{id}/exists", id).then().statusCode(200);
+        given().delete("/volunteers/{id}", id).then().statusCode(204);
+        given().get("/volunteers/{id}/exists", id).then().statusCode(404);
+    }
+
+    @Test
+    void rejectsDuplicateVolunteerEmail() {
+        String body = """
+                {
+                  "username": "%s",
+                  "email": "shared@example.com",
+                  "password": "secret1",
+                  "firstName": "Ada",
+                  "lastName": "Lovelace"
+                }
+                """;
+
+        given().contentType(ContentType.JSON)
+                .body(body.formatted("vol-first"))
+                .post("/volunteers")
+                .then()
+                .statusCode(201);
+
+        given().contentType(ContentType.JSON)
+                .body(body.formatted("vol-second"))
+                .post("/volunteers")
+                .then()
+                .statusCode(409);
+    }
+
+    @Test
+    void updatesVolunteerAndListsOrganizations() {
+        int id = given()
+                .contentType(ContentType.JSON)
+                .body("""
+                        {
+                          "username": "updateme",
+                          "email": "updateme@example.com",
+                          "password": "secret1",
+                          "firstName": "Old",
+                          "lastName": "Name"
+                        }
+                        """)
+                .post("/volunteers")
+                .then()
+                .statusCode(201)
+                .extract()
+                .path("id");
+
+        given().contentType(ContentType.JSON)
+                .body("{\"firstName\": \"New\"}")
+                .put("/volunteers/{id}", id)
+                .then()
+                .statusCode(200)
+                .body("firstName", equalTo("New"));
+
+        given().get("/organizations").then().statusCode(200).body("$", hasSize(0));
+    }
+
+    @Test
+    void returns404ForMissingVolunteer() {
+        given().get("/volunteers/{id}", 9999).then().statusCode(404);
+    }
+}
