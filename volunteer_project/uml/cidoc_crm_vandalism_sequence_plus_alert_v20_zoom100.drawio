@@ -1,0 +1,396 @@
+<mxfile host="app.diagrams.net" agent="GPT">
+  <diagram id="85e8088b-74a4-4913-a7b0-0adfccec0851" name="Vandalism Risk Model v6 (CIDOC CRM + RHDTO + HDT)">
+     <mxGraphModel dx="2650" dy="2589" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2400" pageHeight="1350" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="23db806e-ee9f-4ee2-9b40-feb50b8360f5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=0.5;dashed=1;strokeColor=#B85450;fillColor=#F8CECC;fontSize=16;" value="&lt;b&gt;EVENT &amp; DAMAGE&lt;/b&gt;" vertex="1">
+          <mxGeometry height="615" width="1725" x="161.13610000000003" y="1120" as="geometry" />
+        </mxCell>
+        <mxCell id="0d94efec-a614-44b5-a6c7-282f89bfec95" parent="23db806e-ee9f-4ee2-9b40-feb50b8360f5" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=0.5;strokeColor=#4D4D4D;fillColor=#FFFFFF;fontSize=17;fillColor=#FFEBEE;strokeColor=#C62828;" value="&lt;b&gt;E5 Event&lt;/b&gt;&lt;br/&gt;Vandalism Incident&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#555555;&quot;&gt;event_Vandalism_2026-06-15_NF&lt;/span&gt;" vertex="1">
+          <mxGeometry height="119.03100000000002" width="301.20720000000006" x="55" y="244.5895" as="geometry" />
+        </mxCell>
+        <mxCell id="e6cd4ae6-119b-432f-98bc-8644b27f9bac" parent="23db806e-ee9f-4ee2-9b40-feb50b8360f5" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=0.5;strokeColor=#4D4D4D;fillColor=#FFFFFF;fontSize=17;fillColor=#FFEBEE;strokeColor=#C62828;" value="&lt;b&gt;E11 Modification&lt;/b&gt;&lt;br/&gt;Graffiti Application&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#555555;&quot;&gt;mod_Graffiti_2026-06-15_NF&lt;/span&gt;" vertex="1">
+          <mxGeometry height="116.094" width="301.20720000000006" x="40" y="589.723" as="geometry" />
+        </mxCell>
+        <mxCell id="2857ee48-1886-4c5f-a329-cdeb78def774" parent="23db806e-ee9f-4ee2-9b40-feb50b8360f5" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=0.5;strokeColor=#4D4D4D;fillColor=#FFFFFF;fontSize=17;fillColor=#FFF8E1;strokeColor=#F9A825;" value="&lt;b&gt;E52 Time-Span&lt;/b&gt;&lt;br/&gt;&lt;i&gt;14 May 2026 22:14–22:18&lt;/i&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#555555;&quot;&gt;time_2026-06-15T22:30_22:38&lt;/span&gt;" vertex="1">
+          <mxGeometry height="144.96428571428572" width="290.6548672566372" x="520.5619849557522" y="183.41500000000002" as="geometry" />
+        </mxCell>
+        <mxCell id="bb397d34-97a8-417b-a0ef-5f41678a0376" parent="23db806e-ee9f-4ee2-9b40-feb50b8360f5" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=0.5;strokeColor=#4D4D4D;fillColor=#FFFFFF;fontSize=17;fillColor=#FFF3E0;strokeColor=#EF6C00;" value="&lt;b&gt;E39 Actor&lt;/b&gt;&lt;br/&gt;Perpetrator&lt;br/&gt;&lt;i&gt;Unidentified&lt;/i&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#555555;&quot;&gt;actor_UnknownVandal&lt;/span&gt;" vertex="1">
+          <mxGeometry height="108.42150000000001" width="290.65680000000003" x="610.5652" y="680.0717500000001" as="geometry" />
+        </mxCell>
+        <mxCell id="c2e13e69-33a6-4ec8-94b2-fe4126fd796f" parent="23db806e-ee9f-4ee2-9b40-feb50b8360f5" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=0.5;strokeColor=#4D4D4D;fillColor=#FFFFFF;fontSize=17;fillColor=#E8F5E9;strokeColor=#2E7D32;" value="&lt;b&gt;E14 Condition Assessment&lt;/b&gt;&lt;br/&gt;Damage Assessment&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#555555;&quot;&gt;assess_Damage_2026-06-16&lt;/span&gt;" vertex="1">
+          <mxGeometry height="130.23450000000003" width="324.8448000000001" x="968.7337" y="210.07524999999998" as="geometry" />
+        </mxCell>
+        <mxCell id="c2f93441-4369-461d-acb9-c8e5d93842de" parent="23db806e-ee9f-4ee2-9b40-feb50b8360f5" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=0.5;strokeColor=#4D4D4D;fillColor=#FFFFFF;fontSize=17;fillColor=#F3E5F5;strokeColor=#6A1B9A;" value="&lt;b&gt;E3 Condition State&lt;/b&gt;&lt;br/&gt;Damage State&lt;br/&gt;&lt;i&gt;Graffiti on surface&lt;/i&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#555555;&quot;&gt;state_Damage_GraffitiSurface&lt;/span&gt;" vertex="1">
+          <mxGeometry height="113.73450000000003" width="341.9472" x="1447.8174999999999" y="469.83025" as="geometry" />
+        </mxCell>
+        <mxCell id="8d417432-3081-4c0c-8a2f-5eeba7f23a43" parent="23db806e-ee9f-4ee2-9b40-feb50b8360f5" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=0.5;strokeColor=#4D4D4D;fillColor=#FFFFFF;fontSize=17;fillColor=#F3E5F5;strokeColor=#6A1B9A;" value="&lt;b&gt;E55 Type&lt;/b&gt;&lt;br/&gt;Graffiti type:&lt;br/&gt;&lt;i&gt;spray paint&lt;/i&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#555555;&quot;&gt;type_Damage_Graffiti&lt;/span&gt;" vertex="1">
+          <mxGeometry height="102.53100000000002" width="307.7592" x="1419.649" y="223.9195" as="geometry" />
+        </mxCell>
+        <mxCell id="7ad2c84c-5696-413e-a17a-b2e4452a3603" parent="23db806e-ee9f-4ee2-9b40-feb50b8360f5" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=0.5;strokeColor=#4D4D4D;fillColor=#FFFFFF;fontSize=17;fillColor=#EDE7F6;strokeColor=#6A1B9A;" value="&lt;b&gt;E54 Dimension&lt;/b&gt;&lt;br/&gt;Probability = 0.75&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#555555;&quot;&gt;prob_0.78&lt;/span&gt;" vertex="1">
+          <mxGeometry height="99.00000000000001" width="256.45200000000006" x="1047.3976" y="696.04" as="geometry" />
+        </mxCell>
+        <mxCell id="d25a0b07-a8d2-4de4-8ad7-2b9c6be86775" parent="23db806e-ee9f-4ee2-9b40-feb50b8360f5" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=0.5;strokeColor=#4D4D4D;fillColor=#FFFFFF;fontSize=17;fillColor=#EDE7F6;strokeColor=#6A1B9A;" value="&lt;b&gt;E54 Dimension&lt;/b&gt;&lt;br/&gt;Confidence = medium&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#555555;&quot;&gt;conf_MediumHigh&lt;/span&gt;" vertex="1">
+          <mxGeometry height="115.50000000000001" width="290.65680000000003" x="1383.9352000000001" y="695.29" as="geometry" />
+        </mxCell>
+        <mxCell id="8823355d-b000-4476-b1f9-cf664605a495" parent="23db806e-ee9f-4ee2-9b40-feb50b8360f5" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=0.5;strokeColor=#666666;fillColor=#FFFFFF;fontSize=17;fillColor=#F5F5F5;" value="&lt;b&gt;E52 Time-Span&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#555555;&quot;&gt;time_2026-06-15T22:30_22:38&lt;/span&gt;" vertex="1">
+          <mxGeometry height="90.75000000000001" width="285.6" x="55.836100000000016" y="369.08500000000004" as="geometry" />
+        </mxCell>
+        <mxCell id="f910c58e-21b5-47f9-99cb-7ab0b42e9efe" edge="1" parent="23db806e-ee9f-4ee2-9b40-feb50b8360f5" source="0d94efec-a614-44b5-a6c7-282f89bfec95" style="endArrow=none;dashed=1;strokeWidth=0.5;strokeColor=#666666;fontSize=14;" target="8823355d-b000-4476-b1f9-cf664605a495" value="P4 has time-span">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ea5d9b63-5f31-467a-a1ae-3f604f492c0e" parent="23db806e-ee9f-4ee2-9b40-feb50b8360f5" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=0.5;strokeColor=#666666;fillColor=#FFFFFF;fontSize=17;fillColor=#F5F5F5;" value="&lt;b&gt;E52 Time-Span&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#555555;&quot;&gt;time_2026-06-16T10:00&lt;/span&gt;" vertex="1">
+          <mxGeometry height="90.75000000000001" width="292.3603200000001" x="970.47394" y="345.265" as="geometry" />
+        </mxCell>
+        <mxCell id="e7b39cc1-582e-4989-b2a5-64c371ae6108" edge="1" parent="23db806e-ee9f-4ee2-9b40-feb50b8360f5" source="c2e13e69-33a6-4ec8-94b2-fe4126fd796f" style="endArrow=none;dashed=1;strokeWidth=0.5;strokeColor=#666666;fontSize=14;" target="ea5d9b63-5f31-467a-a1ae-3f604f492c0e" value="P4 has time-span">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inst_e47daf1dd102" parent="23db806e-ee9f-4ee2-9b40-feb50b8360f5" style="shape=note;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;fontSize=12;rounded=0;" value="event_Vandalism_2026-06-15_NF" vertex="1">
+          <mxGeometry height="54.99999999999999" width="260" x="405.0711" y="276.605" as="geometry" />
+        </mxCell>
+        <mxCell id="inst_3a12a04c4699" parent="23db806e-ee9f-4ee2-9b40-feb50b8360f5" style="shape=note;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;fontSize=12;rounded=0;" value="time_Generic" vertex="1">
+          <mxGeometry height="55" width="212.00000000000003" x="884.6460557522124" y="222.50428571428574" as="geometry" />
+        </mxCell>
+        <mxCell id="inst_d3dd44d5a63e" parent="23db806e-ee9f-4ee2-9b40-feb50b8360f5" style="shape=note;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;fontSize=12;rounded=0;" value="actor_UnknownVandal" vertex="1">
+          <mxGeometry height="54.99999999999999" width="254" x="953.6511" y="706.7825" as="geometry" />
+        </mxCell>
+        <mxCell id="inst_a7224fb71ae0" parent="23db806e-ee9f-4ee2-9b40-feb50b8360f5" style="shape=note;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;fontSize=12;rounded=0;" value="assess_Damage_2026-06-16" vertex="1">
+          <mxGeometry height="55" width="260" x="1341.1761" y="247.6925" as="geometry" />
+        </mxCell>
+        <mxCell id="inst_5f4546ecfa51" parent="23db806e-ee9f-4ee2-9b40-feb50b8360f5" style="shape=note;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;fontSize=12;rounded=0;" value="state_Damage_GraffitiSurface" vertex="1">
+          <mxGeometry height="55" width="260" x="1836.4461" y="499.1975" as="geometry" />
+        </mxCell>
+        <mxCell id="inst_cdc95c81e050" parent="23db806e-ee9f-4ee2-9b40-feb50b8360f5" style="shape=note;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;fontSize=12;rounded=0;" value="type_Graffiti_SprayPaint" vertex="1">
+          <mxGeometry height="55" width="260" x="1775.9211" y="247.685" as="geometry" />
+        </mxCell>
+        <mxCell id="inst_613e84d90b3f" parent="23db806e-ee9f-4ee2-9b40-feb50b8360f5" style="shape=note;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;fontSize=12;rounded=0;" value="prob_0.78" vertex="1">
+          <mxGeometry height="55.00000000000001" width="194" x="1388.1110999999999" y="718.04" as="geometry" />
+        </mxCell>
+        <mxCell id="inst_354ee067ae6f" parent="23db806e-ee9f-4ee2-9b40-feb50b8360f5" style="shape=note;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;fontSize=12;rounded=0;" value="conf_MediumHigh" vertex="1">
+          <mxGeometry height="55" width="230" x="1739.0211000000002" y="725.54" as="geometry" />
+        </mxCell>
+        <mxCell id="inst_42176aa2cf71" parent="23db806e-ee9f-4ee2-9b40-feb50b8360f5" style="shape=note;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;fontSize=12;rounded=0;" value="time_Generic" vertex="1">
+          <mxGeometry height="55" width="212.00000000000003" x="415.13610000000006" y="386.96000000000004" as="geometry" />
+        </mxCell>
+        <mxCell id="inst_6099595f3b00" parent="23db806e-ee9f-4ee2-9b40-feb50b8360f5" style="shape=note;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;fontSize=12;rounded=0;" value="time_Generic" vertex="1">
+          <mxGeometry height="55" width="212.00000000000003" x="1336.1721" y="363.14" as="geometry" />
+        </mxCell>
+        <mxCell id="6780bb18-3048-4401-8905-09e2fa7645b4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=0.5;dashed=1;strokeColor=#82B366;fillColor=#D5E8D4;fontSize=16;align=left;spacingBottom=200;" value="&lt;b&gt;ALERT / MONITORING&lt;/b&gt;" vertex="1">
+          <mxGeometry height="540" width="1274.46" x="161.13610000000003" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="061faa90-a989-4a87-a267-323e497932ab" parent="6780bb18-3048-4401-8905-09e2fa7645b4" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=0.5;strokeColor=#4D4D4D;fillColor=#FFFFFF;fontSize=17;fillColor=#E8F5E9;strokeColor=#2E7D32;" value="&lt;b&gt;E16 Measurement&lt;/b&gt;&lt;br/&gt;Observation / Monitoring Input&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#555555;&quot;&gt;meas_CCTV_NF_2026-06-15T22:30 (automated)&lt;/span&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#555555;&quot;&gt;obs_GuardReport_NF_2026-06-15T22:31 (manual)&lt;/span&gt;" vertex="1">
+          <mxGeometry height="143.99550000000002" width="414.96000000000004" x="53.40610000000001" y="427.54974999999996" as="geometry" />
+        </mxCell>
+        <mxCell id="43626880-7112-4ce5-97da-69382b6ac09e" parent="6780bb18-3048-4401-8905-09e2fa7645b4" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=0.5;strokeColor=#4D4D4D;fillColor=#FFFFFF;fontSize=17;fillColor=#E8F5E9;strokeColor=#2E7D32;" value="&lt;b&gt;E54 Dimension&lt;/b&gt;&lt;br/&gt;Indicator Value&lt;br/&gt;&lt;i&gt;Abnormal motion index = 0.92&lt;/i&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#555555;&quot;&gt;ind_AbnormalMotion_0.91&lt;/span&gt;" vertex="1">
+          <mxGeometry height="128.997" width="444.59520000000003" x="418.83849999999995" y="231.8665" as="geometry" />
+        </mxCell>
+        <mxCell id="bd1844a0-3336-42b5-8b86-80a6ccccb9d6" parent="6780bb18-3048-4401-8905-09e2fa7645b4" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=0.5;strokeColor=#4D4D4D;fillColor=#FFFFFF;fontSize=17;fillColor=#FFF8E1;strokeColor=#F9A825;" value="&lt;b&gt;E54 Dimension&lt;/b&gt;&lt;br/&gt;Threshold&lt;br/&gt;&lt;i&gt;Motion threshold = 0.80&lt;/i&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#555555;&quot;&gt;thr_AbnormalMotion_0.80&lt;/span&gt;" vertex="1">
+          <mxGeometry height="117.00150000000001" width="280.7952" x="939.4885" y="273.31675" as="geometry" />
+        </mxCell>
+        <mxCell id="5c30afab-62f7-41c8-8ae0-93fc0a5d8cd5" parent="6780bb18-3048-4401-8905-09e2fa7645b4" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=0.5;strokeColor=#4D4D4D;fillColor=#FFFFFF;fontSize=17;fillColor=#FFEBEE;strokeColor=#C62828;" value="&lt;b&gt;E7 Activity&lt;/b&gt;&lt;br/&gt;Alerting Activity&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#555555;&quot;&gt;act_Alert_2026-06-15T22:32&lt;/span&gt;" vertex="1">
+          <mxGeometry height="150.00150000000002" width="397.8072" x="578.0350000000001" y="468.18174999999997" as="geometry" />
+        </mxCell>
+        <mxCell id="5a6c3b1e-2ee8-45dc-900c-1e8a53505671" parent="6780bb18-3048-4401-8905-09e2fa7645b4" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=0.5;strokeColor=#4D4D4D;fillColor=#FFFFFF;fontSize=17;fillColor=#FFEBEE;strokeColor=#C62828;" value="&lt;b&gt;E73 Information Object&lt;/b&gt;&lt;br/&gt;Alert Message / Log Entry&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#555555;&quot;&gt;msg_Alert_Parthenon_NF&lt;/span&gt;" vertex="1">
+          <mxGeometry height="150.00150000000002" width="304.1976" x="1104.8398" y="513.18175" as="geometry" />
+        </mxCell>
+        <mxCell id="235b7f5d-27b2-47e2-9c51-b3f7af051b52" parent="6780bb18-3048-4401-8905-09e2fa7645b4" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=0.5;strokeColor=#666666;fillColor=#FFFFFF;fontSize=17;fillColor=#F5F5F5;" value="&lt;b&gt;E52 Time-Span&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#555555;&quot;&gt;time_2026-06-15T22:30&lt;/span&gt;" vertex="1">
+          <mxGeometry height="90.75000000000001" width="373.4640000000001" x="55.629099999999994" y="575.875" as="geometry" />
+        </mxCell>
+        <mxCell id="d4cce4e0-302f-4f74-83e1-6cbdd3102395" edge="1" parent="6780bb18-3048-4401-8905-09e2fa7645b4" source="061faa90-a989-4a87-a267-323e497932ab" style="endArrow=none;dashed=1;strokeWidth=0.5;strokeColor=#666666;fontSize=14;" target="235b7f5d-27b2-47e2-9c51-b3f7af051b52" value="P4 has time-span">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ade12f88-3256-4477-a564-ccbb678e5539" parent="6780bb18-3048-4401-8905-09e2fa7645b4" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=0.5;strokeColor=#666666;fillColor=#FFFFFF;fontSize=17;fillColor=#F5F5F5;" value="&lt;b&gt;E52 Time-Span&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#555555;&quot;&gt;time_2026-06-15T22:32&lt;/span&gt;" vertex="1">
+          <mxGeometry height="90.75000000000001" width="358.02648" x="580.1661100000001" y="622.24" as="geometry" />
+        </mxCell>
+        <mxCell id="5c884524-09db-4fcc-8396-26c44b158ea4" edge="1" parent="6780bb18-3048-4401-8905-09e2fa7645b4" source="5c30afab-62f7-41c8-8ae0-93fc0a5d8cd5" style="endArrow=none;dashed=1;strokeWidth=0.5;strokeColor=#666666;fontSize=14;" target="ade12f88-3256-4477-a564-ccbb678e5539" value="P4 has time-span">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inst_a27c2016f720" parent="6780bb18-3048-4401-8905-09e2fa7645b4" style="shape=note;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;fontSize=12;rounded=0;" value="meas_GuardReport_NF_2026-06-15T22:31" vertex="1">
+          <mxGeometry height="55" width="260" x="511.13610000000006" y="466.59499999999997" as="geometry" />
+        </mxCell>
+        <mxCell id="inst_9c972cb0f333" parent="6780bb18-3048-4401-8905-09e2fa7645b4" style="shape=note;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;fontSize=12;rounded=0;" value="ind_AbnormalMotion_0.91" vertex="1">
+          <mxGeometry height="55" width="260" x="904.6161" y="268.865" as="geometry" />
+        </mxCell>
+        <mxCell id="inst_7177501ec0f3" parent="6780bb18-3048-4401-8905-09e2fa7645b4" style="shape=note;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;fontSize=12;rounded=0;" value="thr_AbnormalMotion_0.80" vertex="1">
+          <mxGeometry height="55" width="260" x="1270.2411" y="304.3175" as="geometry" />
+        </mxCell>
+        <mxCell id="inst_df67e51c5aba" parent="6780bb18-3048-4401-8905-09e2fa7645b4" style="shape=note;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;fontSize=12;rounded=0;" value="act_Alert_2026-06-15T22:32" vertex="1">
+          <mxGeometry height="55" width="260" x="1019.5311" y="507.5" as="geometry" />
+        </mxCell>
+        <mxCell id="inst_305c302f3a8c" parent="6780bb18-3048-4401-8905-09e2fa7645b4" style="shape=note;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;fontSize=12;rounded=0;" value="msg_Alert_Parthenon_NF" vertex="1">
+          <mxGeometry height="55" width="260" x="1457.7411" y="552.5" as="geometry" />
+        </mxCell>
+        <mxCell id="inst_2d38bb445282" parent="6780bb18-3048-4401-8905-09e2fa7645b4" style="shape=note;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;fontSize=12;rounded=0;" value="time_Generic" vertex="1">
+          <mxGeometry height="55" width="212.00000000000003" x="498.0861000000001" y="593.75" as="geometry" />
+        </mxCell>
+        <mxCell id="inst_5ed4f2cdd3c4" parent="6780bb18-3048-4401-8905-09e2fa7645b4" style="shape=note;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;fontSize=12;rounded=0;" value="time_Generic" vertex="1">
+          <mxGeometry height="55" width="212.00000000000003" x="1008.0126" y="640.115" as="geometry" />
+        </mxCell>
+        <mxCell id="64ae78f1-b48f-4ade-9278-a883cb0a2df3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=0.5;dashed=1;strokeColor=#6C8EBF;fillColor=#DAE8FC;fontSize=16;" value="&lt;b&gt;HERITAGE ENTITY / SCENARIO&lt;/b&gt;" vertex="1">
+          <mxGeometry height="375" width="1230" x="206.13610000000003" y="625" as="geometry" />
+        </mxCell>
+        <mxCell id="f84d3ce5-e7b4-4962-9b1c-ef94cf74af0f" parent="64ae78f1-b48f-4ade-9278-a883cb0a2df3" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=0.5;strokeColor=#4D4D4D;fillColor=#FFFFFF;fontSize=17;fillColor=#E3F2FD;strokeColor=#1976D2;" value="&lt;b&gt;E89 Propositional Object&lt;/b&gt;&lt;br/&gt;Scenario Context&lt;br/&gt;&lt;i&gt;Graffiti risk at north facade&lt;/i&gt;" vertex="1">
+          <mxGeometry height="132" width="370.79280000000006" x="87.7072" y="274" as="geometry" />
+        </mxCell>
+        <mxCell id="6d87053e-6a11-4be2-b899-9373e98be5fc" parent="64ae78f1-b48f-4ade-9278-a883cb0a2df3" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=0.5;strokeColor=#4D4D4D;fillColor=#FFFFFF;fontSize=17;fillColor=#E3F2FD;strokeColor=#1976D2;" value="&lt;b&gt;RHDTO Tangible Heritage Entity&lt;/b&gt;&lt;br/&gt;(mapped to &lt;b&gt;E18 Physical Thing&lt;/b&gt;)&lt;br/&gt;&lt;i&gt;Statue of Athena&lt;/i&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#555555;&quot;&gt;the_Parthenon&lt;/span&gt;" vertex="1">
+          <mxGeometry height="148.5" width="469.2072000000001" x="689.935" y="228.25" as="geometry" />
+        </mxCell>
+        <mxCell id="b5bde714-fbfe-4c4a-80af-0d97b38c0995" parent="64ae78f1-b48f-4ade-9278-a883cb0a2df3" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=0.5;strokeColor=#4D4D4D;fillColor=#FFFFFF;fontSize=17;fillColor=#E3F2FD;strokeColor=#1976D2;" value="&lt;b&gt;E13 Attribute Assignment&lt;/b&gt;&lt;br/&gt;Risk Assessment&lt;br/&gt;&lt;i&gt;2026 risk assessment score = 8/10&lt;/i&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#555555;&quot;&gt;assess_Risk_Parthenon_NF_2026-06-15&lt;/span&gt;" vertex="1">
+          <mxGeometry height="132" width="387.5928" x="79.30720000000002" y="424" as="geometry" />
+        </mxCell>
+        <mxCell id="48e8c7d7-254a-451a-996e-bfafa7e642e3" parent="64ae78f1-b48f-4ade-9278-a883cb0a2df3" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=0.5;strokeColor=#4D4D4D;fillColor=#FFFFFF;fontSize=17;fillColor=#EDE7F6;strokeColor=#6A1B9A;" value="&lt;b&gt;E3 Condition State&lt;/b&gt;&lt;br/&gt;Risk State&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#555555;&quot;&gt;state_Risk_Parthenon_NF_HIGH&lt;/span&gt;" vertex="1">
+          <mxGeometry height="99.00000000000001" width="344.40000000000003" x="592.6796714285714" y="440.5" as="geometry" />
+        </mxCell>
+        <mxCell id="a8aa63b2-ef61-48f3-b524-7a0f22fc7197" parent="64ae78f1-b48f-4ade-9278-a883cb0a2df3" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=0.5;strokeColor=#4D4D4D;fillColor=#FFFFFF;fontSize=17;fillColor=#EDE7F6;strokeColor=#6A1B9A;" value="&lt;b&gt;E55 Type&lt;/b&gt;&lt;br/&gt;Risk Level: HIGH&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#555555;&quot;&gt;type_RiskLevel_HIGH&lt;/span&gt;" vertex="1">
+          <mxGeometry height="99.00000000000001" width="295.2" x="1050.6789571428571" y="560.5" as="geometry" />
+        </mxCell>
+        <mxCell id="inst_16dbc85520e1" parent="64ae78f1-b48f-4ade-9278-a883cb0a2df3" style="shape=note;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;fontSize=12;rounded=0;" value="scenario_Vandalism_NorthFacade" vertex="1">
+          <mxGeometry height="55" width="260" x="503.63610000000006" y="312.5" as="geometry" />
+        </mxCell>
+        <mxCell id="inst_ebe6709aa8c9" parent="64ae78f1-b48f-4ade-9278-a883cb0a2df3" style="shape=note;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;fontSize=12;rounded=0;" value="the_Parthenon" vertex="1">
+          <mxGeometry height="55" width="218.00000000000003" x="1220.0060999999998" y="267.5" as="geometry" />
+        </mxCell>
+        <mxCell id="inst_92af59a01037" parent="64ae78f1-b48f-4ade-9278-a883cb0a2df3" style="shape=note;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;fontSize=12;rounded=0;" value="assess_Risk_Parthenon_NF_2026-06-15" vertex="1">
+          <mxGeometry height="55" width="260" x="511.13610000000006" y="462.5" as="geometry" />
+        </mxCell>
+        <mxCell id="inst_2eec6f18964e" parent="64ae78f1-b48f-4ade-9278-a883cb0a2df3" style="shape=note;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;fontSize=12;rounded=0;" value="state_Risk_Parthenon_NF_HIGH" vertex="1">
+          <mxGeometry height="55.00000000000001" width="260" x="983.6296714285714" y="462.5" as="geometry" />
+        </mxCell>
+        <mxCell id="inst_2c8e57c0d511" parent="64ae78f1-b48f-4ade-9278-a883cb0a2df3" style="shape=note;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;fontSize=12;rounded=0;" value="type_RiskLevel_HIGH" vertex="1">
+          <mxGeometry height="55.00000000000001" width="254" x="1398.0646714285713" y="582.5" as="geometry" />
+        </mxCell>
+        <mxCell id="b1f3047a-c64b-44a5-9019-3c6e32639bba" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=0.5;dashed=1;strokeColor=#6C8EBF;fillColor=#DAE8FC;fontSize=16;align=left;" value="&lt;h1 style=&quot;padding-bottom: 400px; padding-top: 0px; margin-top: 16.08px; margin-right: 0px; padding-right: 0px;&quot;&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 12px;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;RISK MANAGEMENT&lt;/b&gt;&lt;/h1&gt;" vertex="1">
+          <mxGeometry height="750" width="855" x="1511.1361" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="38243bfa-7d64-46ae-91dd-2b7125b0e32f" parent="b1f3047a-c64b-44a5-9019-3c6e32639bba" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=0.5;strokeColor=#4D4D4D;fillColor=#FFFFFF;fontSize=17;fillColor=#E3F2FD;strokeColor=#1565C0;" value="&lt;b&gt;E7 Activity&lt;/b&gt;&lt;br/&gt;Decision Activity&lt;br/&gt;&lt;i&gt;Deploy patrol &amp; cameras&lt;/i&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#555555;&quot;&gt;act_Decision_DeployPatrol&lt;/span&gt;" vertex="1">
+          <mxGeometry height="117.85714285714286" width="368.3076923076924" x="546.3995615384615" y="259.6407142857143" as="geometry" />
+        </mxCell>
+        <mxCell id="0e900c0b-3798-4a04-8ad9-55daa80bae4a" parent="b1f3047a-c64b-44a5-9019-3c6e32639bba" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=0.5;strokeColor=#4D4D4D;fillColor=#FFFFFF;fontSize=17;fillColor=#E3F2FD;strokeColor=#1565C0;" value="&lt;b&gt;E7 Activity&lt;/b&gt;&lt;br/&gt;Risk Mitigation&lt;br/&gt;&lt;i&gt;Objective: reduce vandalism likelihood&lt;/i&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#555555;&quot;&gt;act_Mitigation_SurfaceProtection&lt;/span&gt;" vertex="1">
+          <mxGeometry height="134.69387755102042" width="368.3076923076924" x="546.3995615384615" y="588.8705102040817" as="geometry" />
+        </mxCell>
+        <mxCell id="a10405f1-6f5b-4dcc-aa89-be9c40a76dd4" parent="b1f3047a-c64b-44a5-9019-3c6e32639bba" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=0.5;strokeColor=#4D4D4D;fillColor=#FFFFFF;fontSize=17;fillColor=#E3F2FD;strokeColor=#1565C0;" value="&lt;b&gt;E7 Activity&lt;/b&gt;&lt;br/&gt;Post-Event Risk Management&lt;br/&gt;&lt;i&gt;Cleaning intervention (15 May 2026)&lt;/i&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#555555;&quot;&gt;act_Recovery_Restoration_2026&lt;/span&gt;" vertex="1">
+          <mxGeometry height="134.69387755102042" width="405.1384615384616" x="79.42648461538464" y="588.8772448979591" as="geometry" />
+        </mxCell>
+        <mxCell id="4fa1d569-d7bc-45ca-8ef1-b49dd10d8279" parent="b1f3047a-c64b-44a5-9019-3c6e32639bba" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=0.5;strokeColor=#4D4D4D;fillColor=#FFFFFF;fontSize=17;fillColor=#E3F2FD;strokeColor=#1565C0;" value="&lt;b&gt;E7 Activity&lt;/b&gt;&lt;br/&gt;Pre-Event Risk Management&lt;br/&gt;&lt;i&gt;Camera installation (10 May 2026)&lt;/i&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#555555;&quot;&gt;act_PreventionPlan_Parthenon_2026&lt;/span&gt;" vertex="1">
+          <mxGeometry height="132" width="369.6" x="96.33610000000002" y="252.565" as="geometry" />
+        </mxCell>
+        <mxCell id="80c55e07-6808-4bd7-92dc-e44016131c43" edge="1" parent="b1f3047a-c64b-44a5-9019-3c6e32639bba" source="38243bfa-7d64-46ae-91dd-2b7125b0e32f" style="endArrow=block;html=1;strokeWidth=0.5;dashed=1;rounded=0;edgeStyle=orthogonalEdgeStyle;fontSize=14;" target="4fa1d569-d7bc-45ca-8ef1-b49dd10d8279" value="P9 consists of">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5c7a158e-f2f3-453b-b0e8-5239e0d62ae8" edge="1" parent="b1f3047a-c64b-44a5-9019-3c6e32639bba" source="4fa1d569-d7bc-45ca-8ef1-b49dd10d8279" style="endArrow=block;html=1;strokeWidth=0.5;dashed=1;rounded=0;edgeStyle=orthogonalEdgeStyle;fontSize=14;" target="a10405f1-6f5b-4dcc-aa89-be9c40a76dd4" value="P9 consists of">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7603aa60-debd-408f-ac92-ba38b8e8ee5f" parent="b1f3047a-c64b-44a5-9019-3c6e32639bba" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=0.5;strokeColor=#666666;fillColor=#FFFFFF;fontSize=17;fillColor=#F5F5F5;" value="&lt;b&gt;E52 Time-Span&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#555555;&quot;&gt;time_2026-06-15T22:35&lt;/span&gt;" vertex="1">
+          <mxGeometry height="90.75000000000001" width="331.4769230769231" x="548.3726384615385" y="728.3169387755103" as="geometry" />
+        </mxCell>
+        <mxCell id="3cd342bf-75e2-4553-8adb-9b2d652c10b4" edge="1" parent="b1f3047a-c64b-44a5-9019-3c6e32639bba" source="0e900c0b-3798-4a04-8ad9-55daa80bae4a" style="endArrow=none;dashed=1;strokeWidth=0.5;strokeColor=#666666;fontSize=14;" target="7603aa60-debd-408f-ac92-ba38b8e8ee5f" value="P4 has time-span">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inst_7f226ea34487" parent="b1f3047a-c64b-44a5-9019-3c6e32639bba" style="shape=note;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;fontSize=12;rounded=0;" value="act_Decision_DeployPatrol" vertex="1">
+          <mxGeometry height="54.99999999999999" width="260" x="959.9764846153847" y="291.0692857142857" as="geometry" />
+        </mxCell>
+        <mxCell id="inst_8822d2f1a473" parent="b1f3047a-c64b-44a5-9019-3c6e32639bba" style="shape=note;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;fontSize=12;rounded=0;" value="act_Mitigation_SurfaceProtection" vertex="1">
+          <mxGeometry height="55" width="260" x="959.9764846153847" y="627.4929591836735" as="geometry" />
+        </mxCell>
+        <mxCell id="inst_a401899a38db" parent="b1f3047a-c64b-44a5-9019-3c6e32639bba" style="shape=note;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;fontSize=12;rounded=0;" value="act_Recovery_Restoration_2026" vertex="1">
+          <mxGeometry height="55" width="260" x="527.8611000000001" y="627.499693877551" as="geometry" />
+        </mxCell>
+        <mxCell id="inst_d80621922726" parent="b1f3047a-c64b-44a5-9019-3c6e32639bba" style="shape=note;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;fontSize=12;rounded=0;" value="act_PreventionPlan_Parthenon_2026" vertex="1">
+          <mxGeometry height="55" width="260" x="511.13610000000006" y="291.065" as="geometry" />
+        </mxCell>
+        <mxCell id="inst_5e8aeb8b2ce6" parent="b1f3047a-c64b-44a5-9019-3c6e32639bba" style="shape=note;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;fontSize=12;rounded=0;" value="time_Generic" vertex="1">
+          <mxGeometry height="55" width="212.00000000000003" x="951.0918692307692" y="746.1919387755103" as="geometry" />
+        </mxCell>
+        <mxCell id="8c7ee724-6b72-4ebe-82f4-2f6972f86b20" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=0.5;strokeColor=#4D4D4D;fillColor=#FFFFFF;fontSize=16;fillColor=#FAFAFA;strokeColor=#BDBDBD;" value="&lt;b&gt;LEGEND&lt;/b&gt;&lt;br/&gt;Green: monitoring&lt;br/&gt;Blue: entity/scenario&lt;br/&gt;Red: event/damage&lt;br/&gt;Purple: DT &amp; states&lt;br/&gt;Arrows labeled with CIDOC properties where applicable" vertex="1">
+          <mxGeometry height="225" width="570" x="2456.1361" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="c08266eb-b41a-401b-91e7-2d17186a9090" edge="1" parent="1" source="061faa90-a989-4a87-a267-323e497932ab" style="endArrow=block;html=1;strokeWidth=0.5;rounded=0;edgeStyle=orthogonalEdgeStyle;fontSize=14;" target="43626880-7112-4ce5-97da-69382b6ac09e" value="P40 observed dimension">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="162a2223-ef54-40a4-9901-156b6420105d" edge="1" parent="1" source="601a0c8a-c819-450c-b7dd-46f2baebe6d0" style="endArrow=block;html=1;strokeWidth=0.5;rounded=0;edgeStyle=orthogonalEdgeStyle;fontSize=14;" target="bd1844a0-3336-42b5-8b86-80a6ccccb9d6" value="P16 used specific object">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ed0e777e-f9f5-4e84-a7bb-e897052da73b" edge="1" parent="1" source="5c30afab-62f7-41c8-8ae0-93fc0a5d8cd5" style="endArrow=block;html=1;strokeWidth=0.5;dashed=1;rounded=0;edgeStyle=orthogonalEdgeStyle;fontSize=14;" target="5a6c3b1e-2ee8-45dc-900c-1e8a53505671" value="P94 has created">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2b23c072-b490-46e4-9a74-9d1d582e5ff8" edge="1" parent="1" source="f84d3ce5-e7b4-4962-9b1c-ef94cf74af0f" style="endArrow=block;html=1;strokeWidth=0.5;rounded=0;edgeStyle=orthogonalEdgeStyle;fontSize=14;" target="6d87053e-6a11-4be2-b899-9373e98be5fc" value="P129 is about">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="044e17b7-7dcf-448f-8305-391962b20a55" edge="1" parent="1" source="43626880-7112-4ce5-97da-69382b6ac09e" style="endArrow=block;html=1;strokeWidth=0.5;dashed=1;rounded=0;edgeStyle=orthogonalEdgeStyle;fontSize=14;" target="b5bde714-fbfe-4c4a-80af-0d97b38c0995" value="P16 used specific object">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="420" y="205" />
+              <mxPoint x="240" y="205" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4e04067f-50cd-4908-82bd-de0512ab963a" edge="1" parent="1" source="b5bde714-fbfe-4c4a-80af-0d97b38c0995" style="endArrow=block;html=1;strokeWidth=0.5;rounded=0;edgeStyle=orthogonalEdgeStyle;fontSize=14;" target="48e8c7d7-254a-451a-996e-bfafa7e642e3" value="P141 assigned">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6fd97d32-368b-4270-a039-eaccd9b11701" edge="1" parent="1" source="48e8c7d7-254a-451a-996e-bfafa7e642e3" style="endArrow=block;html=1;strokeWidth=0.5;dashed=1;rounded=0;edgeStyle=orthogonalEdgeStyle;fontSize=14;" target="85a04369-2e15-4db1-9086-b2e280bf3bad" value="P43 has dimension">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="893abf85-c615-4a23-9ed1-16ab7421182c" edge="1" parent="1" source="48e8c7d7-254a-451a-996e-bfafa7e642e3" style="endArrow=block;html=1;strokeWidth=0.5;rounded=0;edgeStyle=orthogonalEdgeStyle;fontSize=14;" target="a8aa63b2-ef61-48f3-b524-7a0f22fc7197" value="P2 has type">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7f9620b3-af0c-4304-9936-e9021e74652e" edge="1" parent="1" source="5c30afab-62f7-41c8-8ae0-93fc0a5d8cd5" style="endArrow=block;html=1;strokeWidth=0.5;dashed=1;rounded=0;edgeStyle=orthogonalEdgeStyle;fontSize=14;" target="38243bfa-7d64-46ae-91dd-2b7125b0e32f" value="P15i influenced">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1080" y="210" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9b1fc4d3-cdde-4b19-88c8-343574367c1a" edge="1" parent="1" source="38243bfa-7d64-46ae-91dd-2b7125b0e32f" style="endArrow=block;html=1;strokeWidth=0.5;rounded=0;edgeStyle=orthogonalEdgeStyle;fontSize=14;" target="0e900c0b-3798-4a04-8ad9-55daa80bae4a" value="P20 had specific purpose">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3e3343ac-2eb2-4705-b1ec-04df84cf050a" edge="1" parent="1" source="0d94efec-a614-44b5-a6c7-282f89bfec95" style="endArrow=block;html=1;strokeWidth=0.5;rounded=0;edgeStyle=orthogonalEdgeStyle;fontSize=14;" target="2857ee48-1886-4c5f-a329-cdeb78def774" value="P4 has time-span">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="51b901e9-51d2-488d-967c-0d976226354e" edge="1" parent="1" source="0d94efec-a614-44b5-a6c7-282f89bfec95" style="endArrow=block;html=1;strokeWidth=0.5;rounded=0;edgeStyle=orthogonalEdgeStyle;fontSize=14;" target="bb397d34-97a8-417b-a0ef-5f41678a0376" value="P14 carried out by">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="110" y="840" />
+              <mxPoint x="360" y="840" />
+              <mxPoint x="360" y="963" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c0ac3598-7154-45a5-8c12-001231e8f81a" edge="1" parent="1" source="0d94efec-a614-44b5-a6c7-282f89bfec95" style="endArrow=block;html=1;strokeWidth=0.5;dashed=1;rounded=0;edgeStyle=orthogonalEdgeStyle;fontSize=14;" target="e6cd4ae6-119b-432f-98bc-8644b27f9bac" value="P9 consists of">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="01575a4d-1105-4c73-b01b-bb1182407699" edge="1" parent="1" source="e6cd4ae6-119b-432f-98bc-8644b27f9bac" style="endArrow=block;html=1;strokeWidth=0.5;dashed=1;rounded=0;edgeStyle=orthogonalEdgeStyle;fontSize=14;" target="6d87053e-6a11-4be2-b899-9373e98be5fc" value="P31 has modified">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="650" y="875" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0ff7207e-24d3-49ee-b01e-0974ba9a045b" edge="1" parent="1" source="e6cd4ae6-119b-432f-98bc-8644b27f9bac" style="endArrow=block;html=1;strokeWidth=0.5;dashed=1;rounded=0;edgeStyle=orthogonalEdgeStyle;fontSize=14;" target="c2e13e69-33a6-4ec8-94b2-fe4126fd796f" value="P15i influenced">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="787" y="900" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8d336ac3-027c-489e-81e0-7fbdfcc2e087" edge="1" parent="1" source="c2e13e69-33a6-4ec8-94b2-fe4126fd796f" style="endArrow=block;html=1;strokeWidth=0.5;dashed=1;rounded=0;edgeStyle=orthogonalEdgeStyle;fontSize=14;" target="c2f93441-4369-461d-acb9-c8e5d93842de" value="P35 has identified">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5660ac58-41a2-4a65-b137-de802c673939" edge="1" parent="1" source="c2f93441-4369-461d-acb9-c8e5d93842de" style="endArrow=block;html=1;strokeWidth=0.5;rounded=0;edgeStyle=orthogonalEdgeStyle;fontSize=14;" target="8d417432-3081-4c0c-8a2f-5eeba7f23a43" value="P2 has type">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="82485bf4-df60-46db-b458-1559bf2f250b" edge="1" parent="1" source="0d94efec-a614-44b5-a6c7-282f89bfec95" style="endArrow=block;html=1;strokeWidth=0.5;dashed=1;rounded=0;edgeStyle=orthogonalEdgeStyle;fontSize=14;" target="7ad2c84c-5696-413e-a17a-b2e4452a3603" value="P43 has dimension">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="716" y="780" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6e198218-e08a-4474-9648-3a8a123c1135" edge="1" parent="1" source="0d94efec-a614-44b5-a6c7-282f89bfec95" style="endArrow=block;html=1;strokeWidth=0.5;dashed=1;rounded=0;edgeStyle=orthogonalEdgeStyle;fontSize=14;" target="d25a0b07-a8d2-4de4-8ad7-2b9c6be86775" value="P43 has dimension">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="220" y="750" />
+              <mxPoint x="987" y="750" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="27e5b49a-765f-48fb-98ad-d62e2758f2bd" edge="1" parent="1" source="283a437f-b78a-410e-bd89-64eb351ecd1f" style="endArrow=block;html=1;strokeWidth=0.5;rounded=0;edgeStyle=orthogonalEdgeStyle;fontSize=14;" target="6d87053e-6a11-4be2-b899-9373e98be5fc" value="P129 is about">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="527aa007-7af2-48ae-8ee9-ace3a4b36660" edge="1" parent="1" source="44dc1ed2-739f-41d9-aec6-c1189e21f8e0" style="endArrow=block;html=1;strokeWidth=0.5;dashed=1;rounded=0;edgeStyle=orthogonalEdgeStyle;fontSize=14;" target="061faa90-a989-4a87-a267-323e497932ab" value="P16 used specific object">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fc2e0cdf-e0ab-42c3-82b7-f6431d37deea" edge="1" parent="1" source="ee34fafb-ecb8-40f0-b4ad-2b99841a7354" style="endArrow=block;html=1;strokeWidth=0.5;dashed=1;rounded=0;edgeStyle=orthogonalEdgeStyle;fontSize=14;" target="48e8c7d7-254a-451a-996e-bfafa7e642e3" value="P129 is about">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="122a8cb0-d756-400c-a62f-4e8577b12b87" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;fontSize=16;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;" value="&lt;b&gt;Legend&lt;/b&gt;&lt;br/&gt;🟩 Monitoring &amp;amp; Alerting&lt;br/&gt;🟦 Heritage Entity &amp;amp; Scenario / Risk Assessment&lt;br/&gt;🟥 Event &amp;amp; Damage&lt;br/&gt;🟦 Risk Management (Pre–During–Post)&lt;br/&gt;🟪 Risk/Damage State &amp;amp; Classification (Scores/Levels/Types)&lt;br/&gt;⬜ Instance Data / Notes&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#555555;&quot;&gt;state_Damage_GraffitiSurface&lt;/span&gt;" vertex="1">
+          <mxGeometry height="285" width="540" x="2486.1361" y="475" as="geometry" />
+        </mxCell>
+        <mxCell id="006e01bd-3c46-420b-949a-d1802414aa63" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=0.5;dashed=1;strokeColor=#999999;fillColor=none;fontSize=16;strokeColor=#6A1B9A;" value="&lt;b&gt;HERITAGE DIGITAL TWIN&lt;/b&gt;" vertex="1">
+          <mxGeometry height="570" width="1155" x="2036.1361" y="985" as="geometry" />
+        </mxCell>
+        <mxCell id="283a437f-b78a-410e-bd89-64eb351ecd1f" parent="006e01bd-3c46-420b-949a-d1802414aa63" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=0.5;strokeColor=#4D4D4D;fillColor=#FFFFFF;fontSize=17;fillColor=#F3E5F5;strokeColor=#6A1B9A;" value="&lt;b&gt;E73 Information Object&lt;/b&gt;&lt;br/&gt;Heritage Digital Twin (HDT)&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#555555;&quot;&gt;dt_ParthenonTwin&lt;/span&gt;" vertex="1">
+          <mxGeometry height="156.75" width="547.2923076923078" x="56.8180230769231" y="258.42785714285714" as="geometry" />
+        </mxCell>
+        <mxCell id="ee34fafb-ecb8-40f0-b4ad-2b99841a7354" parent="006e01bd-3c46-420b-949a-d1802414aa63" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=0.5;strokeColor=#4D4D4D;fillColor=#FFFFFF;fontSize=17;fillColor=#F3E5F5;strokeColor=#6A1B9A;" value="&lt;b&gt;E73 Information Object&lt;/b&gt;&lt;br/&gt;Knowledge Graph / Ontology Store&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#555555;&quot;&gt;kg_ParthenonRiskKG&lt;/span&gt;" vertex="1">
+          <mxGeometry height="156.75" width="547.2923076923078" x="115.6630230769231" y="572.8771428571429" as="geometry" />
+        </mxCell>
+        <mxCell id="44dc1ed2-739f-41d9-aec6-c1189e21f8e0" parent="006e01bd-3c46-420b-949a-d1802414aa63" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=0.5;strokeColor=#4D4D4D;fillColor=#FFFFFF;fontSize=17;fillColor=#F3E5F5;strokeColor=#6A1B9A;" value="&lt;b&gt;E7 Activity&lt;/b&gt;&lt;br/&gt;DT Update / Data Fusion&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#555555;&quot;&gt;act_DTUpdate_2026-06-15T22:33&lt;/span&gt;" vertex="1">
+          <mxGeometry height="179.1428571428572" width="497.53846153846166" x="704.4834076923077" y="247.23142857142858" as="geometry" />
+        </mxCell>
+        <mxCell id="b0a4d140-8ae5-4ede-9c2c-14d59d257c2e" parent="006e01bd-3c46-420b-949a-d1802414aa63" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=0.5;strokeColor=#4D4D4D;fillColor=#FFFFFF;fontSize=17;fillColor=#F3E5F5;strokeColor=#6A1B9A;" value="&lt;b&gt;E73 Information Object&lt;/b&gt;&lt;br/&gt;DT State Snapshot&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#555555;&quot;&gt;dtSnap_2026-06-15T22:35&lt;/span&gt;" vertex="1">
+          <mxGeometry height="156.75" width="497.53846153846166" x="695.8284076923077" y="572.8707142857143" as="geometry" />
+        </mxCell>
+        <mxCell id="19eb5b51-a9e4-4ba1-902e-70699387c8f4" edge="1" parent="006e01bd-3c46-420b-949a-d1802414aa63" source="44dc1ed2-739f-41d9-aec6-c1189e21f8e0" style="endArrow=block;html=1;strokeWidth=0.5;dashed=1;rounded=0;edgeStyle=orthogonalEdgeStyle;fontSize=14;" target="283a437f-b78a-410e-bd89-64eb351ecd1f" value="P67 refers to">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="21ec9ddb-1768-453d-9b46-3dd498ed69b8" edge="1" parent="006e01bd-3c46-420b-949a-d1802414aa63" source="44dc1ed2-739f-41d9-aec6-c1189e21f8e0" style="endArrow=block;html=1;strokeWidth=0.5;dashed=1;rounded=0;edgeStyle=orthogonalEdgeStyle;fontSize=14;" target="ee34fafb-ecb8-40f0-b4ad-2b99841a7354" value="P67 refers to">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="430" y="74" />
+              <mxPoint x="430" y="298" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4aeb7e62-ac60-4995-ba37-b3b53c46cda5" edge="1" parent="006e01bd-3c46-420b-949a-d1802414aa63" source="44dc1ed2-739f-41d9-aec6-c1189e21f8e0" style="endArrow=block;html=1;strokeWidth=0.5;dashed=1;rounded=0;edgeStyle=orthogonalEdgeStyle;fontSize=14;" target="b0a4d140-8ae5-4ede-9c2c-14d59d257c2e" value="P94 has created">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4dc11716-e0d5-4995-b750-39b610699595" parent="006e01bd-3c46-420b-949a-d1802414aa63" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=0.5;strokeColor=#666666;fillColor=#FFFFFF;fontSize=17;fillColor=#F5F5F5;" value="&lt;b&gt;E52 Time-Span&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#555555;&quot;&gt;time_2026-06-15T22:35&lt;/span&gt;" vertex="1">
+          <mxGeometry height="90.75000000000001" width="447.7846153846155" x="698.4937923076923" y="733.3707142857143" as="geometry" />
+        </mxCell>
+        <mxCell id="32e0a175-f59c-44fe-a9f5-e4409abbd60b" edge="1" parent="006e01bd-3c46-420b-949a-d1802414aa63" source="b0a4d140-8ae5-4ede-9c2c-14d59d257c2e" style="endArrow=none;dashed=1;strokeWidth=0.5;strokeColor=#666666;fontSize=14;" target="4dc11716-e0d5-4995-b750-39b610699595" value="P4 has time-span">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inst_80c3329aa453" parent="006e01bd-3c46-420b-949a-d1802414aa63" style="shape=note;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;fontSize=12;rounded=0;" value="dt_ParthenonTwin" vertex="1">
+          <mxGeometry height="55" width="236" x="651.7911" y="298.05285714285714" as="geometry" />
+        </mxCell>
+        <mxCell id="inst_daa3b86e5556" parent="006e01bd-3c46-420b-949a-d1802414aa63" style="shape=note;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;fontSize=12;rounded=0;" value="kg_ParthenonRiskKG" vertex="1">
+          <mxGeometry height="55" width="248" x="704.6361" y="612.5021428571429" as="geometry" />
+        </mxCell>
+        <mxCell id="inst_3b6b814e6ad0" parent="006e01bd-3c46-420b-949a-d1802414aa63" style="shape=note;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;fontSize=12;rounded=0;" value="act_DTUpdate_2026-06-15T22:33" vertex="1">
+          <mxGeometry height="55" width="260" x="1240.368023076923" y="287.87428571428575" as="geometry" />
+        </mxCell>
+        <mxCell id="inst_dd168f9f3034" parent="006e01bd-3c46-420b-949a-d1802414aa63" style="shape=note;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;fontSize=12;rounded=0;" value="dtSnap_2026-06-15T22:35" vertex="1">
+          <mxGeometry height="55" width="260" x="1231.7130230769233" y="612.4957142857143" as="geometry" />
+        </mxCell>
+        <mxCell id="inst_f835e77c11e5" parent="006e01bd-3c46-420b-949a-d1802414aa63" style="shape=note;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;fontSize=12;rounded=0;" value="time_Generic" vertex="1">
+          <mxGeometry height="55" width="212.00000000000003" x="1211.2899461538461" y="751.2457142857143" as="geometry" />
+        </mxCell>
+        <mxCell id="85a04369-2e15-4db1-9086-b2e280bf3bad" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=0.5;strokeColor=#4D4D4D;fillColor=#FFFFFF;fontSize=17;fillColor=#EDE7F6;strokeColor=#6A1B9A;" value="&lt;b&gt;E54 Dimension&lt;/b&gt;&lt;br/&gt;Risk Score = 8/10&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#555555;&quot;&gt;score_Risk_8.5_10&lt;/span&gt;" vertex="1">
+          <mxGeometry height="99.00000000000001" width="295.2" x="1240.323957142857" y="800.5" as="geometry" />
+        </mxCell>
+        <mxCell id="601a0c8a-c819-450c-b7dd-46f2baebe6d0" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=0.5;strokeColor=#4D4D4D;fillColor=#F5F5F5;fontSize=17;dashed=1;dashPattern=3 3;" value="&lt;b&gt;E13 Attribute Assignment&lt;/b&gt;&lt;br/&gt;Risk Evaluation / Rule Check&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#555555;&quot;&gt;act_EvaluateRisk_2026-06-15T22:31&lt;/span&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#555555;&quot;&gt;Time-Span: time_2026-06-15T22:31_22:32&lt;/span&gt;" vertex="1">
+          <mxGeometry height="115.50000000000001" width="369.6" x="592.1311" y="319.075" as="geometry" />
+        </mxCell>
+        <mxCell id="91e2fb95-fb26-452b-a40e-e6afff961b73" edge="1" parent="1" source="601a0c8a-c819-450c-b7dd-46f2baebe6d0" style="endArrow=block;html=1;strokeWidth=0.5;rounded=0;edgeStyle=orthogonalEdgeStyle;fontSize=14;" target="5c30afab-62f7-41c8-8ae0-93fc0a5d8cd5" value="P15i influenced">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cba4fece-d6ab-487e-9659-3bf7ddbd3532" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=0.5;strokeColor=#4D4D4D;fillColor=#FFFFFF;fontSize=17;fillColor=#FFF8E1;strokeColor=#F9A825;" value="&lt;b&gt;E52 Time-Span&lt;/b&gt;&lt;br/&gt;&lt;i&gt;15 June 2026 22:31–22:32&lt;/i&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#555555;&quot;&gt;time_2026-06-15T22:31_22:32&lt;/span&gt;" vertex="1">
+          <mxGeometry height="99.00000000000001" width="369.6" x="952.1311" y="319.825" as="geometry" />
+        </mxCell>
+        <mxCell id="0bd6d7b0-d096-47fa-925e-f1c86e47a88f" edge="1" parent="1" source="601a0c8a-c819-450c-b7dd-46f2baebe6d0" style="endArrow=block;html=1;strokeWidth=0.5;rounded=0;edgeStyle=orthogonalEdgeStyle;fontSize=14;" target="48e8c7d7-254a-451a-996e-bfafa7e642e3" value="P140 assigned attribute to">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="62170a13-2ae3-465d-9751-34f42a66236d" edge="1" parent="1" source="601a0c8a-c819-450c-b7dd-46f2baebe6d0" style="endArrow=block;html=1;strokeWidth=0.5;rounded=0;edgeStyle=orthogonalEdgeStyle;fontSize=14;" target="cba4fece-d6ab-487e-9659-3bf7ddbd3532" value="P4 has time-span">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inst_0668fc3c282d" parent="1" style="shape=note;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;fontSize=12;rounded=0;" value="score_Risk_8.5_10" vertex="1">
+          <mxGeometry height="55.00000000000001" width="242" x="1593.7096714285713" y="822.5" as="geometry" />
+        </mxCell>
+        <mxCell id="inst_e039cc8e2646" parent="1" style="shape=note;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;fontSize=12;rounded=0;" value="act_Eval_2026-06-15T22:31_22:32" vertex="1">
+          <mxGeometry height="55" width="260" x="1006.9311" y="349.325" as="geometry" />
+        </mxCell>
+        <mxCell id="inst_58215834075e" parent="1" style="shape=note;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;fontSize=12;rounded=0;" value="time_Evaluation_2026-06-15T22:31_22:32" vertex="1">
+          <mxGeometry height="55.00000000000001" width="260" x="1366.9311" y="341.825" as="geometry" />
+        </mxCell>
+        <mxCell id="b08c7d4d-f395-4dd9-b713-56c81203bcdf" edge="1" parent="1" source="c2e13e69-33a6-4ec8-94b2-fe4126fd796f" style="endArrow=block;html=1;strokeWidth=0.5;rounded=0;edgeStyle=orthogonalEdgeStyle;fontSize=14;" target="6d87053e-6a11-4be2-b899-9373e98be5fc" value="P34 concerned">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4398e963-015d-489d-99a7-9906b994a001" edge="1" parent="1" source="b5bde714-fbfe-4c4a-80af-0d97b38c0995" style="endArrow=block;html=1;strokeWidth=0.5;rounded=0;edgeStyle=orthogonalEdgeStyle;fontSize=14;" target="6d87053e-6a11-4be2-b899-9373e98be5fc" value="P140 assigned attribute to">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="286a792a-b6e0-4aec-a2cf-368e6c0d7056" edge="1" parent="1" source="601a0c8a-c819-450c-b7dd-46f2baebe6d0" style="endArrow=block;html=1;strokeWidth=0.5;dashed=1;rounded=0;edgeStyle=orthogonalEdgeStyle;fontSize=14;" target="43626880-7112-4ce5-97da-69382b6ac09e" value="P16 used specific object" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

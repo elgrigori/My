@@ -9,10 +9,8 @@ public class UserResponse {
     public String city;
     public String postalCode;
     public String phone;
-
     public String firstName;
     public String lastName;
-
     public String afm;
     public String organizationName;
     public String description;

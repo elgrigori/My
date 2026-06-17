@@ -1,12 +1,28 @@
 services:
+  jaeger:
+    image: jaegertracing/all-in-one:1.57
+    ports:
+      - "16686:16686"
+      - "4317:4317"
+
   user-service:
     build: ./user-service
     ports:
       - "8081:8081"
     environment:
       QUARKUS_DATASOURCE_JDBC_URL: "jdbc:h2:file:/deployments/data/user-service;DB_CLOSE_DELAY=-1"
+      QUARKUS_OTEL_EXPORTER_OTLP_TRACES_ENDPOINT: "http://jaeger:4317"
+      VOLUNTEER_SIMULATION_DELAY_MS: "0"
+      VOLUNTEER_SIMULATION_FAILURE_RATE: "0"
+    depends_on:
+      - jaeger
     volumes:
       - user-data:/deployments/data
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS http://localhost:8081/q/health/ready || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
 
   action-service:
     build: ./action-service
@@ -16,10 +32,19 @@ services:
       QUARKUS_DATASOURCE_JDBC_URL: "jdbc:h2:file:/deployments/data/action-service;DB_CLOSE_DELAY=-1"
       QUARKUS_REST_CLIENT_USER_SERVICE_URL: "http://user-service:8081"
       QUARKUS_REST_CLIENT_PARTICIPATION_SERVICE_URL: "http://participation-service:8083"
+      QUARKUS_OTEL_EXPORTER_OTLP_TRACES_ENDPOINT: "http://jaeger:4317"
+      VOLUNTEER_SIMULATION_DELAY_MS: "0"
+      VOLUNTEER_SIMULATION_FAILURE_RATE: "0"
     depends_on:
+      - jaeger
       - user-service
     volumes:
       - action-data:/deployments/data
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS http://localhost:8082/q/health/ready || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
 
   participation-service:
     build: ./participation-service
@@ -29,11 +54,20 @@ services:
       QUARKUS_DATASOURCE_JDBC_URL: "jdbc:h2:file:/deployments/data/participation-service;DB_CLOSE_DELAY=-1"
       QUARKUS_REST_CLIENT_USER_SERVICE_URL: "http://user-service:8081"
       QUARKUS_REST_CLIENT_ACTION_SERVICE_URL: "http://action-service:8082"
+      QUARKUS_OTEL_EXPORTER_OTLP_TRACES_ENDPOINT: "http://jaeger:4317"
+      VOLUNTEER_SIMULATION_DELAY_MS: "0"
+      VOLUNTEER_SIMULATION_FAILURE_RATE: "0"
     depends_on:
+      - jaeger
       - user-service
       - action-service
     volumes:
       - participation-data:/deployments/data
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS http://localhost:8083/q/health/ready || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
 
 volumes:
   user-data:

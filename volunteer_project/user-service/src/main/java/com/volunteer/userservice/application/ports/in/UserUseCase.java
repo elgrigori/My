@@ -1,8 +1,8 @@
 package com.volunteer.userservice.application.ports.in;
 
+import com.volunteer.userservice.adapters.in.rest.representation.OrganizationRequest;
 import com.volunteer.userservice.adapters.in.rest.representation.AuthResponse;
 import com.volunteer.userservice.adapters.in.rest.representation.LoginRequest;
-import com.volunteer.userservice.adapters.in.rest.representation.OrganizationRequest;
 import com.volunteer.userservice.adapters.in.rest.representation.UserResponse;
 import com.volunteer.userservice.adapters.in.rest.representation.UserUpdateRequest;
 import com.volunteer.userservice.adapters.in.rest.representation.VolunteerRequest;
@@ -14,7 +14,7 @@ public interface UserUseCase {
 
     UserResponse createOrganization(OrganizationRequest request);
 
-    UserResponse getUser(Long id);
+    AuthResponse authenticate(LoginRequest request);
 
     List<UserResponse> listVolunteers();
 
@@ -23,8 +23,6 @@ public interface UserUseCase {
     UserResponse getVolunteer(Long id);
 
     UserResponse getOrganization(Long id);
-
-    UserResponse updateUser(Long id, UserUpdateRequest request);
 
     UserResponse updateVolunteer(Long id, UserUpdateRequest request);
 
@@ -37,6 +35,4 @@ public interface UserUseCase {
     boolean volunteerExists(Long id);
 
     boolean organizationExists(Long id);
-
-    AuthResponse authenticate(LoginRequest request);
 }

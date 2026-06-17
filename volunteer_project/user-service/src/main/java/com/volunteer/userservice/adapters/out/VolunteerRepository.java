@@ -1,6 +1,5 @@
 package com.volunteer.userservice.adapters.out;
 
-import com.volunteer.userservice.application.domain.Volunteer;
 import jakarta.enterprise.context.ApplicationScoped;
 
 @ApplicationScoped

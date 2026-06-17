@@ -1,0 +1,190 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: volunteer-config
+data:
+  QUARKUS_OTEL_EXPORTER_OTLP_TRACES_ENDPOINT: "http://jaeger:4317"
+  VOLUNTEER_SIMULATION_DELAY_MS: "0"
+  VOLUNTEER_SIMULATION_FAILURE_RATE: "0"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jaeger
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: jaeger
+  template:
+    metadata:
+      labels:
+        app: jaeger
+    spec:
+      containers:
+        - name: jaeger
+          image: jaegertracing/all-in-one:1.57
+          ports:
+            - containerPort: 16686
+            - containerPort: 4317
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: jaeger
+spec:
+  selector:
+    app: jaeger
+  ports:
+    - name: ui
+      port: 16686
+      targetPort: 16686
+    - name: otlp-grpc
+      port: 4317
+      targetPort: 4317
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: user-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: user-service
+  template:
+    metadata:
+      labels:
+        app: user-service
+    spec:
+      containers:
+        - name: user-service
+          image: volunteer/user-service:1.0.0
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8081
+          envFrom:
+            - configMapRef:
+                name: volunteer-config
+          env:
+            - name: QUARKUS_HTTP_PORT
+              value: "8081"
+          livenessProbe:
+            httpGet:
+              path: /q/health/live
+              port: 8081
+          readinessProbe:
+            httpGet:
+              path: /q/health/ready
+              port: 8081
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: user-service
+spec:
+  selector:
+    app: user-service
+  ports:
+    - port: 8081
+      targetPort: 8081
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: action-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: action-service
+  template:
+    metadata:
+      labels:
+        app: action-service
+    spec:
+      containers:
+        - name: action-service
+          image: volunteer/action-service:1.0.0
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8082
+          envFrom:
+            - configMapRef:
+                name: volunteer-config
+          env:
+            - name: QUARKUS_HTTP_PORT
+              value: "8082"
+            - name: QUARKUS_REST_CLIENT_USER_SERVICE_URL
+              value: "http://user-service:8081"
+            - name: QUARKUS_REST_CLIENT_PARTICIPATION_SERVICE_URL
+              value: "http://participation-service:8083"
+          livenessProbe:
+            httpGet:
+              path: /q/health/live
+              port: 8082
+          readinessProbe:
+            httpGet:
+              path: /q/health/ready
+              port: 8082
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: action-service
+spec:
+  selector:
+    app: action-service
+  ports:
+    - port: 8082
+      targetPort: 8082
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: participation-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: participation-service
+  template:
+    metadata:
+      labels:
+        app: participation-service
+    spec:
+      containers:
+        - name: participation-service
+          image: volunteer/participation-service:1.0.0
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8083
+          envFrom:
+            - configMapRef:
+                name: volunteer-config
+          env:
+            - name: QUARKUS_HTTP_PORT
+              value: "8083"
+            - name: QUARKUS_REST_CLIENT_USER_SERVICE_URL
+              value: "http://user-service:8081"
+            - name: QUARKUS_REST_CLIENT_ACTION_SERVICE_URL
+              value: "http://action-service:8082"
+          livenessProbe:
+            httpGet:
+              path: /q/health/live
+              port: 8083
+          readinessProbe:
+            httpGet:
+              path: /q/health/ready
+              port: 8083
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: participation-service
+spec:
+  selector:
+    app: participation-service
+  ports:
+    - port: 8083
+      targetPort: 8083

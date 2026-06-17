@@ -1,0 +1,26 @@
+####
+# Fast-jar image for user-service.
+#
+# Build the application first:
+# ./mvnw package
+#
+# Build the image:
+# docker build -f src/main/docker/Dockerfile.fast-jar -t volunteer/user-service-fast-jar .
+#
+# Run:
+# docker run -i --rm -p 8081:8081 volunteer/user-service-fast-jar
+####
+FROM eclipse-temurin:21-jre
+
+WORKDIR /deployments
+
+COPY target/quarkus-app/lib/ ./lib/
+COPY target/quarkus-app/*.jar ./
+COPY target/quarkus-app/app/ ./app/
+COPY target/quarkus-app/quarkus/ ./quarkus/
+
+EXPOSE 8081
+
+ENV JAVA_OPTS_APPEND="-Dquarkus.http.host=0.0.0.0 -Djava.util.logging.manager=org.jboss.logmanager.LogManager"
+
+ENTRYPOINT ["java", "-jar", "quarkus-run.jar"]

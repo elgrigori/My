@@ -17,6 +17,7 @@ import com.volunteer.actionservice.application.domain.DonationAction;
 import com.volunteer.actionservice.application.domain.FundingAction;
 import com.volunteer.actionservice.application.ports.in.ActionUseCase;
 import com.volunteer.actionservice.application.ports.out.ActionRepository;
+import io.quarkus.scheduler.Scheduled;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 import jakarta.transaction.Transactional;
@@ -59,15 +60,13 @@ public class ActionService implements ActionUseCase {
         return toResponse(action);
     }
 
-    public List<ActionResponse> search(String category, String location, String title, ActionType type,
+    public List<ActionResponse> search(String category, String location, ActionType type,
                                        ActionStatus status, LocalDateTime from, LocalDateTime to, Long organizationId) {
         String categoryFilter = normalize(category);
         String locationFilter = normalize(location);
-        String titleFilter = normalize(title);
         return actionRepository.listAll().stream()
                 .filter(action -> categoryFilter == null || action.category.toLowerCase(Locale.ROOT).contains(categoryFilter))
                 .filter(action -> locationFilter == null || action.location.toLowerCase(Locale.ROOT).contains(locationFilter))
-                .filter(action -> titleFilter == null || action.title.toLowerCase(Locale.ROOT).contains(titleFilter))
                 .filter(action -> type == null || matchesType(action, type))
                 .filter(action -> status == null || action.status == status)
                 .filter(action -> from == null || !action.endDate.isBefore(from))
@@ -75,6 +74,10 @@ public class ActionService implements ActionUseCase {
                 .filter(action -> organizationId == null || Objects.equals(action.organizationId, organizationId))
                 .map(this::toResponse)
                 .toList();
+    }
+
+    public List<ActionResponse> listAll() {
+        return search(null, null, null, null, null, null, null);
     }
 
     public ActionResponse get(Long id) {
@@ -100,12 +103,6 @@ public class ActionService implements ActionUseCase {
     }
 
     @Transactional
-    public void delete(Long id) {
-        Action action = findAction(id);
-        actionRepository.delete(action);
-    }
-
-    @Transactional
     public ActionResponse cancel(Long id) {
         Action action = findAction(id);
         ensureOpen(action);
@@ -121,6 +118,27 @@ public class ActionService implements ActionUseCase {
         ensureOpen(action);
         action.status = ActionStatus.COMPLETED;
         return toResponse(action);
+    }
+
+    @Scheduled(every = "5m")
+    @Transactional
+    public void autoCancelExpiredActivismActions() {
+        LocalDateTime now = LocalDateTime.now();
+        actionRepository.listAll().stream()
+                .filter(action -> action instanceof ActivismAction)
+                .filter(action -> action.status == ActionStatus.OPEN)
+                .filter(action -> action.endDate != null && action.endDate.isBefore(now))
+                .map(action -> (ActivismAction) action)
+                .filter(activism -> value(activism.currentParticipants) < value(activism.minParticipants))
+                .forEach(activism -> {
+                    activism.status = ActionStatus.CANCELLED;
+                    try {
+                        participationClient.actionCancelled(new ActionNotificationRequest(
+                                activism.id, activism.title,
+                                "Action automatically cancelled due to insufficient participants"));
+                    } catch (ProcessingException | WebApplicationException ignored) {
+                    }
+                });
     }
 
     public ActionResponse availability(Long id) {
@@ -183,15 +201,15 @@ public class ActionService implements ActionUseCase {
             activism.minParticipants = request.minParticipants;
             activism.maxParticipants = request.maxParticipants != null ? request.maxParticipants : request.totalParticipants;
         }
-        if (action instanceof DonationAction donation) {
-            donation.requiredItems = request.requiredItems;
-            donation.products.clear();
-            donation.products.addAll(toProducts(request));
-        }
         if (action instanceof ContributeAction contribute) {
             contribute.requiredItems = request.requiredItems;
             contribute.products.clear();
             contribute.products.addAll(toProducts(request));
+        }
+        if (action instanceof DonationAction donation) {
+            donation.requiredItems = request.requiredItems;
+            donation.products.clear();
+            donation.products.addAll(toProducts(request));
         }
         if (action instanceof FundingAction funding) {
             funding.targetAmount = request.targetAmount;
@@ -218,10 +236,12 @@ public class ActionService implements ActionUseCase {
                 throw new ServiceException(Response.Status.BAD_REQUEST, "Invalid activism participant limits");
             }
         }
-        if ((request.type == ActionType.DONATION || request.type == ActionType.CONTRIBUTE)
-                && (request.requiredItems == null || request.requiredItems.isBlank())
-                && (request.products == null || request.products.isEmpty())) {
-            throw new ServiceException(Response.Status.BAD_REQUEST, "Donation actions require items");
+        if (request.type == ActionType.CONTRIBUTE
+                || request.type == ActionType.DONATION) {
+            if ((request.requiredItems == null || request.requiredItems.isBlank())
+                    && (request.products == null || request.products.isEmpty())) {
+                throw new ServiceException(Response.Status.BAD_REQUEST, "Contribute actions require items");
+            }
         }
         if (request.type == ActionType.FUNDING
                 && (request.targetAmount == null || request.targetAmount.compareTo(BigDecimal.ZERO) <= 0)) {
@@ -265,10 +285,7 @@ public class ActionService implements ActionUseCase {
     }
 
     private boolean matchesType(Action action, ActionType type) {
-        if (action.type() == type) {
-            return true;
-        }
-        return action instanceof DonationAction && type == ActionType.CONTRIBUTE;
+        return action.type() == type;
     }
 
     private boolean isAvailable(Action action) {
@@ -388,13 +405,13 @@ public class ActionService implements ActionUseCase {
             response.maxParticipants = activism.maxParticipants;
             response.totalParticipants = activism.maxParticipants;
         }
-        if (action instanceof DonationAction donation) {
-            response.requiredItems = donation.requiredItems;
-            response.products = toProductResponses(donation.products);
-        }
         if (action instanceof ContributeAction contribute) {
             response.requiredItems = contribute.requiredItems;
             response.products = toProductResponses(contribute.products);
+        }
+        if (action instanceof DonationAction donation) {
+            response.requiredItems = donation.requiredItems;
+            response.products = toProductResponses(donation.products);
         }
         if (action instanceof FundingAction funding) {
             response.targetAmount = funding.targetAmount;

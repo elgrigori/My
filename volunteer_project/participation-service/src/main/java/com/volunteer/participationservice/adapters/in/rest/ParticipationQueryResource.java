@@ -9,7 +9,7 @@ import jakarta.ws.rs.core.Response;
 import org.eclipse.microprofile.openapi.annotations.Operation;
 import org.eclipse.microprofile.openapi.annotations.tags.Tag;
 
-@Path("/")
+@Path(ApiPath.ROOT.QUERY)
 @Tag(name = "Participation queries")
 public class ParticipationQueryResource {
     @Inject

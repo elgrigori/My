@@ -63,19 +63,19 @@ public class ParticipationService implements ParticipationUseCase {
         participation.endDate = action.endDate;
         participation.status = ParticipationStatus.CONFIRMED;
         appendNotification(participation, notificationService.confirmation(volunteer, action));
-        participationRepository.persist(participation);
+        participationRepository.save(participation);
         updateActionAccepted(participation, request);
         return toResponse(participation);
     }
 
     @Transactional
     public ParticipationResponse cancel(Long id) {
-        Participation participation = participationRepository.findByIdOptional(id)
+        Participation participation = participationRepository.findParticipationById(id)
                 .orElseThrow(() -> new ServiceException(Response.Status.NOT_FOUND, "Participation not found"));
         if (participation.status == ParticipationStatus.CANCELLED) {
             throw new ServiceException(Response.Status.CONFLICT, "Participation is already cancelled");
         }
-        validateCanCancel(fetchAction(participation.actionId));
+        validateCanCancel(participation.startDate);
         participation.status = ParticipationStatus.CANCELLED;
         appendNotification(participation, "Participation cancelled");
         updateActionCancelled(participation);
@@ -95,7 +95,7 @@ public class ParticipationService implements ParticipationUseCase {
     }
 
     public ParticipationResponse get(Long id) {
-        return toResponse(participationRepository.findByIdOptional(id)
+        return toResponse(participationRepository.findParticipationById(id)
                 .orElseThrow(() -> new ServiceException(Response.Status.NOT_FOUND, "Participation not found")));
     }
 
@@ -113,7 +113,7 @@ public class ParticipationService implements ParticipationUseCase {
 
     @Transactional
     public ParticipationResponse markNotificationRead(Long notificationId) {
-        Participation participation = participationRepository.findByIdOptional(notificationId)
+        Participation participation = participationRepository.findParticipationById(notificationId)
                 .orElseThrow(() -> new ServiceException(Response.Status.NOT_FOUND, "Notification not found"));
         participation.notificationRead = true;
         return toResponse(participation);
@@ -170,8 +170,8 @@ public class ParticipationService implements ParticipationUseCase {
         }
     }
 
-    private void validateCanCancel(ActionSummary action) {
-        if (action.startDate != null && LocalDateTime.now().plusHours(12).isAfter(action.startDate)) {
+    private void validateCanCancel(LocalDateTime startDate) {
+        if (startDate != null && LocalDateTime.now().plusHours(12).isAfter(startDate)) {
             throw new ServiceException(Response.Status.CONFLICT, "Participation cannot be cancelled less than 12 hours before action start");
         }
     }

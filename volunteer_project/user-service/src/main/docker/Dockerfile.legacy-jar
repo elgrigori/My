@@ -1,0 +1,24 @@
+####
+# Legacy-jar image for user-service.
+#
+# Build the application first:
+# ./mvnw package -Dquarkus.package.jar.type=legacy-jar
+#
+# Build the image:
+# docker build -f src/main/docker/Dockerfile.legacy-jar -t volunteer/user-service-legacy-jar .
+#
+# Run:
+# docker run -i --rm -p 8081:8081 volunteer/user-service-legacy-jar
+####
+FROM eclipse-temurin:21-jre
+
+WORKDIR /deployments
+
+COPY target/lib/ ./lib/
+COPY target/*-runner.jar ./application.jar
+
+EXPOSE 8081
+
+ENV JAVA_OPTS_APPEND="-Dquarkus.http.host=0.0.0.0 -Djava.util.logging.manager=org.jboss.logmanager.LogManager"
+
+ENTRYPOINT ["java", "-jar", "application.jar"]

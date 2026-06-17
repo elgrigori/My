@@ -12,14 +12,12 @@ import java.util.List;
 public interface ActionUseCase {
     ActionResponse create(ActionRequest request);
 
-    List<ActionResponse> search(String category, String location, String title, ActionType type,
+    List<ActionResponse> search(String category, String location, ActionType type,
                                 ActionStatus status, LocalDateTime from, LocalDateTime to, Long organizationId);
 
     ActionResponse get(Long id);
 
     ActionResponse update(Long id, ActionRequest request);
-
-    void delete(Long id);
 
     ActionResponse cancel(Long id);
 

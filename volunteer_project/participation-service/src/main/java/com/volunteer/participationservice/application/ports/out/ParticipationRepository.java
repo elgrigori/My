@@ -2,12 +2,16 @@ package com.volunteer.participationservice.application.ports.out;
 
 import com.volunteer.participationservice.application.domain.Participation;
 import com.volunteer.participationservice.application.domain.ParticipationStatus;
-import io.quarkus.hibernate.orm.panache.PanacheRepository;
 
 import java.time.LocalDateTime;
 import java.util.List;
+import java.util.Optional;
 
-public interface ParticipationRepository extends PanacheRepository<Participation> {
+public interface ParticipationRepository {
+    Optional<Participation> findParticipationById(Long id);
+
+    void save(Participation participation);
+
     List<Participation> findConfirmedByVolunteer(Long volunteerId);
 
     List<Participation> findOverlapping(Long volunteerId, LocalDateTime startDate, LocalDateTime endDate);

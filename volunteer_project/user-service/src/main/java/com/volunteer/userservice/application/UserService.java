@@ -19,8 +19,6 @@ import jakarta.transaction.Transactional;
 import jakarta.ws.rs.core.Response;
 import org.eclipse.microprofile.config.inject.ConfigProperty;
 
-import java.nio.charset.StandardCharsets;
-import java.util.Base64;
 import java.util.List;
 import java.util.Objects;
 
@@ -38,9 +36,11 @@ public class UserService implements UserUseCase {
     @ConfigProperty(name = "volunteer.password.min-length", defaultValue = "6")
     int minPasswordLength;
 
+    //create user
+
     @Transactional
     public UserResponse createVolunteer(VolunteerRequest request) {
-        validateCredentials(request.username, request.email, request.password, null);
+        validateCredentials(request.username, request.email, request.password);
         Volunteer volunteer = new Volunteer();
         volunteer.username = request.username;
         volunteer.email = request.email;
@@ -57,8 +57,8 @@ public class UserService implements UserUseCase {
 
     @Transactional
     public UserResponse createOrganization(OrganizationRequest request) {
-        validateCredentials(request.username, request.email, request.password, null);
-        ensureAfmAvailable(request.afm, null);
+        validateCredentials(request.username, request.email, request.password);
+        ensureAfmAvailable(request.afm);
         Organization organization = new Organization();
         organization.username = request.username;
         organization.email = request.email;
@@ -76,8 +76,24 @@ public class UserService implements UserUseCase {
         return toResponse(organization);
     }
 
-    public UserResponse getUser(Long id) {
-        return toResponse(findUser(id));
+    public AuthResponse authenticate(LoginRequest request) {
+        User user = userRepository.findByUsername(request.username)
+                .filter(existing -> Objects.equals(existing.password, request.password))
+                .orElseThrow(() -> new ServiceException(Response.Status.UNAUTHORIZED, "Invalid username or password"));
+        AuthResponse response = new AuthResponse();
+        response.userId = user.id;
+        response.username = user.username;
+        response.type = user.type();
+        response.token = "demo-token-" + user.id;
+        return response;
+    }
+
+    public UserResponse getVolunteer(Long id) {
+        return toResponse(findVolunteer(id));
+    }
+
+    public UserResponse getOrganization(Long id) {
+        return toResponse(findOrganization(id));
     }
 
     public List<UserResponse> listVolunteers() {
@@ -90,20 +106,6 @@ public class UserService implements UserUseCase {
         return organizationRepository.listAll().stream()
                 .map(this::toResponse)
                 .toList();
-    }
-
-    public UserResponse getVolunteer(Long id) {
-        return toResponse(findVolunteer(id));
-    }
-
-    public UserResponse getOrganization(Long id) {
-        return toResponse(findOrganization(id));
-    }
-
-    @Transactional
-    public UserResponse updateUser(Long id, UserUpdateRequest request) {
-        User user = findUser(id);
-        return updateUser(user, request);
     }
 
     @Transactional
@@ -169,25 +171,6 @@ public class UserService implements UserUseCase {
         return organizationRepository.findByIdOptional(id).isPresent();
     }
 
-    public AuthResponse authenticate(LoginRequest request) {
-        User user = userRepository.findByUsername(request.username)
-                .orElseThrow(() -> new ServiceException(Response.Status.UNAUTHORIZED, "Invalid username or password"));
-        if (!Objects.equals(user.password, request.password)) {
-            throw new ServiceException(Response.Status.UNAUTHORIZED, "Invalid username or password");
-        }
-        AuthResponse response = new AuthResponse();
-        response.userId = user.id;
-        response.username = user.username;
-        response.type = user.type();
-        response.token = Base64.getEncoder().encodeToString((user.username + ":" + user.type()).getBytes(StandardCharsets.UTF_8));
-        return response;
-    }
-
-    private User findUser(Long id) {
-        return userRepository.findByIdOptional(id)
-                .orElseThrow(() -> new ServiceException(Response.Status.NOT_FOUND, "User not found"));
-    }
-
     private Volunteer findVolunteer(Long id) {
         return volunteerRepository.findByIdOptional(id)
                 .orElseThrow(() -> new ServiceException(Response.Status.NOT_FOUND, "Volunteer not found"));
@@ -198,16 +181,23 @@ public class UserService implements UserUseCase {
                 .orElseThrow(() -> new ServiceException(Response.Status.NOT_FOUND, "Organization not found"));
     }
 
-    private void validateCredentials(String username, String email, String password, Long currentId) {
+    private void validateCredentials(String username, String email, String password) {
         ensurePasswordLength(password);
-        ensureUsernameAvailable(username, currentId);
-        ensureEmailAvailable(email, currentId);
+        ensureUsernameAvailable(username);
+        ensureEmailAvailable(email);
     }
 
     private void ensurePasswordLength(String password) {
         if (password == null || password.length() < minPasswordLength) {
             throw new ServiceException(Response.Status.BAD_REQUEST, "Password must contain at least " + minPasswordLength + " characters");
         }
+    }
+
+    private void ensureUsernameAvailable(String username) {
+        userRepository.findByUsername(username)
+                .ifPresent(existing -> {
+                    throw new ServiceException(Response.Status.CONFLICT, "Username already exists");
+                });
     }
 
     private void ensureUsernameAvailable(String username, Long currentId) {
@@ -218,11 +208,25 @@ public class UserService implements UserUseCase {
                 });
     }
 
+    private void ensureEmailAvailable(String email) {
+        userRepository.findByEmail(email)
+                .ifPresent(existing -> {
+                    throw new ServiceException(Response.Status.CONFLICT, "Email already exists");
+                });
+    }
+
     private void ensureEmailAvailable(String email, Long currentId) {
         userRepository.findByEmail(email)
                 .filter(existing -> !Objects.equals(existing.id, currentId))
                 .ifPresent(existing -> {
                     throw new ServiceException(Response.Status.CONFLICT, "Email already exists");
+                });
+    }
+
+    private void ensureAfmAvailable(String afm) {
+        organizationRepository.findByAfm(afm)
+                .ifPresent(existing -> {
+                    throw new ServiceException(Response.Status.CONFLICT, "AFM already exists");
                 });
     }
 

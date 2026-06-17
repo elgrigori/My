@@ -1,11 +1,7 @@
 package com.volunteer.userservice;
 
-import com.volunteer.userservice.adapters.out.UserRepository;
 import io.quarkus.test.junit.QuarkusTest;
 import io.restassured.http.ContentType;
-import jakarta.inject.Inject;
-import jakarta.transaction.Transactional;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.given;
@@ -14,16 +10,7 @@ import static org.hamcrest.Matchers.hasSize;
 import static org.hamcrest.Matchers.notNullValue;
 
 @QuarkusTest
-class UserResourceTest {
-    @Inject
-    UserRepository userRepository;
-
-    @BeforeEach
-    @Transactional
-    void cleanDatabase() {
-        userRepository.deleteAll();
-    }
-
+class UserResourceTest extends IntegrationBase {
     @Test
     void registersVolunteerAndReadsProfile() {
         String location = given()
@@ -104,10 +91,34 @@ class UserResourceTest {
                 .extract()
                 .path("id");
 
-        given().get("/volunteers").then().statusCode(200).body("$", hasSize(1));
+        given().get("/volunteers").then().statusCode(200).body("$", hasSize(2));
         given().get("/volunteers/{id}/exists", id).then().statusCode(200);
         given().delete("/volunteers/{id}", id).then().statusCode(204);
         given().get("/volunteers/{id}/exists", id).then().statusCode(404);
+    }
+
+    @Test
+    void exposesOrganizationExistsAndDeleteEndpoints() {
+        int id = given()
+                .contentType(ContentType.JSON)
+                .body("""
+                        {
+                          "username": "org-crud",
+                          "email": "org-crud@example.com",
+                          "password": "secret1",
+                          "afm": "123123123",
+                          "organizationName": "Org Test"
+                        }
+                        """)
+                .post("/organizations")
+                .then()
+                .statusCode(201)
+                .extract()
+                .path("id");
+
+        given().get("/organizations/{id}/exists", id).then().statusCode(200);
+        given().delete("/organizations/{id}", id).then().statusCode(204);
+        given().get("/organizations/{id}/exists", id).then().statusCode(404);
     }
 
     @Test
@@ -161,7 +172,7 @@ class UserResourceTest {
                 .statusCode(200)
                 .body("firstName", equalTo("New"));
 
-        given().get("/organizations").then().statusCode(200).body("$", hasSize(0));
+        given().get("/organizations").then().statusCode(200).body("$", hasSize(1));
     }
 
     @Test

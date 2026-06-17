@@ -30,6 +30,7 @@ Rules followed:
 - H2 database
 - MicroProfile Config
 - MicroProfile REST Client
+- MicroProfile Health, Fault Tolerance, Metrics and OpenTelemetry
 - SmallRye OpenAPI and Swagger UI
 - JUnit 5, Rest-Assured, Mockito
 - Docker and Docker Compose
@@ -81,6 +82,17 @@ Then start all services:
 ```bash
 docker compose up --build
 ```
+
+Docker Compose also starts Jaeger at http://localhost:16686. Health and metrics
+are available at:
+
+- http://localhost:8081/q/health/ready and http://localhost:8081/q/metrics
+- http://localhost:8082/q/health/ready and http://localhost:8082/q/metrics
+- http://localhost:8083/q/health/ready and http://localhost:8083/q/metrics
+
+## Minikube And Observability
+
+Kubernetes manifests and the scenario report for Health, Fault Tolerance, Metrics and Jaeger tracing are documented in [docs/cloud-deployment-report.md](docs/cloud-deployment-report.md).
 
 ## Example Curl Commands
 

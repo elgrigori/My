@@ -23,10 +23,7 @@ public class OrganizationRequest {
 
     public String description;
     public String mission;
-
-    @NotNull
     public Integer foundedYear;
-
     public String address;
     public String city;
     public String postalCode;

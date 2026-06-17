@@ -1,0 +1,22 @@
+####
+# Minimal native image for participation-service.
+#
+# Build the native runner first:
+# ./mvnw package -Dnative
+#
+# Build the image:
+# docker build -f src/main/docker/Dockerfile.native-micro -t volunteer/participation-service-native-micro .
+#
+# Run:
+# docker run -i --rm -p 8083:8083 volunteer/participation-service-native-micro
+####
+FROM quay.io/quarkus/quarkus-micro-image:2.0
+
+WORKDIR /work/
+
+COPY target/*-runner /work/application
+
+EXPOSE 8083
+USER 1001
+
+ENTRYPOINT ["./application", "-Dquarkus.http.host=0.0.0.0"]
