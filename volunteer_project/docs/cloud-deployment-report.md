@@ -6,7 +6,7 @@ This report documents the MicroProfile/Quarkus support added for running the vol
 
 - Health API: each service exposes `/q/health/live` and `/q/health/ready`. The readiness check opens a JDBC connection and reports the database status.
 - Fault Tolerance API: REST clients between services use `@Timeout`, `@Retry` and `@CircuitBreaker`.
-- Metrics API: selected public API methods use `@Counted` and `@Timed`. Metrics are exposed at `/q/metrics`.
+- Metrics API: selected public API methods use MicroProfile `@Counted` and `@Timed`. Metrics are exposed at `/metrics`.
 - OpenTelemetry API: traces are exported through OTLP to Jaeger.
 
 ## Build container images
@@ -15,9 +15,9 @@ Run from the repository root:
 
 ```powershell
 .\apache-maven-3.9.16\bin\mvn.cmd clean package -DskipTests
-docker build -t volunteer/user-service:1.0.0 .\user-service
-docker build -t volunteer/action-service:1.0.0 .\action-service
-docker build -t volunteer/participation-service:1.0.0 .\participation-service
+docker build -t volunteer/user-service:1.0.3 .\user-service
+docker build -t volunteer/action-service:1.0.3 .\action-service
+docker build -t volunteer/participation-service:1.0.3 .\participation-service
 ```
 
 ## Run with Docker Compose
@@ -36,17 +36,17 @@ Useful endpoints:
 - User health: `http://localhost:8081/q/health/ready`
 - Action health: `http://localhost:8082/q/health/ready`
 - Participation health: `http://localhost:8083/q/health/ready`
-- User metrics: `http://localhost:8081/q/metrics`
-- Action metrics: `http://localhost:8082/q/metrics`
-- Participation metrics: `http://localhost:8083/q/metrics`
+- User metrics: `http://localhost:8081/metrics`
+- Action metrics: `http://localhost:8082/metrics`
+- Participation metrics: `http://localhost:8083/metrics`
 - Jaeger UI: `http://localhost:16686`
 
 For minikube, either build inside the minikube Docker daemon or load the images:
 
 ```powershell
-minikube image load volunteer/user-service:1.0.0
-minikube image load volunteer/action-service:1.0.0
-minikube image load volunteer/participation-service:1.0.0
+minikube image load volunteer/user-service:1.0.3
+minikube image load volunteer/action-service:1.0.3
+minikube image load volunteer/participation-service:1.0.3
 ```
 
 ## Deploy on minikube
@@ -74,14 +74,14 @@ Expected result:
 
 - All API calls return successful responses.
 - `/q/health/ready` is `UP` for all services.
-- `/q/metrics` contains the custom counters and timers.
+- `/metrics` contains the custom counters and timers.
 - Jaeger contains traces that include the participating services.
 
 Suggested screenshots:
 
 - `kubectl get pods`
 - `/q/health/ready` for each service
-- `/q/metrics` showing `actions_created_total`, `volunteers_created_total` or `participations_created_total`
+- `/metrics` showing `actions_created_total`, `volunteers_created_total` or `participations_created_total`
 - Jaeger trace for the participation request
 
 ## Scenario 2: slow downstream service
@@ -129,7 +129,7 @@ Expected result:
 
 - Some calls succeed after retry.
 - Some calls fail with service-unavailable behavior after retries are exhausted or after the circuit breaker opens.
-- Jaeger displays failed spans, and `/q/metrics` shows the request counters continuing to increase.
+- Jaeger displays failed spans, and `/metrics` shows the request counters continuing to increase.
 
 Reset:
 
@@ -137,3 +137,32 @@ Reset:
 kubectl patch configmap volunteer-config --type merge -p '{"data":{"VOLUNTEER_SIMULATION_FAILURE_RATE":"0"}}'
 kubectl rollout restart deployment/user-service deployment/action-service deployment/participation-service
 ```
+
+## Verified minikube execution - June 18, 2026
+
+The repository manifest was applied with the three `1.0.3` service images and
+`jaegertracing/all-in-one:1.57`.
+
+Verified Kubernetes state:
+
+```text
+action-service          1/1 Running, image volunteer/action-service:1.0.3
+participation-service   1/1 Running, image volunteer/participation-service:1.0.3
+user-service            1/1 Running, image volunteer/user-service:1.0.3
+jaeger                  1/1 Running, image jaegertracing/all-in-one:1.57
+```
+
+Verified from inside each service pod:
+
+- `GET /` returned HTTP `200` and the correct service welcome page.
+- `GET /q/health/live` returned `UP`.
+- `GET /q/health/ready` returned `UP`, including the database checks.
+- `GET /metrics` returned HTTP `200`.
+- The metrics output contained application counters/timers such as
+  `application_actions_availability_checked_total`,
+  `application_organizations_create_seconds_*`, and
+  `application_participations_cancel_seconds_*`.
+
+The full cross-service normal, delay, random-failure, and Jaeger trace scenarios
+still need to be executed and captured. They are not marked as verified in this
+report.
