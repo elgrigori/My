@@ -62,7 +62,7 @@ spec:
     spec:
       containers:
         - name: user-service
-          image: volunteer/user-service:1.0.3
+          image: volunteer/user-service:1.0.4
           imagePullPolicy: Never
           ports:
             - containerPort: 8081
@@ -118,7 +118,7 @@ spec:
     spec:
       containers:
         - name: action-service
-          image: volunteer/action-service:1.0.3
+          image: volunteer/action-service:1.0.4
           imagePullPolicy: Never
           ports:
             - containerPort: 8082
@@ -178,7 +178,7 @@ spec:
     spec:
       containers:
         - name: participation-service
-          image: volunteer/participation-service:1.0.3
+          image: volunteer/participation-service:1.0.4
           imagePullPolicy: Never
           ports:
             - containerPort: 8083

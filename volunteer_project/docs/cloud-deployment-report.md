@@ -15,9 +15,9 @@ Run from the repository root:
 
 ```powershell
 .\apache-maven-3.9.16\bin\mvn.cmd clean package -DskipTests
-docker build -t volunteer/user-service:1.0.3 .\user-service
-docker build -t volunteer/action-service:1.0.3 .\action-service
-docker build -t volunteer/participation-service:1.0.3 .\participation-service
+docker build -t volunteer/user-service:1.0.4 .\user-service
+docker build -t volunteer/action-service:1.0.4 .\action-service
+docker build -t volunteer/participation-service:1.0.4 .\participation-service
 ```
 
 ## Run with Docker Compose
@@ -44,9 +44,9 @@ Useful endpoints:
 For minikube, either build inside the minikube Docker daemon or load the images:
 
 ```powershell
-minikube image load volunteer/user-service:1.0.3
-minikube image load volunteer/action-service:1.0.3
-minikube image load volunteer/participation-service:1.0.3
+minikube image load volunteer/user-service:1.0.4
+minikube image load volunteer/action-service:1.0.4
+minikube image load volunteer/participation-service:1.0.4
 ```
 
 ## Deploy on minikube
@@ -100,7 +100,7 @@ Call an endpoint that crosses service boundaries, for example creating a partici
 
 Expected result:
 
-- The caller eventually receives an error response instead of waiting indefinitely.
+- The caller eventually receives HTTP `503 Service Unavailable` instead of waiting indefinitely.
 - Jaeger shows retry/failed spans around the slow downstream request.
 - Metrics timers show increased latency.
 
@@ -128,7 +128,7 @@ Run the same cross-service request several times.
 Expected result:
 
 - Some calls succeed after retry.
-- Some calls fail with service-unavailable behavior after retries are exhausted or after the circuit breaker opens.
+- Some calls fail with HTTP `503 Service Unavailable` after retries are exhausted or after the circuit breaker opens.
 - Jaeger displays failed spans, and `/metrics` shows the request counters continuing to increase.
 
 Reset:
@@ -146,9 +146,9 @@ The repository manifest was applied with the three `1.0.3` service images and
 Verified Kubernetes state:
 
 ```text
-action-service          1/1 Running, image volunteer/action-service:1.0.3
-participation-service   1/1 Running, image volunteer/participation-service:1.0.3
-user-service            1/1 Running, image volunteer/user-service:1.0.3
+action-service          1/1 Running, image volunteer/action-service:1.0.4
+participation-service   1/1 Running, image volunteer/participation-service:1.0.4
+user-service            1/1 Running, image volunteer/user-service:1.0.4
 jaeger                  1/1 Running, image jaegertracing/all-in-one:1.57
 ```
 
@@ -166,3 +166,7 @@ Verified from inside each service pod:
 The full cross-service normal, delay, random-failure, and Jaeger trace scenarios
 still need to be executed and captured. They are not marked as verified in this
 report.
+
+Fault Tolerance exceptions such as `TimeoutException` and
+`CircuitBreakerOpenException` are mapped to HTTP `503 Service Unavailable` by
+the action and participation services.
